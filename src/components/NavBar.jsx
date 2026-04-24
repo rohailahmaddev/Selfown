@@ -1,5 +1,5 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-import logo from "../assets/logo-sm.png"
+import logo from "../../public/logo-sm.png"
 import { NavLink } from "react-router-dom";
 
 const NavMenu = [

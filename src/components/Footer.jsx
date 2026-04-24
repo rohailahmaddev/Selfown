@@ -1,4 +1,4 @@
-import logo from "../assets/logo-sm.png"
+import logo from "../../public/logo-sm.png"
 import { TiSocialGooglePlusCircular } from "react-icons/ti";
 import { PiLinkedinLogo } from "react-icons/pi";
 import { GrGithub } from "react-icons/gr";
