@@ -12,26 +12,25 @@ export default function HeroText() {
 
       setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % skills.length);
-        setAnimate(true); 
-      }, 400); 
-
+        setAnimate(true);
+      }, 400);
     }, 2500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-  <span className="border-b-4 border-amber-600 inline-block overflow-hidden">
-    <span
-      className="inline-block"
-      style={{
-        opacity: animate ? 1 : 0,
-        transform: animate ? "translateY(0px)" : "translateY(20px)",
-        transition: "opacity 0.4s ease, transform 0.4s ease",
-      }}
-    >
-      {skills[currentIndex]}
+    <span className="border-b-4 border-amber-600 inline-block overflow-hidden">
+      <span
+        className="inline-block"
+        style={{
+          opacity: animate ? 1 : 0,
+          transform: animate ? "translateY(0px)" : "translateY(20px)",
+          transition: "opacity 0.4s ease, transform 0.4s ease",
+        }}
+      >
+        {skills[currentIndex]}
+      </span>
     </span>
-  </span>
   );
 }

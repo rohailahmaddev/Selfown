@@ -4,7 +4,7 @@ import vue from "../assets/Vue.svg";
 import bootstrap from "../assets/Bootstrap.svg";
 import angular from "../assets/Angular.svg";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import {motion,AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectsArray = [
   {

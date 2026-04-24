@@ -4,7 +4,7 @@
   max-width: 1370px;
   margin: auto;
 }
-.sudo_class::before{
+.sudo_class::before {
   background-color: rgb(227, 247, 250);
   content: "";
   position: absolute;
@@ -14,7 +14,7 @@
   height: 20px;
   border-radius: 30% 70% 70% 30% / 35% 44% 56% 65%;
 }
-.active{
+.active {
   color: rgb(21, 192, 214);
 }
 .text {
@@ -33,7 +33,7 @@
 .button-bg {
   background-color: rgb(0, 187, 212);
 }
-.navtext{
+.navtext {
   color: rgb(153, 165, 199);
 }
 .herotext_color {
@@ -56,7 +56,7 @@
   color: rgb(115, 132, 158);
 }
 .gradient_bg {
-  background: linear-gradient(to bottom,rgb(247, 250, 252), white);
+  background: linear-gradient(to bottom, rgb(247, 250, 252), white);
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -66,48 +66,48 @@
   padding: 10px;
   color: white;
 }
-.section{
+.section {
   background-color: rgb(247, 250, 252);
 }
-.footer_bg{
- background-color: rgb(23, 45, 82);
+.footer_bg {
+  background-color: rgb(23, 45, 82);
 }
 
-.about_bg{
+.about_bg {
   background-color: rgba(rgb(0, 0, 0), 1) !important;
 }
 
-.text_blur::after{
-    height: 30px;
-    left: -97px;
-    position: absolute;
-    width: 190px;
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0px;
-
-}
-.text_blur::before{
+.text_blur::after {
+  height: 30px;
+  left: -97px;
   position: absolute;
-  content:var( --heading-content);
+  width: 190px;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0px;
+}
+.text_blur::before {
+  position: absolute;
+  content: var(--heading-content);
   color: white;
   width: 190px;
   animation: animateBounce 3s infinite;
 }
 
-@keyframes animateBounce{
-  0%,100%{
-    transform:translateY(0);
-    animation-timing-function:cubic-bezier(0.45,0,0.55,1)
+@keyframes animateBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   }
-  50%{
-    transform:translateY(-5px);
-    animation-timing-function:cubic-bezier(0.45,0,0.55,1)
+  50% {
+    transform: translateY(-5px);
+    animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   }
 }
 
-.margint{
-  margin-top:-80px ;
+.margint {
+  margin-top: -80px;
 }
 
 .fold {
