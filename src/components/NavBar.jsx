@@ -8,7 +8,7 @@ import dark_logo from "../../public/logo-dark.png"
 
 const NavMenu = [
   {
-    name: "Home",
+    name: "ome",
     path: "/",
   },
   {
