@@ -1,8 +1,8 @@
-export const SectionDivider = ({ svg, top, bg }) => {
+export const SectionDivider = ({ svg, bg }) => {
   return (
     <section className="container relative">
       <div
-        className={`overflow-hidden absolute ${top} left-0 -bottom-15 w-full ${bg}`}
+        className={`overflow-hidden absolute -top-1 md:-top-5 left-0 -bottom-15 w-full ${bg}`}
       >
         {svg}
       </div>

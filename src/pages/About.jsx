@@ -1,17 +1,17 @@
+import { useRef } from "react";
 import { AboutEduk } from "../components/AboutEdu";
 import { AboutPersonalDetail } from "../components/AboutPersonalDetail";
 import { MessageSend } from "../components/Message";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
-import { SerEdu } from "../components/SerEdu";
 import { Skill } from "../components/Skill";
 
 export const About = () => {
+  const heroRef = useRef(null);
   return (
     <>
-      <OtherHeroSections heading={"ABOUT ME"} />
+      <OtherHeroSections heading={"ABOUT ME"} heroRef={heroRef}/>
       <SectionDivider
-        top={`-top-5`}
         bg={"bg-transparent"}
         svg={
           <svg
@@ -28,7 +28,7 @@ export const About = () => {
       />
       <AboutPersonalDetail />
       <Skill />
-      <AboutEduk />
+      <AboutEduk/>
       <MessageSend />
       <SectionDivider
         top={`-top-5`}

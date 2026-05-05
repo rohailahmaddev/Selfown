@@ -64,7 +64,7 @@ export const Skill = () => {
                     <h3 className="herotext_color text-[20px] font-medium">
                       {ele.skill}
                     </h3>
-                    <span className="herotext_color">{ele.experience}</span>
+                    <span className="herotext_color w-39">{ele.experience}</span>
                   </div>
                 </div>
               </li>

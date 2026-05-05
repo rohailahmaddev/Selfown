@@ -29,7 +29,7 @@ const sliderCard = [
 export default function Slider() {
   return (
     <section className="container flex items-center justify-center gradient_bg pt-20 pb-25">
-      <div className="w-[85%] bg-white shadow-md rounded flex items-center justify-between p-5 overflow-hidden">
+      <div className="w-[85%] bg-white shadow-md rounded flex items-center justify-between md:p-5 overflow-hidden">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}

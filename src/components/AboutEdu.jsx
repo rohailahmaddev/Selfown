@@ -1,4 +1,5 @@
 import ExperienceCard from "./Eductaions";
+import { MobileEducation } from "./MobileEducation";
 import { SerEdu } from "./SerEdu";
 
 export const AboutEduk = ({ display = true }) => {
@@ -14,7 +15,7 @@ export const AboutEduk = ({ display = true }) => {
             }
           />
         )}
-        <div className="w-[70%] pt-25 flex flex-col gap-10">
+        <div className=" w-[70%] hidden  md:flex pt-25  flex-col gap-10">
           <ExperienceCard
             date={"2019-22"}
             border={"border-red-200"}
@@ -44,6 +45,32 @@ export const AboutEduk = ({ display = true }) => {
             border={"border-blue-200"}
             iconsColor={"text-blue-400"}
             iconBg={"bg-blue-100"}
+            circleBg={"bg-blue-400"}
+            institute={"High / Higher secondary school"}
+          />
+        </div>
+        <div className="w-full mt-20 pt-25 flex md:hidden flex-col gap-35">
+          <MobileEducation
+           date={"2017-08"}
+           border={"border-blue-200"}
+           circleBg={"bg-blue-400"}
+           institute={"High / Higher secondary school"}
+           />
+          <MobileEducation
+            date={"2014-18"}
+            border={"border-green-200"}
+            circleBg={"bg-green-400"}
+            institute={"ABC themes - Web Design IT Company"}
+           />
+            <MobileEducation
+            date={"2012-13"}
+            border={"border-yellow-200"}
+            circleBg={"bg-yellow-400"}
+            institute={"MSc IT Master Degree"}
+          />
+          <MobileEducation
+            date={"2017-08"}
+            border={"border-blue-200"}
             circleBg={"bg-blue-400"}
             institute={"High / Higher secondary school"}
           />

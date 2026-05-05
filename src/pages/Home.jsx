@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { ContactForm } from "../components/ContanctForm";
 import { Eductation } from "../components/Education";
 import { HeroSection } from "../components/HeroSection";
@@ -11,9 +12,12 @@ import { Skill } from "../components/Skill";
 import Slider from "../components/Slider";
 
 export const Home = () => {
+
+  const heroRef = useRef(null);
+
   return (
     <>
-      <HeroSection />
+      <HeroSection heroRef={heroRef}/>
       <PersonalDetail />
       <Skill />
       <ServicesCard />
@@ -38,7 +42,7 @@ export const Home = () => {
       <Slider />
       <MessageSend />
       <ProjectMenu />
-      <LatestNews />
+      <LatestNews heroRef={heroRef}/>
       <ContactForm />
       <SectionDivider
         top={`-top-5`}

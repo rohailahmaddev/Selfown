@@ -5,12 +5,12 @@ import { PersonalDetailIcons } from "./PersonalDetailIcons";
 export const AboutPersonalDetail = () => {
   return (
     <section className="container flex items-center justify-center">
-      <div className="w-[85%] flex justify-between items-center">
-        <div className="w-[40%]">
+      <div className="w-[85%] flex justify-between items-center md:flex-row flex-col">
+        <div className=" w-full md:w-[40%]">
           <img src={image} alt="image" />
         </div>
 
-        <div className="w-[50%] flex gap-10 flex-col">
+        <div className="w-full md:w-[50%] flex gap-10 flex-col">
           <PersonalDetail
             displayProperty="flex flex-col w-full gap-10"
             col1Width="w-full"

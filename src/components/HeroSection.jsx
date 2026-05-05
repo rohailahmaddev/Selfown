@@ -1,15 +1,15 @@
 import authorImage from "../assets/1.png";
 import HeroText from "./HeroSkillAnimation";
 
-export const HeroSection = () => {
+export const HeroSection = ({heroRef}) => {
   return (
-    <section className="container flex items-center justify-center">
+    <section className="container flex items-center justify-center" ref={heroRef}>
       <div className="w-[100%] relative flex items-center justify-center">
-        <div className="w-full flex items-center justify-end relative overflow-hidden">
-          <div className="bg_overlay w-full h-[600px] absolute top-0"></div>
-          <div className="w-[50%] h-[600px] z-[-1] ">
+        <div className="w-full flex items-center justify-end relative overflow-hidden flex-row">
+          <div className="bg_overlay w-full h-[900px] md:h-[600px] absolute top-0"></div>
+          <div className="w-[50%] h-[900px] md:h-[600px] z-[-1] ">
             <iframe
-              className=" block w-[177.77%] h-[600px]  top-1/2 left-300 -translate-x-1/2 -translate-y-1/2 absolute"
+              className=" block md:w-[177.77%] md:h-[600px] top-[calc(1 / 2 * 23%)] MobileVideo md:top-1/2 left-110 md:-translate-y-1/2  md:left-300 md:-translate-x-1/2 absolute"
               src="https://www.youtube-nocookie.com/embed/LBNDfxjEYlA?si=a6y-Rc56wsFbYrkB&controls=0&rel=0&modestbranding=1&autoplay=1&loop=1&mute=1"
               allowFullScreen
               title="YouTube video player"
@@ -19,15 +19,15 @@ export const HeroSection = () => {
             ></iframe>
           </div>
         </div>
-        <div className="col-1 w-[75%] absolute -top-10 flex items-center justify-between">
-          <div className="flex flex-col justify-center gap-7 w-[65%]">
-            <span className="text-2xl text text-center">
+        <div className="col-1 w-[85%] md:w-[75%] absolute top-10 md:-top-10 flex items-center justify-between flex-col md:flex-row">
+          <div className="flex flex-col justify-center gap-7 w-full md:w-[65%]">
+            <span className="text-2xl w-full  text text-center">
               Hi, I'm David Williamson
             </span>
-            <h1 className="text-5xl font-bold herotext_color">
+            <h1 className="text-5xl font-semibold md:font-bold gap-4 flex flex-col md:flex-row items-center herotext_color">
               I'm a freelance <HeroText />{" "}
             </h1>
-            <h1 className="text-5xl font-bold herotext_color text-center">
+            <h1 className="text-5xl font-semibold md:font-bold herotext_color text-center">
               Developer
             </h1>
             <a
@@ -41,7 +41,7 @@ export const HeroSection = () => {
             </a>
           </div>
           <div>
-            <img src={authorImage} alt="Author image" className="h-160" />
+            <img src={authorImage} alt="Author image" className=" h-139 md:h-160" />
           </div>
         </div>
       </div>

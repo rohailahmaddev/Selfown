@@ -6,19 +6,19 @@ import image from "../assets/testi-pet.png";
 export const ContactForm = ({ section = "section" }) => {
   return (
     <section
-      className={`container flex items-center justify-center pt-25 pb-25 ${section}`}
+      className={`container flex items-center justify-center pt-25 pb-25 md:${section}`}
     >
-      <div className="w-[85%] bg-white shadow-md rounded flex">
-        <div className="w-[70%] flex flex-col gap-6 p-5">
+      <div className="w-[85%] bg-white md:shadow-md rounded flex flex-col md:flex-row">
+        <div className="w-full md:w-[70%] flex flex-col gap-6 p-5">
           <div className="flex flex-col gap-3 p-2 w-full">
-            <h2 className="herotext_color text-4xl">Get in touch !</h2>
-            <p className="herotext_colo w-[65%] text-[20px]">
+            <h2 className="herotext_color text-4xl w-full">Get in touch !</h2>
+            <p className="herotext_colo w-full md:w-[65%] text-[20px]">
               Always available for freelancing if the right project comes along,
               Feel free to contact me.
             </p>
           </div>
           <form className="flex flex-col w-full gap-6 px-2">
-            <div className="flex items-center gap-10 w-full">
+            <div className="flex items-center gap-10 w-full flex-col md:flex-row">
               <span className="flex flex-col w-full gap-2">
                 <label htmlFor="username">Name</label>
                 <input
@@ -38,7 +38,7 @@ export const ContactForm = ({ section = "section" }) => {
                 />
               </span>
             </div>
-            <div className="flex items-center gap-10 w-full">
+            <div className="flex items-center gap-10 w-full flex-col md:flex-row">
               <span className="flex flex-col w-full gap-2">
                 <label htmlFor="Subject">Subject</label>
                 <input
@@ -68,7 +68,7 @@ export const ContactForm = ({ section = "section" }) => {
                 placeholder="Write message..."
               ></textarea>
             </div>
-            <div className="w-[25%]">
+            <div className="w-[80%] md:w-[25%]">
               <button className="text-xl p-3 text-white cursor-pointer rounded bg-blue-950 w-full">
                 Send Message
               </button>
@@ -76,7 +76,7 @@ export const ContactForm = ({ section = "section" }) => {
           </form>
         </div>
         <div
-          className="w-[30%] bg-bottom-right bg-no-repeat bg-size-[200px]  "
+          className=" w-full md:w-[30%] bg-bottom-right bg-no-repeat bg-size-[200px]  "
           style={{ backgroundImage: `url(${image})` }}
         >
           <div className=" flex flex-col gap-5 p-5 w-full">

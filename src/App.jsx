@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   const [scroll, setScroll] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +21,11 @@ function App() {
   return (
     <>
       <header
-        className={` h-20 top-0 sticky z-50 transition-all duration-300
-    ${scroll ? "bg-white" : "bg-transparent"}
+        className={` h-15 md:h-20 top-0 sticky z-50 transition-all duration-300 bg-white
+    ${scroll ? "bg-white" : "md:bg-transparent"}
     `}
       >
-        <NavBar />
+        <NavBar scroll={scroll}/>
       </header>
 
       <main className="container">

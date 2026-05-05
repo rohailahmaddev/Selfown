@@ -9,7 +9,7 @@ export default function ExperienceCard({
   circleBg,
 }) {
   return (
-    <div className="relative w-full">
+    <div className="relative w-full cursor-pointer">
       <div
         className={`relative flex items-center  border-2 w-[90%] -z-1 border-dashed ${border} border-r-0 justify-between rounded p-2 overflow-hidden`}
       >

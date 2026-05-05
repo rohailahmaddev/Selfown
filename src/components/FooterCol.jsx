@@ -1,6 +1,6 @@
 export const FooterCol = ({ heading, array }) => {
   return (
-    <div className="col-2 w-[15%]">
+    <div className="col-2 w-full md:w-[15%]">
       <ul className="flex flex-col gap-5 w-full">
         <li className="text-white">{heading}</li>
         {array.map((ele, i) => {

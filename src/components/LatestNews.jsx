@@ -8,6 +8,8 @@ import card6Image from "../assets/6.jpg";
 import userImage from "../assets/user-7.jpg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { SerEdu } from "./SerEdu";
+import { NavLink } from "react-router-dom";
+import { useRef } from "react";
 
 const card = [
   {
@@ -54,10 +56,16 @@ const card = [
   },
 ];
 
-export const LatestNews = ({ display = true }) => {
+export const LatestNews = ({ display = true, heroRef }) => {
+
+  const goToHero = () => {
+    heroRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+
   const array = display ? card.slice(0, 3) : card;
   return (
-    <section className="container flex items-center justify-center pb-25">
+    <section className="container flex items-center justify-center md:pb-25">
       <div className="w-[85%] flex flex-col items-center">
         {display && (
           <SerEdu
@@ -69,7 +77,7 @@ export const LatestNews = ({ display = true }) => {
           />
         )}
         <ul
-          className={`${display ? "flex justify-between" : "grid grid-cols-3 grid-rows-2"} gap-10 w-full items-center pt-20`}
+          className={`${display ? "grid grid-cols-1 md:grid-cols-3" : "grid grid-cols-1 md:grid-cols-3 grid-rows-2"} gap-10 w-full items-center pt-20`}
         >
           {array.map((ele, index) => {
             return (
@@ -95,7 +103,7 @@ export const LatestNews = ({ display = true }) => {
                       <h4 className="text-[15px]">{ele.date}</h4>
                     </div>
                   </div>
-                  <button className="flex items-center cursor-pointer text-[15px]">
+                  <button onClick={goToHero} className="flex items-center cursor-pointer text-[15px]">
                     Read more{" "}
                     <IoIosArrowRoundForward className="pt-1 text-[20px]" />
                   </button>

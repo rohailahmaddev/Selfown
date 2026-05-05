@@ -1,12 +1,16 @@
+import { useRef } from "react";
 import { LatestNews } from "../components/LatestNews";
 import { MessageSend } from "../components/Message";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
 
 export const Blogs = () => {
+
+  const heroRef = useRef(null);
+
   return (
     <>
-      <OtherHeroSections heading={"BLOGS"} />
+      <OtherHeroSections heading={"BLOGS"} heroRef={heroRef} />
       <SectionDivider
         top={`-top-5`}
         bg={"bg-transparent"}
@@ -23,7 +27,7 @@ export const Blogs = () => {
           </svg>
         }
       />
-      <LatestNews display={false} />
+      <LatestNews display={false}  heroRef={heroRef}/>
       <MessageSend />
       <SectionDivider
         top={`-top-5`}

@@ -26,8 +26,8 @@ export const PersonalDetail = ({
   ];
   return (
     <section className="container flex items-center justify-center">
-      <div className={` ${displayProperty} pt-25`}>
-        <div className={`col-1 flex flex-col gap-5 ${col1Width}`}>
+      <div className={` ${displayProperty} pt-25 flex flex-col gap-6 md:gap-0 md:flex-row`}>
+        <div className={`col-1 flex flex-col gap-5 md:${col1Width}`}>
           <h2 className="herotext_color w-full font-semibold personal_det text-3xl  relative">
             Personal Details
           </h2>
@@ -37,7 +37,7 @@ export const PersonalDetail = ({
           </p>
           {icons && <PersonalDetailIcons />}
         </div>
-        <div className={`col-2 ${col2Width}`}>
+        <div className={`col-2  md:${col2Width}`}>
           <ul className="flex flex-col gap-5">
             {detail.map((Element, index) => {
               return (

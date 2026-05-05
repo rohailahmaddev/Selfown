@@ -16,8 +16,8 @@ export const Footer = () => {
   return (
     <>
       <section className="container footer_bg flex items-center justify-center border-b border-b-gray-400 pb-6">
-        <div className="w-[85%] flex items-center justify-center  gap-10 ">
-          <div className="col-1 flex flex-col w-[45%] gap-7">
+        <div className="w-[85%] flex md:items-center md:justify-center flex-col md:flex-row  gap-10 ">
+          <div className="col-1 flex flex-col w-full md:w-[45%] gap-7">
             <div className="col-1 w-[20%] flex items-center gap-2">
               <img src={logo} alt="logo" className="w-10" />
               <h1 className="font-bold text-2xl cursor-pointer text-white">

@@ -1,6 +1,10 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import logo from "../../public/logo-sm.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { MdMenu, MdClose } from "react-icons/md";
+import light_logo from "../../public/logo-light.png"
+import dark_logo from "../../public/logo-dark.png"
 
 const NavMenu = [
   {
@@ -33,42 +37,86 @@ const NavMenu = [
   },
 ];
 
-export const NavBar = () => {
+export const NavBar = ({scroll}) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
+
   return (
-    <nav className={`container flex items-center justify-center`}>
-      <div className="w-[85%] flex items-center justify-between py-5">
-        <div className="col-1 w-[17%] flex items-center gap-2">
-          <img src={logo} alt="logo" className="w-10" />
-          <h1 className="font-bold text-2xl cursor-pointer">SELFOWN</h1>
-        </div>
-        <div className="col-2 w-[47%]">
-          <ul className="list-none flex items-center justify-between">
-            {NavMenu.map((ele, index) => {
-              return (
-                <li key={index} className="cursor-pointer">
-                  <NavLink
-                    to={ele.path}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "relative cursor-pointer font-medium active sudo_class"
-                        : "relative cursor-pointer font-medium navtext link"
-                    }
-                  >
-                    {" "}
-                    {ele.name}{" "}
-                  </NavLink>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div className="col-3 w-[10%]">
-          <button className="button-border hover:-translate-y-1 transition duration-300 cursor-pointer px-3 py-2 font-medium flex items-center justify-center gap-2">
-            Hire Me!
-            <MdKeyboardDoubleArrowRight />
-          </button>
-        </div>
-      </div>
-    </nav>
+  <nav className="container flex flex-col items-center justify-center">
+  <div className="w-[85%] flex items-center justify-between py-2 md:py-5 ">
+
+    <div className="flex items-center gap-2">
+      <img src={logo} alt="logo" className="w-8" />
+      <img
+    src={dark_logo}
+    alt="logo"
+    className={`block ${isHome  ? "md:block" : "md:hidden"}`}
+  />
+   <img
+    src={light_logo}
+    alt="logo"
+    className={`hidden ${isHome ? "md:hidden" : "md:block"}`}
+  />
+      {/* <img src={isHome || scroll ? dark_logo : light_logo} alt="logo" /> */}
+    </div>
+
+    <div className="hidden md:flex w-[50%]">
+      <ul className="flex items-center justify-between w-full">
+        {NavMenu.map((ele, index) => (
+          <li key={index}>
+            <NavLink
+              to={ele.path}
+              className={({ isActive }) =>
+                isActive
+                  ? "relative font-medium active sudo_class"
+                  : "relative font-medium navtext link"
+              }
+            >
+              {ele.name}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div className="hidden md:block">
+      <button className="button-border hover:-translate-y-1 transition duration-300 px-3 py-2 flex items-center gap-2">
+        Hire Me!
+        <MdKeyboardDoubleArrowRight />
+      </button>
+    </div>
+
+    {/* Mobile Menu Icon */}
+    <div className="md:hidden text-4xl cursor-pointer">
+        <MdMenu onClick={() => setIsOpen((prev)=>!prev)} />
+    </div>
+  </div>
+  {/* Mobile Menu */}
+    <div className={`md:hidden bg-white w-full px-6 pb-5 overflow-hidden ease-in-out  ${isOpen?"max-h-110 opacity-100":"max-h-0 opacity-0"} transition-all duration-500 `}>
+      <ul className="flex flex-col gap-4 p-4">
+        {NavMenu.map((ele, index) => (
+          <li key={index}>
+            <NavLink
+              to={ele.path}
+              className="block py-2 font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              {ele.name}
+            </NavLink>
+          </li>
+        ))}
+        <li>
+            <button className="button-border hover:-translate-y-1 transition duration-300 px-3 py-2 flex items-center gap-2">
+              Hire Me!
+              <MdKeyboardDoubleArrowRight />
+            </button>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
   );
 };

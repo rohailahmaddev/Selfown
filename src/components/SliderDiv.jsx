@@ -7,7 +7,7 @@ export const SliderDiv = ({ sliderCard }) => {
       <h1 className="text-4xl font-bold text-center herotext_color">
         {sliderCard.name}
       </h1>
-      <p className="text-2xl text-center w-[75%] italic">{sliderCard.text}</p>
+      <p className="text-xl md:text-2xl  text-center w-[75%] italic">{sliderCard.text}</p>
       <div className="flex flex-col items-center gap-3">
         <img src={user} alt="user image" className="rounded-full w-30 h-30" />
         <h3 className="text-center">{sliderCard.author}</h3>
