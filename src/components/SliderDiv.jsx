@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa6";
 
 export const SliderDiv = ({ sliderCard }) => {
   return (
-    <div className="flex items-center justify-center flex-col gap-7 pt-10 w-full">
+    <div className="flex items-center justify-center flex-col gap-3 md:gap-7 p-4 md:pt-10 w-full">
       <h1 className="text-4xl font-bold text-center herotext_color">
         {sliderCard.name}
       </h1>

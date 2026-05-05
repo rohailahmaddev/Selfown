@@ -17,7 +17,7 @@ export const MessageSend = () => {
         </div>
         <div className="col-2 w-full md:w-[45%] flex items-center justify-center">
           <form className="w-full">
-            <div className="bg-white rounded-xl  p-1 w-full shadow-md flex items-center justify-between">
+            <div className="bg-white rounded md:rounded-xl  p-1 w-full shadow-md flex items-center justify-between">
               <input
                 type="email"
                 placeholder="Email Address"
@@ -25,7 +25,7 @@ export const MessageSend = () => {
               />
               <button
                 type="submit"
-                className="md:text-xl p-3 text-white cursor-pointer rounded bg-blue-950"
+                className="md:text-xl text-[13px] p-1 md:p-3 text-white cursor-pointer rounded bg-blue-950"
               >
                 Send Message
               </button>

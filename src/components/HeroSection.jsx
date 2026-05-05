@@ -24,7 +24,7 @@ export const HeroSection = ({heroRef}) => {
             <span className="text-2xl w-full  text text-center">
               Hi, I'm David Williamson
             </span>
-            <h1 className="text-5xl font-semibold md:font-bold gap-4 flex flex-col md:flex-row items-center herotext_color">
+            <h1 className="text-4xl font-semibold md:font-bold gap-4 flex flex-col md:flex-row items-center herotext_color">
               I'm a freelance <HeroText />{" "}
             </h1>
             <h1 className="text-5xl font-semibold md:font-bold herotext_color text-center">

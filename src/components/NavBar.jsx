@@ -60,7 +60,6 @@ export const NavBar = ({scroll}) => {
     alt="logo"
     className={`hidden ${isHome ? "md:hidden" : "md:block"}`}
   />
-      {/* <img src={isHome || scroll ? dark_logo : light_logo} alt="logo" /> */}
     </div>
 
     <div className="hidden md:flex w-[50%]">
@@ -95,7 +94,7 @@ export const NavBar = ({scroll}) => {
     </div>
   </div>
   {/* Mobile Menu */}
-    <div className={`md:hidden bg-white w-full px-6 pb-5 overflow-hidden ease-in-out  ${isOpen?"max-h-110 opacity-100":"max-h-0 opacity-0"} transition-all duration-500 `}>
+    <div className={`md:hidden bg-white w-full px-6 pb-5 overflow-hidden ease-in-out  ${isOpen?"max-h-120 opacity-100":"max-h-0 opacity-0"} transition-all duration-500 `}>
       <ul className="flex flex-col gap-4 p-4">
         {NavMenu.map((ele, index) => (
           <li key={index}>
