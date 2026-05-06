@@ -25,7 +25,7 @@ export const ContactForm = ({ section = "section" }) => {
                   type="text"
                   id="username"
                   className="p-2 outline-none rounded border border-blue-200 focus:border-black"
-                  placeholder="Your Name"
+                  placeholder="Your name"
                   required
                 />
               </span>
@@ -35,7 +35,7 @@ export const ContactForm = ({ section = "section" }) => {
                   type="email"
                   id="email"
                   className="p-2 border outline-none rounded border-blue-200 focus:border-black"
-                  placeholder="Your Email"
+                  placeholder="Your email"
                   required
                 />
               </span>
@@ -47,7 +47,7 @@ export const ContactForm = ({ section = "section" }) => {
                   type="text"
                   id="Subject"
                   className="p-2 rounded outline-none border border-blue-200 focus:border-black"
-                  placeholder="Subject"
+                  placeholder="Your subject"
                   required
                 />
               </span>
@@ -58,7 +58,7 @@ export const ContactForm = ({ section = "section" }) => {
                   maxLength={13}
                   id="number"
                   className="p-2 outline-none border border-blue-200 focus:border-black rounded"
-                  placeholder="+9230000003232"
+                  placeholder="+00 1234 5678 90"
                   required
                 />
               </span>
@@ -69,12 +69,12 @@ export const ContactForm = ({ section = "section" }) => {
                 name="message"
                 id="message"
                 className="border p-2 border-blue-200 focus:border-black outline-none h-25 rounded"
-                placeholder="Write message..."
+                placeholder="Enter your message..."
                 required
               ></textarea>
             </div>
             <div className="w-[80%] md:w-[25%]">
-              <button className="text-xl p-3 text-white cursor-pointer rounded bg-blue-950 w-full" type="submit">
+              <button className="text-xl p-3 text-white cursor-pointer rounded button-bg w-full" type="submit">
                 Send Message
               </button>
             </div>
@@ -101,7 +101,7 @@ export const ContactForm = ({ section = "section" }) => {
                   <MdOutlineMailOutline />
                 </span>
                 <span className="flex flex-col">
-                  <p>rohailrao07@gmail.com</p>
+                  <p>example@example.com</p>
                   <p className="text-gray-500">Monday to Saturday</p>
                 </span>
               </div>

@@ -65,7 +65,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
         )}{" "}
         <div className="pt-25">
           <ul
-            className={`${display ? "grid grid-col-1 md:grid-cols-3" : "grid-cols-3 grid-rows-2"} items-center bg-transparent gap-5`}
+            className={`${display ? "grid grid-col-1 md:grid-cols-3" : "grid grid-cols-3 grid-rows-2"} items-center bg-transparent gap-5`}
           >
             {array.map((ele, index) => {
               return (

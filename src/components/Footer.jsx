@@ -1,8 +1,8 @@
 import logo from "../../public/logo-sm.png";
-import { TiSocialGooglePlusCircular } from "react-icons/ti";
-import { PiLinkedinLogo } from "react-icons/pi";
-import { GrGithub } from "react-icons/gr";
-import { IoLogoTwitter } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { SlSocialFacebook } from "react-icons/sl";
+import { CiTwitter } from "react-icons/ci";
 import { FooterCol } from "./FooterCol";
 import { FooterStrip } from "./FooterStip";
 
@@ -19,7 +19,7 @@ export const Footer = () => {
         <div className="w-[85%] flex md:items-center md:justify-center flex-col md:flex-row  gap-10 ">
           <div className="col-1 flex flex-col w-full md:w-[45%] gap-7">
             <div className="col-1 w-[20%] flex items-center gap-2">
-              <img src={logo} alt="logo" className="w-10" />
+              <img src={logo} alt="logo" className="w-6" />
               <h1 className="font-bold text-2xl cursor-pointer text-white">
                 SELFOWN
               </h1>
@@ -31,16 +31,16 @@ export const Footer = () => {
             </p>
             <div className="flex items-center gap-2">
               <a href="#">
-                <GrGithub className="text-2xl cursor-pointer text-gray-400" />
+                <SlSocialFacebook className="text-2xl cursor-pointer text-gray-400" />
               </a>
               <a href="#">
-                <IoLogoTwitter className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
+                <CiTwitter className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
               </a>
               <a href="#">
-                <TiSocialGooglePlusCircular className="text-2xl hover:text-red-600 cursor-pointer  text-gray-400" />
+                <FiGithub className="text-2xl hover:text-red-600 cursor-pointer  text-gray-400" />
               </a>
               <a href="#">
-                <PiLinkedinLogo className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
+                <FaInstagram className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
               </a>
             </div>
           </div>

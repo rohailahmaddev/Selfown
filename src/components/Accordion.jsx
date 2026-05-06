@@ -30,7 +30,7 @@ export const Accordion = ({ image, array }) => {
                     onClick={() => handleAccordion(index)}
                   />
                 )}
-                <h2 className="herotext_color text-xl md:text-2xl w-[75%] cursor-pointer">
+                <h2 className="herotext_color text-xl md:text-2xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
                   {ele.question}
                 </h2>
                 <span className="text w-[15%]">{ele.date}</span>

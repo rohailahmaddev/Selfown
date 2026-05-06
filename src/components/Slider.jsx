@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import user from "../assets/user-3.jpg";
+import user2 from "../assets/user-5.jpg"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,15 +16,10 @@ const sliderCard = [
     author: "Larry J. Akins",
   },
   {
-    name: "second.",
+    name: "wetransfer",
     text: "I feel confident imposing change on myself. It's a lot more fun progressing than looking back. That's why scelerisque pretium dolor, sit amet vehicula erat pelleque need throw curve balls.",
     author: "John D. Smith",
-  },
-  {
-    name: "third.",
-    text: "I feel confident imposing change on myself. It's a lot more fun progressing than looking back. That's why scelerisque pretium dolor, sit amet vehicula erat pelleque need throw curve balls.",
-    author: "Sarah K. Jones",
-  },
+  }
 ];
 
 export default function Slider() {
@@ -34,7 +30,7 @@ export default function Slider() {
           navigation={true}
           modules={[Navigation, Autoplay]}
           autoplay={{
-            delay: 1000,
+            delay: 3000,
             disableOnInteraction: false,
           }}
           speed={1000}
@@ -42,13 +38,10 @@ export default function Slider() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <SliderDiv sliderCard={sliderCard[0]} />
+            <SliderDiv sliderCard={sliderCard[0]} user={user}/>
           </SwiperSlide>
           <SwiperSlide>
-            <SliderDiv sliderCard={sliderCard[1]} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderDiv sliderCard={sliderCard[2]} />
+            <SliderDiv sliderCard={sliderCard[1]} user={user2}/>
           </SwiperSlide>
         </Swiper>
       </div>

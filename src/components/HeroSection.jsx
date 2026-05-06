@@ -6,8 +6,8 @@ export const HeroSection = ({heroRef}) => {
     <section className="container flex items-center justify-center" ref={heroRef}>
       <div className="w-[100%] relative flex items-center justify-center">
         <div className="w-full flex items-center justify-end relative overflow-hidden flex-row">
-          <div className="bg_overlay w-full h-[900px] md:h-[600px] absolute top-0"></div>
-          <div className="w-[50%] h-[900px] md:h-[600px] z-[-1] ">
+          <div className="bg_overlay w-full h-[1000px] md:h-[600px] absolute top-0"></div>
+          <div className="w-[50%] h-[1000px] md:h-[600px] z-[-1] ">
             <iframe
               className=" block md:w-[177.77%] md:h-[600px] top-[calc(1 / 2 * 23%)] MobileVideo md:top-1/2 left-110 md:-translate-y-1/2  md:left-300 md:-translate-x-1/2 absolute"
               src="https://www.youtube-nocookie.com/embed/LBNDfxjEYlA?si=a6y-Rc56wsFbYrkB&controls=0&rel=0&modestbranding=1&autoplay=1&loop=1&mute=1"

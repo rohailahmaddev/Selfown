@@ -1,22 +1,23 @@
 import { TiSocialGooglePlusCircular } from "react-icons/ti";
-import { PiLinkedinLogo } from "react-icons/pi";
-import { GrGithub } from "react-icons/gr";
-import { IoLogoTwitter } from "react-icons/io5";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { VscGithub } from "react-icons/vsc";
+import { TiSocialTwitterCircular } from "react-icons/ti";
+
 
 export const PersonalDetailIcons = () => {
   return (
     <div className="flex items-center justify-start gap-5">
       <a href="#">
-        <GrGithub className="text-3xl cursor-pointer" />
+        <VscGithub className="text-4xl text-gray-400 hover:text-black cursor-pointer" />
       </a>
       <a href="#">
-        <IoLogoTwitter className="text-3xl hover:text-blue-600 cursor-pointer" />
+        <TiSocialTwitterCircular className="text-5xl hover:text-blue-400 text-gray-400 cursor-pointer" />
       </a>
       <a href="#">
-        <TiSocialGooglePlusCircular className="text-3xl hover:text-red-600 cursor-pointer" />
+        <TiSocialGooglePlusCircular className="text-5xl text-gray-400 hover:text-red-600 cursor-pointer" />
       </a>
       <a href="#">
-        <PiLinkedinLogo className="text-3xl hover:text-blue-600 cursor-pointer" />
+        <TiSocialLinkedinCircular className="text-5xl hover:text-blue-400 text-gray-400 cursor-pointer" />
       </a>
     </div>
   );

@@ -6,6 +6,7 @@ import card5Image from "../assets/5.jpg";
 import card6Image from "../assets/6.jpg";
 
 import userImage from "../assets/user-7.jpg";
+import userImage2 from "../assets/user-2.jpg"
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { SerEdu } from "./SerEdu";
 import { NavLink } from "react-router-dom";
@@ -17,42 +18,42 @@ const card = [
     heading: "Change the world with small things",
     userimage: userImage,
     username: "Charles Woodall",
-    date: "14 feb 2020",
+    date: "14 Feb 2020",
   },
   {
     image: card2Image,
     heading: "With a clean, minimal and professional look",
-    userimage: userImage,
-    username: "Charles Woodall",
-    date: "14 feb 2020",
+    userimage: userImage2,
+    username: "Jarvis Owen",
+    date: "12 Jan 2023",
   },
   {
     image: card3Image,
     heading: "With a clean, minimal and professional look",
-    userimage: userImage,
-    username: "Charles Woodall",
-    date: "14 feb 2020",
+    userimage: userImage2,
+    username: "Jarvis Owen",
+    date: "12 Jan 2022",
   },
   {
     image: card4Image,
     heading: "Change the world with small things",
     userimage: userImage,
     username: "Charles Woodall",
-    date: "14 feb 2020",
+    date: "14 Feb 2020",
   },
   {
     image: card5Image,
     heading: "With a clean, minimal and professional look",
-    userimage: userImage,
-    username: "Charles Woodall",
-    date: "14 feb 2020",
+    userimage: userImage2,
+    username: "Jarvis Owen",
+    date: "12 Jan 2022",
   },
   {
     image: card6Image,
     heading: "With a clean, minimal and professional look",
-    userimage: userImage,
-    username: "Charles Woodall",
-    date: "14 feb 2020",
+    userimage: userImage2,
+    username: "Jarvis Owen",
+    date: "12 Jan 2022",
   },
 ];
 

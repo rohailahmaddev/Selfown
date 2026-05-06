@@ -12,35 +12,35 @@ const ProjectsArray = [
     icon: react,
     tech_stack: ["React", "Javascript"],
     bg: "bg-blue-100",
-    catagory: "Mongodb",
+    catagory: ["Angular"],
   },
   {
     name: "Auto Driver Project",
     icon: vue,
     tech_stack: ["Vue", "Javascript"],
     bg: "bg-blue-100",
-    catagory: "Bootstrap",
+    catagory: [""],
   },
   {
     name: "Auto Driver Project",
     icon: mongo,
     tech_stack: ["Mongodb", "Javascript"],
     bg: "bg-blue-100",
-    catagory: "Mongodb",
+    catagory: ["Angular","Mongodb"],
   },
   {
     name: "Auto Driver Project",
     icon: bootstrap,
     tech_stack: ["Bootstrap", "CSS", "Javascript"],
     bg: "bg-blue-100",
-    catagory: "Bootstrap",
+    catagory: ["Bootstrap"],
   },
   {
     name: "Auto Driver Project",
     icon: angular,
     tech_stack: ["Angular", "React", "JQuery"],
     bg: "bg-red-100",
-    catagory: "Angular",
+    catagory: ["Angular","Bootstrap"],
   },
 ];
 
@@ -49,7 +49,7 @@ export const Projects = ({ activeMenu }) => {
     <motion.ul className="flex items-center w-full gap-10 flex-wrap">
       <AnimatePresence>
         {ProjectsArray.filter(
-          (item) => activeMenu === "All" || item.catagory === activeMenu,
+          (item) => activeMenu === "All" ||item.catagory[0] === activeMenu || item.catagory[1]=== activeMenu
         ).map((ele, index) => {
           return (
             <motion.li

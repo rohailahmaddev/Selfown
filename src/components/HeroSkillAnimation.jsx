@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const skills = ["React", "Flutter", "Angular", "Vue"];
+const skills = ["React", "Flutter", "Python"];
 
 export default function HeroText() {
   const [currentIndex, setCurrentIndex] = useState(0);

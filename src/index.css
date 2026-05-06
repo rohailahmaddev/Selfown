@@ -28,7 +28,6 @@
 }
 .button-border {
   border: 1px solid rgb(21, 192, 214);
-  color: rgb(21, 192, 214);
 }
 .bg_overlay {
   background: linear-gradient(120deg, #fff 56%, rgba(145, 213, 237, 0.6) 80%);
@@ -38,6 +37,9 @@
 }
 .navtext {
   color: rgb(153, 165, 199);
+}
+.nav_button{
+  color: rgb(21, 192, 214);
 }
 .herotext_color {
   color: rgb(51, 71, 102);
@@ -126,10 +128,10 @@
 
 .fold {
   position: absolute;
-  bottom: -30px;
-  right: -60px;
-  width: 120px;
-  height: 80px;
+  bottom: 7px;
+  right: -18px;
+  width: 58px;
+  height: 69px;
   background-color: #fff;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
@@ -142,8 +144,8 @@
     left: 50%;
     transform: translate(-15%, -50%);
     width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
+    height: 80.25vw;
+    min-height: 130vh;
     min-width: 177.77vh;
     z-index: -1;
   }

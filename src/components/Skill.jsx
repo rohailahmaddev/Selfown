@@ -9,19 +9,29 @@ import angular from "../assets/Angular.svg";
 
 const skills = [
   {
-    skill: "React",
-    experience: "8 Months Experience",
-    icon: react,
+    skill: "Andriod",
+    experience: "2 Year Experience",
+    icon: android,
   },
   {
-    skill: "Node.js",
-    experience: "10 Months Experience",
-    icon: node,
+    skill: "Angular",
+    experience: "1 Year Experience",
+    icon: angular,
+  },
+  {
+    skill: "Bootstrap",
+    experience: "3 Year Experience",
+    icon: bootstrap,
   },
   {
     skill: "Vue",
     experience: "2 Year Experience",
     icon: vue,
+  },
+  {
+    skill: "React",
+    experience: "8 Months Experience",
+    icon: react,
   },
   {
     skill: "Mongodb",
@@ -34,20 +44,11 @@ const skills = [
     icon: laravel,
   },
   {
-    skill: "Bootstrap",
-    experience: "3 Year Experience",
-    icon: bootstrap,
+    skill: "Node.js",
+    experience: "10 Months Experience",
+    icon: node,
   },
-  {
-    skill: "Angular",
-    experience: "1 Year Experience",
-    icon: angular,
-  },
-  {
-    skill: "Andriod",
-    experience: "2 Year Experience",
-    icon: android,
-  },
+
 ];
 
 export const Skill = () => {

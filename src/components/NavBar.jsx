@@ -49,16 +49,16 @@ export const NavBar = ({scroll}) => {
   <div className="w-[85%] flex items-center justify-between py-2 md:py-5 ">
 
     <div className="flex items-center gap-2">
-      <img src={logo} alt="logo" className="w-8" />
+      <img src={logo} alt="logo" className="w-6" />
       <img
     src={dark_logo}
     alt="logo"
-    className={`block ${isHome  ? "md:block" : "md:hidden"}`}
+    className={`block ${isHome || scroll ? "md:block" : "md:hidden"}`}
   />
    <img
     src={light_logo}
     alt="logo"
-    className={`hidden ${isHome ? "md:hidden" : "md:block"}`}
+    className={` ${scroll  ? "md:hidden" : "md:block"}`}
   />
     </div>
 
@@ -82,7 +82,7 @@ export const NavBar = ({scroll}) => {
     </div>
 
     <div className="hidden md:block">
-      <button className="button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-2 rounded-xs py-1 flex items-center gap-2">
+      <button className={`button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-2 rounded-xs py-1 flex items-center gap-2 ${isHome ? "bg-transparent nav_button" : ` ${scroll?"button-bg text-white":"bg-white nav_button"}`}`}>
         Hire Me!
         <MdKeyboardDoubleArrowRight />
       </button>
