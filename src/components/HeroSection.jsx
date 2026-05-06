@@ -19,12 +19,12 @@ export const HeroSection = ({heroRef}) => {
             ></iframe>
           </div>
         </div>
-        <div className="col-1 w-[85%] md:w-[75%] absolute top-10 md:-top-10 flex items-center justify-between flex-col md:flex-row">
+        <div className="col-1 w-[85%] md:w-[75%] absolute top-10 md:-top-10 pt-25 md:pt-0 flex items-center justify-between flex-col md:flex-row">
           <div className="flex flex-col justify-center gap-7 w-full md:w-[65%]">
-            <span className="text-2xl w-full  text text-center">
+            <span className="text-2xl w-full text-center heroSmallText">
               Hi, I'm David Williamson
             </span>
-            <h1 className="text-4xl font-semibold md:font-bold gap-4 flex flex-col md:flex-row items-center herotext_color">
+            <h1 className=" text-4xl md:text-5xl font-semibold md:font-bold gap-4 flex flex-col md:flex-row items-center herotext_color">
               I'm a freelance <HeroText />{" "}
             </h1>
             <h1 className="text-5xl font-semibold md:font-bold herotext_color text-center">
@@ -35,7 +35,7 @@ export const HeroSection = ({heroRef}) => {
               download
               className="text-center"
             >
-              <button className="button-bg rounded px-6 py-2 cursor-pointer">
+              <button className="button-bg rounded px-6 py-2 cursor-pointer text-white">
                 Download CV
               </button>
             </a>

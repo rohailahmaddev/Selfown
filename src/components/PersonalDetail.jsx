@@ -2,7 +2,7 @@ import { PersonalDetailIcons } from "./PersonalDetailIcons";
 
 export const PersonalDetail = ({
   icons = true,
-  displayProperty = "flex items-center justify-between w-[85%]",
+  displayProperty = "flex items-center md:flex-row flex-col justify-between w-[85%]",
   col1Width = "w-[55%]",
   col2Width = "w-[35%]",
 }) => {
@@ -26,7 +26,7 @@ export const PersonalDetail = ({
   ];
   return (
     <section className="container flex items-center justify-center">
-      <div className={` ${displayProperty} pt-25 flex flex-col gap-6 md:gap-0 md:flex-row`}>
+      <div className={` ${displayProperty} pt-25 gap-6`}>
         <div className={`col-1 flex flex-col gap-5 md:${col1Width}`}>
           <h2 className="herotext_color w-full font-semibold personal_det text-3xl  relative">
             Personal Details
@@ -42,8 +42,8 @@ export const PersonalDetail = ({
             {detail.map((Element, index) => {
               return (
                 <li key={index} className="flex items-center gap-5">
-                  <p className="w-36"> {Element.name} </p> <span>:</span>{" "}
-                  <span className="text"> {Element.det} </span>
+                  <p className="w-36 text-[10px] md:text-[18px]"> {Element.name} </p> <span>:</span>{" "}
+                  <span className="text text-[10px] md:text-[18px]"> {Element.det} </span>
                 </li>
               );
             })}

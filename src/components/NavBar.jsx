@@ -8,7 +8,7 @@ import dark_logo from "../../public/logo-dark.png"
 
 const NavMenu = [
   {
-    name: "ome",
+    name: "Home",
     path: "/",
   },
   {
@@ -82,7 +82,7 @@ export const NavBar = ({scroll}) => {
     </div>
 
     <div className="hidden md:block">
-      <button className="button-border hover:-translate-y-1 transition duration-300 px-3 py-2 flex items-center gap-2">
+      <button className="button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-2 rounded-xs py-1 flex items-center gap-2">
         Hire Me!
         <MdKeyboardDoubleArrowRight />
       </button>

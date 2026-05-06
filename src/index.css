@@ -4,6 +4,9 @@
   max-width: 1370px;
   margin: auto;
 }
+.heroSmallText{
+  color:rgb(122, 138, 163);
+}
 .sudo_class::before {
   background-color: rgb(227, 247, 250);
   content: "";

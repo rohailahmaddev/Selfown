@@ -3,7 +3,7 @@ import { GrFormSubtract } from "react-icons/gr";
 import { FaPlus } from "react-icons/fa6";
 
 export const Accordion = ({ image, array }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
 
   const handleAccordion = (i) => {
     setOpenIndex((prev) => (prev === i ? null : i));

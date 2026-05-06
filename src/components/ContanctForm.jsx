@@ -26,6 +26,7 @@ export const ContactForm = ({ section = "section" }) => {
                   id="username"
                   className="p-2 outline-none rounded border border-blue-200 focus:border-black"
                   placeholder="Your Name"
+                  required
                 />
               </span>
               <span className="flex flex-col w-full gap-2">
@@ -35,6 +36,7 @@ export const ContactForm = ({ section = "section" }) => {
                   id="email"
                   className="p-2 border outline-none rounded border-blue-200 focus:border-black"
                   placeholder="Your Email"
+                  required
                 />
               </span>
             </div>
@@ -46,6 +48,7 @@ export const ContactForm = ({ section = "section" }) => {
                   id="Subject"
                   className="p-2 rounded outline-none border border-blue-200 focus:border-black"
                   placeholder="Subject"
+                  required
                 />
               </span>
               <span className="flex flex-col  w-full gap-2">
@@ -56,6 +59,7 @@ export const ContactForm = ({ section = "section" }) => {
                   id="number"
                   className="p-2 outline-none border border-blue-200 focus:border-black rounded"
                   placeholder="+9230000003232"
+                  required
                 />
               </span>
             </div>
@@ -66,10 +70,11 @@ export const ContactForm = ({ section = "section" }) => {
                 id="message"
                 className="border p-2 border-blue-200 focus:border-black outline-none h-25 rounded"
                 placeholder="Write message..."
+                required
               ></textarea>
             </div>
             <div className="w-[80%] md:w-[25%]">
-              <button className="text-xl p-3 text-white cursor-pointer rounded bg-blue-950 w-full">
+              <button className="text-xl p-3 text-white cursor-pointer rounded bg-blue-950 w-full" type="submit">
                 Send Message
               </button>
             </div>
