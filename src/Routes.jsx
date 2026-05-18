@@ -7,6 +7,7 @@ import { Resumes } from "./pages/Resume";
 import { ProjectsPage } from "./pages/Projects";
 import { Blogs } from "./pages/Blogs";
 import { Contact } from "./pages/Contact";
+import { BlogDetail } from "./pages/BlogDetail";
 
 export const Router = () => {
   const router = createBrowserRouter([
@@ -15,7 +16,7 @@ export const Router = () => {
       element: <App />,
       children: [
         {
-          path: "/",
+         index:true,
           element: <Home />,
         },
         {
@@ -37,6 +38,10 @@ export const Router = () => {
         {
           path: "/blogs",
           element: <Blogs />,
+        },
+        {
+          path: "/blogs/:id",
+          element: <BlogDetail/>,
         },
         {
           path: "/contact",

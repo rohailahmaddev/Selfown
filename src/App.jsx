@@ -22,7 +22,7 @@ function App() {
     <>
       <header
         className={` h-15 md:h-20 top-0 sticky z-50 transition-all duration-300 bg-white
-    ${scroll ? "bg-white" : "md:bg-transparent"}
+    ${scroll ? "md:bg-white" : "md:bg-transparent"}
     `}
       >
         <NavBar scroll={scroll}/>
