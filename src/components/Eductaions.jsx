@@ -1,5 +1,3 @@
-
-
 export default function ExperienceCard({
   date,
   border,
@@ -7,7 +5,7 @@ export default function ExperienceCard({
   iconBg,
   icon,
   rotate,
-  iconsColor,
+  duties,
   circleBg,
 }) {
   return (
@@ -25,8 +23,7 @@ export default function ExperienceCard({
         <div className={` w-[65%] ${rotate?`pl-25 ${rotate}`:`pr-15`} `}>
           <h3 className="text-lg font-semibold text-gray-700">{institute}</h3>
           <p className="text-gray-500 font-semibold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            malesuada tellus lorem, et condimentum neque commodo
+           {duties}
           </p>
         </div>
       </div>

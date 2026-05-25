@@ -48,7 +48,7 @@ if(loading) return <Loader/>
             btn_text={"BLOGS"}
             heading={"Latest news & insights"}
             para={
-              "We craft digital, graphic and dimensional thinking, to create category leading brand experiences that have meaning ."
+              "AI-driven digital design creating adaptive, meaningful brand experiences across platforms."
             }
           />
         )}

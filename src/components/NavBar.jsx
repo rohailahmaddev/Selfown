@@ -1,11 +1,10 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import logo from "/logo-sm.png";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
 import { MdMenu } from "react-icons/md";
 import light_logo from "/logo-light.png"
 import dark_logo from "/logo-dark.png"
-import { Data } from "../context/Store";
 
 const NavMenu = [
   {
@@ -52,7 +51,7 @@ export const NavBar = ({ scroll }) => {
       <div className="w-[85%] flex items-center justify-between py-2 md:py-5 ">
 
         <div className="flex items-center gap-2">
-          <img src={logo} alt="logo" className="w-6" />
+          {/* <img src={logo} alt="logo" className="w-6" />
           <img
             src={dark_logo}
             alt="logo"
@@ -61,8 +60,9 @@ export const NavBar = ({ scroll }) => {
           <img
             src={light_logo}
             alt="logo"
-            className={` ${scroll || isHome ? "md:hidden" : "md:block"}`}
-          />
+            className={` ${scroll || isHome ? "hidden" : "hidden md:block"}`}
+          /> */}
+          <p   className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-white"}`}>Muhammad Hamid</p>
         </div>
 
         <div className="hidden md:flex w-[45%]">

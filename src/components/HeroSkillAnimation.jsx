@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const skills = ["React", "Flutter", "Python"];
+const skills = [".NET","NODE.JS","NEXT.JS","ANGULAR","REACT"];
 
 export default function HeroText() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,7 +20,7 @@ export default function HeroText() {
   }, []);
 
   return (
-    <span className="border-b-4 border-amber-600 inline-block overflow-hidden">
+    <span className="border-b-3 border-amber-600 pb-2 inline-block overflow-hidden">
       <span
         className="inline-block"
         style={{

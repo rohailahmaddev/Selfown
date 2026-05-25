@@ -58,7 +58,7 @@ export const ContactForm = ({ section = "section" }) => {
                   maxLength={13}
                   id="number"
                   className="p-2 outline-none border border-blue-200 focus:border-black rounded"
-                  placeholder="+00 1234 5678 90"
+                  placeholder="+92 332 5926682"
                   required
                 />
               </span>
@@ -92,7 +92,7 @@ export const ContactForm = ({ section = "section" }) => {
                   <LuPhone />
                 </span>
                 <span className="flex flex-col">
-                  <p>+1 234 567 89</p>
+                  <p>+92 332 5926682</p>
                   <p className="text-gray-500">9:00am to 7:00pm</p>
                 </span>
               </div>
@@ -101,7 +101,7 @@ export const ContactForm = ({ section = "section" }) => {
                   <MdOutlineMailOutline />
                 </span>
                 <span className="flex flex-col">
-                  <p>example@example.com</p>
+                  <p>mughal.hamid@gmail.com</p>
                   <p className="text-gray-500">Monday to Saturday</p>
                 </span>
               </div>

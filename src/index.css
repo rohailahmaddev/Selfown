@@ -4,6 +4,10 @@
   max-width: 1370px;
   margin: auto;
 }
+.herocontainer{
+  max-width: 100%;
+  margin: auto;
+}
 .heroSmallText{
   color:rgb(122, 138, 163);
 }

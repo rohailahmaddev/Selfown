@@ -18,16 +18,15 @@ export const Footer = () => {
       <section className="container footer_bg flex items-center justify-center border-b border-b-gray-400 pb-6">
         <div className="w-[85%] flex md:items-center md:justify-center flex-col md:flex-row  gap-10 ">
           <div className="col-1 flex flex-col w-full md:w-[45%] gap-7">
-            <div className="col-1 w-[20%] flex items-center gap-2">
-              <img src={logo} alt="logo" className="w-6" />
-              <h1 className="font-bold text-2xl cursor-pointer text-white">
-                SELFOWN
+            <div className="col-1 w-[60%] flex items-center gap-2 pt-6">
+              {/* <img src={logo} alt="logo" className="w-6" /> */}
+              <h1 className="font-bold text-2xl cursor-pointer text-white md:w-full">
+                Muhammad Hammid
               </h1>
             </div>
             <p className="text-gray-400 text-[20px]">
-              In an ideal world this text wouldn’t exist, a client would
-              acknowledge the importance of having web copy before the design
-              starts.
+            Building modern and scalable web applications
+            with clean code and seamless user experiences.
             </p>
             <div className="flex items-center gap-2">
               <a href="#">

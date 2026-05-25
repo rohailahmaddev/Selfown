@@ -8,9 +8,6 @@ export const SingleBlogs = () => {
 
     const { id } = useParams();
 
-    console.log(id)
-
-
     const [blog, setBlog] = useState(null);
     const { loading, setLoading } = useContext(Data)
 

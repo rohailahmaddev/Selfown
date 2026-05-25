@@ -31,8 +31,7 @@ function stringToColor(string) {
   }
   
   export default function BackgroundLetterAvatars({name}) {
-    console.log("dflsajdlk;fjasdlk;fjlask;djf;lkadsjf;lkasjf;lkadsj;lfkja;sldfj;lasdkjf;lkasdjf;lkasdjf;lkasdjfl;kasdjf")
-     console.log(name)
+
     return (
       <Stack direction="row" spacing={2}>
         <Avatar {...stringAvatar(name)} />

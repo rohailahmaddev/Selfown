@@ -1,4 +1,4 @@
-import image from "../assets/About2.png";
+import image from "../assets/author.png";
 import { PersonalDetail } from "./PersonalDetail";
 import { PersonalDetailIcons } from "./PersonalDetailIcons";
 
@@ -17,7 +17,7 @@ export const AboutPersonalDetail = () => {
             col2Width="w-full"
             icons={false}
           />
-          <PersonalDetailIcons />
+          {/* <PersonalDetailIcons /> */}
         </div>
       </div>
     </section>

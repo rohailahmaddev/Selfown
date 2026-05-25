@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GrFormSubtract } from "react-icons/gr";
 import { FaPlus } from "react-icons/fa6";
 
-export const Accordion = ({ image, array }) => {
+export const Accordion = ({ image, array,exp }) => {
   const [openIndex, setOpenIndex] = useState(0);
 
   const handleAccordion = (i) => {
@@ -11,8 +11,8 @@ export const Accordion = ({ image, array }) => {
   return (
     <div className=" bg-indigo-100 flex justify-between flex-col md:flex-row w-full">
       <div className="w-full md:w-[30%] flex items-center justify-center flex-col">
-        <img src={image} alt="school child" className=" w-[55%] md:w-[50%]" />
-        <h2 className="herotext_color text-2xl"> Educaton</h2>
+        <img src={image} alt="school child" className=" w-[55%] md:w-[60%]" />
+        <h2 className="herotext_color text-2xl"> {exp} </h2>
       </div>
       <ul className="w-full md:w-[70%] flex flex-col">
         {array.map((ele, index) => {
@@ -24,13 +24,12 @@ export const Accordion = ({ image, array }) => {
                     className="md:text-xl cursor-pointer w-[5%] text"
                     onClick={() => handleAccordion(index)}
                   />
-                ) : (
-                  <FaPlus
+                ) : (<FaPlus
                     className="md:text-xl cursor-pointer w-[5%] text"
                     onClick={() => handleAccordion(index)}
                   />
                 )}
-                <h2 className="herotext_color text-xl md:text-2xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
+                <h2 className="herotext_color text-xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
                   {ele.question}
                 </h2>
                 <span className="text w-[15%]">{ele.date}</span>

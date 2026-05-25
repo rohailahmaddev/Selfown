@@ -9,7 +9,7 @@ export const MessageSend = () => {
       <div className="w-[85%] flex items-center justify-between flex-col gap-5 md:gap-0 md:flex-row">
         <div className="col-1 w-full md:w-[55%] flex flex-col gap-4">
           <h2 className="text-2xl font-semibold md:text-4xl herotext_color">
-            I Am Available For Freelancer.
+            I Am Available For Freelancing.
           </h2>
           <p className="herotext_color text-2xl">
             Browse hundreds of job offers and find the bestsuitable position.

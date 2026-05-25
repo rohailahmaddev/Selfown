@@ -5,52 +5,70 @@ import jobImage from "../assets/job.png";
 
 const accordion = [
   {
-    question: "MSc IT Master Degree",
-    date: "2010-2012",
+    question: "BSCS Bachelor Degree",
+    date: "2007-2011",
     answer:
-      "Harvard University is an educational institution that offers graduate, professional, and research programs in the fields of and public health.",
-    institute: "Harvard University, Cambridge, MA, United States",
-  },
-  {
-    question: "BCA college complete course",
-    date: "2007-2010",
-    answer:
-      "Columbia University is an educational institution that offers graduate, professional, and research programs in the fields of and public health.",
-    institute: "Columbia University, New York, NY, United States",
-  },
-  {
-    question: "High/Higher",
-    date: "1999-2007",
-    answer:
-      "Princeton University is an educational institution that offers graduate, professional, and research programs in the fields of and public health.",
-    institute: "Princeton University, Princeton, NJ, United States",
-  },
+      "NUML Islamabad is an educational institution offering Computer Science programs focused on programming, software development, and modern computing skills.",
+    institute: "NAML University Islamabad Pakistan",
+  }
 ];
 
 const accordion2 = [
   {
-    question: "ABC themes - Web Design IT Company",
-    date: "2020 - 2021",
+    question: "Senior Full Stack Developer (RCI Insurance Platform)",
+    date: "2023 - Present",
     answer:
-      "- Delivered quality code by applying the best development practices",
+      "Designed micro-frontend architecture and developed .NET 6 microservices for a large-scale insurance platform.",
     institute:
-      "A-000 Chambers Street, Suite z-701 New York, NY 10007, United States",
+      "RCI Insurance / Remote Cloud Platform",
   },
   {
-    question: "DEF Themes - Creative full stack web design & development",
-    date: "2016 - 2019",
+    question: "Senior Full Stack Developer (Hospitality SaaS – Hotel Management)",
+    date: "2022 - 2023",
     answer:
-      "- Delivered quality code by applying the best development practices",
+      "Developed and maintained .NET MAUI cross-platform mobile apps for hotel management SaaS. Migrated Xamarin.Forms to MAUI and implemented native features like camera and barcode scanning.",
     institute:
-      "A-000 Chambers Street, Suite z-701 New York, NY 10007, United States",
+      "Remote SaaS Platform",
   },
   {
-    question: "GHI Themes - Web & App IT Company",
-    date: "2013 - 2015",
+    question: "Software Engineer (TKXEL)",
+    date: "2021 - 2023",
     answer:
-      "- Delivered quality code by applying the best development practices",
+      "Led architecture design, technical delivery, and performance optimization across multiple enterprise projects. Managed client communication, pre-sales, code reviews, and mentored engineering teams.",
     institute:
-      "A-000 Chambers Street, Suite z-701 New York, NY 10007, United States",
+      "TKXEL",
+  },
+  {
+    question: "Sr. Software Engineer (Team Lead) (MEZINO TECHNOLOGIES)",
+    date: "2016 - 2021",
+    answer:
+      "Led development teams and delivered enterprise software solutions from design to deployment. Managed task allocation, code quality, and mentored junior developers.",
+    institute:
+      "MEZINO TECHNOLOGIES",
+  },
+  {
+    question: "Sr. Software Engineer (3S SOLUTIONS)",
+    date: "2015 - 2016",
+    answer:
+      "Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support.",
+    institute:
+      "3S SOLUTIONS",
+  },
+  {
+    question: "Software Engineer (SIGMATEC)",
+    date: "2014 - 2015",
+    answer:
+      "Built web applications using .NET technologies with frontend and backend integration. Worked on bug fixes, database optimization, and feature development support.",
+    institute:
+      "SIGMATEC",
+  },
+  {
+    question: "Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)",
+    date: "2012 - 2013",
+    answer:
+    "Developed and maintained responsive websites using HTML, CSS, and JavaScript. Handled UI updates, basic backend integration, and website maintenance.",
+    institute:
+      "KOHINOOR MAPLE LEAF GROUP – KMLG",
   },
 ];
 
@@ -62,12 +80,12 @@ export const Eductation = () => {
           btn_text={"LIFE TIME"}
           heading={"Education & Experience"}
           para={
-            "We craft digital, graphic and dimensional thinking, to create category leading brand experiences that have meaning ."
+            "Committed to quality education and practical experience through continuous learning and real-world projects."
           }
         />
-        <Accordion image={image} array={accordion} />
+        <Accordion image={image} array={accordion} exp={"Education"} />
         <div className="border-b border-dashed border-blue-100 pt-5 w-full"></div>
-        <Accordion image={jobImage} array={accordion2} />
+        <Accordion image={jobImage} array={accordion2} exp={"Experience"}/>
       </div>
     </section>
   );
