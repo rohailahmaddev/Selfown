@@ -10,11 +10,9 @@ export const FooterStrip = () => {
           </p>
         </div>
         <div className="col2">
-          <a href="#">
-            <p className="text-blue-500 text-[10px] md:text-[20px] hover:text-white cursor-pointer transition duration-300">
+          <p className="text-blue-500 text-[10px] md:text-[20px] hover:text-white cursor-pointer transition duration-300">
             - Terms & condition <span className="text-red-500">*</span>
-            </p>
-          </a>
+          </p>
         </div>
       </div>
     </section>

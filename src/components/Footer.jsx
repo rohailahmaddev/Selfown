@@ -1,4 +1,3 @@
-import logo from "../../public/logo-sm.png";
 import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialFacebook } from "react-icons/sl";
@@ -7,30 +6,38 @@ import { FooterCol } from "./FooterCol";
 import { FooterStrip } from "./FooterStip";
 
 const company = [{
-  name:"Home",
-path:"/"}, {name:"About",
-  path:"/about"
-},{ name:"Service",
-  path:"/services"
+  name: "Home",
+  path: "/"
+}, {
+  name: "About",
+  path: "/about"
+}, {
+  name: "Service",
+  path: "/services"
 }];
 
 const information = [{
-  name:"Resume",
-  path:"/resume"
-}, {name:"Client Say",
-  path:"",
-  id:"slider"
-}, {name:"Projects",
-  path:"/projects"
+  name: "Resume",
+  path: "/resume"
+}, {
+  name: "Client Say",
+  path: "",
+  id: "slider"
+}, {
+  name: "Projects",
+  path: "/projects"
 }];
 
-const moreinfo = [{name:"Blogs",
-  path:"/blogs"
-}, {name:"Contact",
-  path:"/contact"
-}, {name:"Terms & Condition",
-  path:"",
-  id:"footer"
+const moreinfo = [{
+  name: "Blogs",
+  path: "/blogs"
+}, {
+  name: "Contact",
+  path: "/contact"
+}, {
+  name: "Terms & Condition",
+  path: "",
+  id: "footer"
 }];
 
 export const Footer = () => {
@@ -46,8 +53,8 @@ export const Footer = () => {
               </h1>
             </div>
             <p className="text-gray-400 text-[20px]">
-            Building modern and scalable web applications
-            with clean code and seamless user experiences.
+              Building modern and scalable web applications
+              with clean code and seamless user experiences.
             </p>
             <div className="flex items-center gap-2">
               <a href="https://www.facebook.com/mughal.hamid" target="_blank">

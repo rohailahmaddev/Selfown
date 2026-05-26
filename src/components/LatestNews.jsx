@@ -10,34 +10,34 @@ import { Loader } from "./Loader";
 
 export const LatestNews = ({ display = true, heroRef }) => {
 
-  const [blogs,setBlogs] = useState([])
-  const {loading,setLoading} = useContext(Data)
+  const [blogs, setBlogs] = useState([])
+  const { loading, setLoading } = useContext(Data)
   const navigate = useNavigate();
 
-useEffect(()=>{
-    const getBlogs = async ()=>{
-        setLoading(true)
-        try {
-            const res = await ApiFetch()
-            setBlogs(res.data)
-        } catch (error) {
-            console.log(error)
-        }
-        finally{
-            setLoading(false)
-        }
+  useEffect(() => {
+    const getBlogs = async () => {
+      setLoading(true)
+      try {
+        const res = await ApiFetch()
+        setBlogs(res.data)
+      } catch (error) {
+        console.log(error)
+      }
+      finally {
+        setLoading(false)
+      }
     }
     getBlogs()
-},[setLoading])
+  }, [setLoading])
 
 
-const goToHero = () => {
-  heroRef.current.scrollIntoView({ behavior: "smooth" });
-};
+  const goToHero = () => {
+    heroRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
-const array = display ? blogs.slice(0, 3) : blogs;
+  const array = display ? blogs.slice(0, 3) : blogs;
 
-if(loading) return <Loader/>
+  if (loading) return <Loader />
 
 
   return (
@@ -60,8 +60,8 @@ if(loading) return <Loader/>
               <li
                 key={index}
                 className="rounded flex flex-col gap-5 shadow-md pb-5 cursor-pointer"
-                onClick={()=>navigate(`/blogs/${ele.id}`)}
-                >
+                onClick={() => navigate(`/blogs/${ele.id}`)}
+              >
                 <img src={ele.image} alt="image" className="rounded-t " />
                 <div className="px-5 border-b border-dashed border-blue-100">
                   <h2 className="text-2xl h-14 ">
@@ -73,10 +73,10 @@ if(loading) return <Loader/>
                 </div>
                 <div className="flex items-center justify-between px-5">
                   <div className="flex items-center gap-3">
-                      <Avatar name={ele.author_name}/>
+                    <Avatar name={ele.author_name} />
                     <div className="flex flex-col">
                       <h4 className="text-[15px]">{ele.author_name}</h4>
-                      <h4 className="text-[15px]">{ele.created_at.substring(0,10)}</h4>
+                      <h4 className="text-[15px]">{ele.created_at.substring(0, 10)}</h4>
                     </div>
                   </div>
                   <button onClick={goToHero} className="flex items-center cursor-pointer text-[15px]">

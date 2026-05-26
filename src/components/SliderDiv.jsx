@@ -12,7 +12,7 @@ export const SliderDiv = ({ sliderCard }) => {
         <img src={sliderCard?.pic} alt="user image" className="rounded-full w-15 h-15" />
         <h3 className="text-center">{sliderCard?.author}</h3>
         <span className="flex items-center justify-center gap-2">
-          {Array.from({ length: 5}).map((_, index) => {
+          {Array.from({ length: 5 }).map((_, index) => {
             return <FaStar key={index} className="text-yellow-500" />;
           })}
         </span>

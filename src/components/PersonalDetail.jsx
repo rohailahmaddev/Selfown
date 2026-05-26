@@ -28,7 +28,7 @@ export const PersonalDetail = ({
             Personal Details
           </h2>
           <p className="herotext_color w-full text-2xl">
-          Full-stack developer building scalable, efficient web applications with clean code, solid backend logic, and responsive frontend interfaces.          </p>
+            Full-stack developer building scalable, efficient web applications with clean code, solid backend logic, and responsive frontend interfaces.          </p>
           {/* {icons && <PersonalDetailIcons />} */}
         </div>
         <div className={`col-2  md:${col2Width}`}>

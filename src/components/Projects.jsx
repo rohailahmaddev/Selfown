@@ -10,33 +10,33 @@ const ProjectsArray = [
     icon: Net,
     tech_stack: [".NET", "C#", "React", "SQL Server"],
     bg: "bg-blue-200",
-    catagory: [".NET","C#"],
+    catagory: [".NET", "C#"],
   },
   {
     name: "Production support system",
     icon: Net,
     tech_stack: [".NET", "C#", "SQL Server"],
     bg: "bg-blue-200",
-    catagory: [".NET","C#"],
+    catagory: [".NET", "C#"],
   },
   {
     name: "Production SaaS / enterprise app",
     icon: ASPNET,
-    tech_stack: ["C#", "React", "Typescript","SQL Server"],
+    tech_stack: ["C#", "React", "Typescript", "SQL Server"],
     bg: "bg-black/10",
-    catagory: [".NET","C#"],
+    catagory: [".NET", "C#"],
   },
   {
     name: "Full JavaScript full-stack product",
     icon: Next,
-    tech_stack: ["Next.JS", "React", "Node.JS","Typescript"],
+    tech_stack: ["Next.JS", "React", "Node.JS", "Typescript"],
     bg: "bg-gray-200",
     catagory: ["Next.JS"],
   },
   {
     name: "Enterprise insurance system",
     icon: Net,
-    tech_stack: [".NET", "React", "i18next", "Angular","Typescript"],
+    tech_stack: [".NET", "React", "i18next", "Angular", "Typescript"],
     bg: "bg-blue-200",
     catagory: [".NET"],
   },
@@ -64,9 +64,9 @@ const ProjectsArray = [
   {
     name: "Government-compliant invoicing system",
     icon: Net,
-    tech_stack: [".NET", "C#","XML / UBL 2.1", "Peppol BIS 3.0","REST APIs"],
+    tech_stack: [".NET", "C#", "XML / UBL 2.1", "Peppol BIS 3.0", "REST APIs"],
     bg: "bg-blue-200",
-    catagory: [".NET","C#"],
+    catagory: [".NET", "C#"],
   },
 ];
 
@@ -75,7 +75,7 @@ export const Projects = ({ activeMenu }) => {
     <motion.ul className="flex items-center justify-center w-full gap-10 flex-wrap">
       <AnimatePresence>
         {ProjectsArray.filter(
-          (item) => activeMenu === "All" ||item.catagory[0] === activeMenu || item.catagory[1]=== activeMenu
+          (item) => activeMenu === "All" || item.catagory[0] === activeMenu || item.catagory[1] === activeMenu
         ).map((ele, index) => {
           return (
             <motion.li

@@ -1,6 +1,6 @@
 import image from "../assets/Aboutbg.png";
 
-export const OtherHeroSections = ({ heading,heroRef }) => {
+export const OtherHeroSections = ({ heading, heroRef }) => {
   return (
     <section
       className="hero_container flex items-center justify-center bg-no-repeat bg-center bg-cover margint bg-black! h-100"

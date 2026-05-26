@@ -10,7 +10,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
   const cards = [
     {
       bg: "bg-red-200",
-      icon:<HiMiniCodeBracket />,
+      icon: <HiMiniCodeBracket />,
       name: "Custom Software",
       discription:
         "Building scalable custom software solutions using .NET and .NET Core for modern business needs.",
@@ -45,7 +45,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
     },
     {
       bg: "bg-green-200",
-      icon:<FiLayout />,
+      icon: <FiLayout />,
       name: "Frontend Solutions",
       discription:
         "Modern frontend development using React, Next.js, Angular, TypeScript, Bootstrap, and Kendo UI.",
@@ -62,7 +62,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
             btn_text={"SERVICES"}
             heading={"My Services"}
             para={
-              "Build scalable full stack web applications with modern frontend, backend, and API solutions for fast and seamless digital experiences."          }
+              "Build scalable full stack web applications with modern frontend, backend, and API solutions for fast and seamless digital experiences."}
           />
         )}{" "}
         <div className="pt-25">

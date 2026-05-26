@@ -19,21 +19,21 @@ export default function ExperienceCard({
           <div
             className={`${iconBg} rounded-lg p-13 shadow-inner flex items-center justify-center`}
           >
-           {icon}
+            {icon}
           </div>
         </div>
-        <div className={` w-[65%] ${rotate?`pl-25 ${rotate}`:`pr-15`} `}>
+        <div className={` w-[65%] ${rotate ? `pl-25 ${rotate}` : `pr-15`} `}>
           <h3 className="text-lg font-semibold text-gray-700">{institute}</h3>
           <p className="text-gray-500 font-semibold">
-           {duties}
+            {duties}
           </p>
         </div>
       </div>
       <StickerBadge
-      circleBg={circleBg}
-  rotate={rotate} 
-  date={date}
-/>
+        circleBg={circleBg}
+        rotate={rotate}
+        date={date}
+      />
     </div>
   );
 }

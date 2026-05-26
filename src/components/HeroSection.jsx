@@ -1,7 +1,7 @@
 import authorImage from "../assets/author.png";
 import HeroText from "./HeroSkillAnimation";
 
-export const HeroSection = ({heroRef}) => {
+export const HeroSection = ({ heroRef }) => {
   return (
     <section className="hero_container flex items-center justify-center" ref={heroRef}>
       <div className="w-[100%] relative flex items-center justify-center">
@@ -25,13 +25,13 @@ export const HeroSection = ({heroRef}) => {
               Hi, I'm Muhammad Hamid
             </span>
             <h1 className=" text-4xl md:text-5xl font-semibold md:font-bold gap-4 md:w-full flex flex-col justify-center md:flex-row items-center herotext_color">
-             <span> I'm a freelance</span><span className="w-[47%] md:w-[33%]"> <HeroText /> </span>{" "}
+              <span> I'm a freelance</span><span className="w-[47%] md:w-[33%]"> <HeroText /> </span>{" "}
             </h1>
             <h1 className="text-5xl font-semibold md:font-bold herotext_color text-center">
               Developer
             </h1>
             <a
-              href="../assets/Rohail Ahmad CV.pdf"
+              href="../assets/Muhammad Hamid CV.pdf"
               download
               className="text-center"
             >

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { GrFormSubtract } from "react-icons/gr";
 import { FaPlus } from "react-icons/fa6";
 
-export const Accordion = ({ image, array,exp }) => {
+export const Accordion = ({ image, array, exp }) => {
   const [openIndex, setOpenIndex] = useState(0);
 
   const handleAccordion = (i) => {
@@ -25,9 +25,9 @@ export const Accordion = ({ image, array,exp }) => {
                     onClick={() => handleAccordion(index)}
                   />
                 ) : (<FaPlus
-                    className="md:text-xl cursor-pointer w-[5%] text"
-                    onClick={() => handleAccordion(index)}
-                  />
+                  className="md:text-xl cursor-pointer w-[5%] text"
+                  onClick={() => handleAccordion(index)}
+                />
                 )}
                 <h2 className="herotext_color text-xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
                   {ele.question}

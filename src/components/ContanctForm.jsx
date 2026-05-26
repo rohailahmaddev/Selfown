@@ -12,7 +12,7 @@ export const ContactForm = ({ section = "section" }) => {
         <div className="w-full md:w-[70%] flex flex-col gap-6 p-5">
           <div className="flex flex-col gap-3 p-2 w-full">
             <h2 className="herotext_color text-4xl w-full">Get in touch !</h2>
-            <p className="herotext_colo w-full md:w-[65%] text-[20px]">
+            <p className="herotext_color w-full md:w-[65%] text-[20px]">
               Always available for freelancing if the right project comes along,
               Feel free to contact me.
             </p>

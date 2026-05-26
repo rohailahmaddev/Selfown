@@ -9,37 +9,30 @@ import angular from "../assets/Angular.svg";
 const skills = [
   {
     skill: ".NET",
-    // experience: "2 Year Experience",
     icon: NET,
   },
   {
     skill: "Angular",
-    // experience: "1 Year Experience",
     icon: angular,
   },
   {
     skill: "AWS",
-    // experience: "2 Year Experience",
     icon: Aws,
   },
   {
     skill: "React",
-    // experience: "8 Months Experience",
     icon: react,
   },
   {
     skill: "Azure",
-    // experience: "3 Year Experience",
     icon: Azure,
   },
   {
     skill: "Next.JS",
-    // experience: "1 Year Experience",
     icon: Next,
   },
   {
     skill: "Node.js",
-    // experience: "10 Months Experience",
     icon: node,
   },
 

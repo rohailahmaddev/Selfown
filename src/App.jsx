@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   const [scroll, setScroll] = useState(false);
-  
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +25,7 @@ function App() {
     ${scroll ? "md:bg-white" : "md:bg-transparent"}
     `}
       >
-        <NavBar scroll={scroll}/>
+        <NavBar scroll={scroll} />
       </header>
 
       <main>

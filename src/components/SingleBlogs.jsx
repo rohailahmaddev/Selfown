@@ -27,7 +27,7 @@ export const SingleBlogs = () => {
         getBlogs()
     }, [setLoading])
 
-    if (loading) return <Loader/>
+    if (loading) return <Loader />
 
     return (
         <section className="pt-25 container flex items-center justify-center pb-25">

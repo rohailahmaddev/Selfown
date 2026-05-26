@@ -66,7 +66,7 @@ const accordion2 = [
     question: "Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)",
     date: "2012 - 2013",
     answer:
-    "Developed and maintained responsive websites using HTML, CSS, and JavaScript. Handled UI updates, basic backend integration, and website maintenance.",
+      "Developed and maintained responsive websites using HTML, CSS, and JavaScript. Handled UI updates, basic backend integration, and website maintenance.",
     institute:
       "KOHINOOR MAPLE LEAF GROUP – KMLG",
   },
@@ -85,7 +85,7 @@ export const Eductation = () => {
         />
         <Accordion image={image} array={accordion} exp={"Education"} />
         <div className="border-b border-dashed border-blue-100 pt-5 w-full"></div>
-        <Accordion image={jobImage} array={accordion2} exp={"Experience"}/>
+        <Accordion image={jobImage} array={accordion2} exp={"Experience"} />
       </div>
     </section>
   );

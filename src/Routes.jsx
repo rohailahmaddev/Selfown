@@ -16,7 +16,7 @@ export const Router = () => {
       element: <App />,
       children: [
         {
-         index:true,
+          index: true,
           element: <Home />,
         },
         {
@@ -41,7 +41,7 @@ export const Router = () => {
         },
         {
           path: "/blogs/:id",
-          element: <BlogDetail/>,
+          element: <BlogDetail />,
         },
         {
           path: "/contact",

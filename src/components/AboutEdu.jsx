@@ -22,11 +22,11 @@ export const AboutEduk = ({ display = true }) => {
           />
         )}
         <div className=" w-[70%] hidden  md:flex pt-25  flex-col gap-35">
-        <ExperienceCard
+          <ExperienceCard
             date={"2007-11"}
             border={"border-green-200"}
             rotate={"rotate-180"}
-            icon={<FaUniversity className={`text-green-400 text-4xl`}/>}
+            icon={<FaUniversity className={`text-green-400 text-4xl`} />}
             iconBg={"bg-green-100"}
             circleBg={"bg-green-400"}
             institute={"BSCS Bacholar Degree"}
@@ -35,7 +35,7 @@ export const AboutEduk = ({ display = true }) => {
           <ExperienceCard
             date={"2023-Present"}
             border={"border-red-200"}
-            icon={<CgOrganisation className={`text-red-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-red-400 text-4xl`} />}
             iconBg={"bg-red-100"}
             circleBg={"bg-red-400"}
             institute={"Senior Full Stack Developer (RCI Insurance Platform)"}
@@ -45,7 +45,7 @@ export const AboutEduk = ({ display = true }) => {
             date={"2022-23"}
             border={"border-green-200"}
             rotate={"rotate-180"}
-            icon={<CgOrganisation className={`text-green-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-green-400 text-4xl`} />}
             iconBg={"bg-green-100"}
             circleBg={"bg-green-400"}
             institute={"Senior Full Stack Developer (Hospitality SaaS – Hotel Management)"}
@@ -55,7 +55,7 @@ export const AboutEduk = ({ display = true }) => {
             date={"2021-23"}
             border={"border-yellow-200"}
             iconsColor={""}
-            icon={<CgOrganisation className={`text-yellow-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-yellow-400 text-4xl`} />}
             iconBg={"bg-yellow-100"}
             circleBg={"bg-yellow-400"}
             institute={"Software Engineer (TKXEL)"}
@@ -66,7 +66,7 @@ export const AboutEduk = ({ display = true }) => {
             border={"border-blue-200"}
             rotate={"rotate-180"}
             iconsColor={"text-blue-400"}
-            icon={<CgOrganisation className={`text-blue-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-blue-400 text-4xl`} />}
             iconBg={"bg-blue-100"}
             circleBg={"bg-blue-400"}
             institute={"Sr. Software Engineer (Team Lead) (MEZINO TECHNOLOGIES)"}
@@ -76,7 +76,7 @@ export const AboutEduk = ({ display = true }) => {
             date={"2015-16"}
             border={"border-yellow-200"}
             iconsColor={""}
-            icon={<CgOrganisation className={`text-yellow-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-yellow-400 text-4xl`} />}
             iconBg={"bg-yellow-100"}
             circleBg={"bg-yellow-400"}
             institute={"Sr. Software Engineer (3S SOLUTIONS)"}
@@ -87,7 +87,7 @@ export const AboutEduk = ({ display = true }) => {
             border={"border-blue-200"}
             rotate={"rotate-180"}
             iconsColor={"text-blue-400"}
-            icon={<CgOrganisation className={`text-blue-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-blue-400 text-4xl`} />}
             iconBg={"bg-blue-100"}
             circleBg={"bg-blue-400"}
             institute={"Software Engineer (SIGMATEC)"}
@@ -97,7 +97,7 @@ export const AboutEduk = ({ display = true }) => {
             date={"2015-16"}
             border={"border-yellow-200"}
             iconsColor={""}
-            icon={<CgOrganisation className={`text-yellow-400 text-4xl`}/>}
+            icon={<CgOrganisation className={`text-yellow-400 text-4xl`} />}
             iconBg={"bg-yellow-100"}
             circleBg={"bg-yellow-400"}
             institute={"Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)"}
@@ -106,18 +106,18 @@ export const AboutEduk = ({ display = true }) => {
         </div>
         <div className="w-full mt-20 pt-25 flex md:hidden flex-col gap-55">
           <MobileEducation
-           date={"2007-11"}
-           border={"border-blue-200"}
-           circleBg={"bg-blue-400"}
-           institute={"BSCS Bacholar Degree"}
-           />
+            date={"2007-11"}
+            border={"border-blue-200"}
+            circleBg={"bg-blue-400"}
+            institute={"BSCS Bacholar Degree"}
+          />
           <MobileEducation
             date={"2014-18"}
             border={"border-green-200"}
             circleBg={"bg-green-400"}
             institute={"Senior Full Stack Developer (RCI Insurance Platform)"}
-           />
-            <MobileEducation
+          />
+          <MobileEducation
             date={"2012-13"}
             border={"border-yellow-200"}
             circleBg={"bg-yellow-400"}
@@ -140,13 +140,13 @@ export const AboutEduk = ({ display = true }) => {
             border={"border-green-200"}
             circleBg={"bg-green-400"}
             institute={"Sr. Software Engineer (3S SOLUTIONS)"}
-           />
+          />
           <MobileEducation
-           date={"2007-11"}
-           border={"border-blue-200"}
-           circleBg={"bg-blue-400"}
-           institute={"Software Engineer (SIGMATEC)"}
-           />
+            date={"2007-11"}
+            border={"border-blue-200"}
+            circleBg={"bg-blue-400"}
+            institute={"Software Engineer (SIGMATEC)"}
+          />
           <MobileEducation
             date={"2012-13"}
             border={"border-yellow-200"}

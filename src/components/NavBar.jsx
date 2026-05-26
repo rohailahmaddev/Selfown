@@ -40,7 +40,7 @@ const NavMenu = [
 export const NavBar = ({ scroll }) => {
 
   const [isOpen, setIsOpen] = useState(false);
-  
+
 
   const location = useLocation();
 
@@ -62,7 +62,7 @@ export const NavBar = ({ scroll }) => {
             alt="logo"
             className={` ${scroll || isHome ? "hidden" : "hidden md:block"}`}
           /> */}
-          <p   className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-white"}`}>Muhammad Hamid</p>
+          <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-white"}`}>Muhammad Hamid</p>
         </div>
 
         <div className="hidden md:flex w-[45%]">
@@ -73,7 +73,7 @@ export const NavBar = ({ scroll }) => {
                   to={ele.path}
                   className={({ isActive }) =>
                     isActive
-                      ? `relative font-medium active ${ele.name === "Home"?"sudo_class":""}`
+                      ? `relative font-medium active ${ele.name === "Home" ? "sudo_class" : ""}`
                       : "relative font-medium navtext link"
                   }
                 >
