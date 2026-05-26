@@ -3,7 +3,7 @@ import HeroText from "./HeroSkillAnimation";
 
 export const HeroSection = ({heroRef}) => {
   return (
-    <section className="herocontainer flex items-center justify-center" ref={heroRef}>
+    <section className="hero_container flex items-center justify-center" ref={heroRef}>
       <div className="w-[100%] relative flex items-center justify-center">
         <div className="w-full flex items-center justify-end relative overflow-hidden flex-row">
           <div className="bg_overlay w-full h-[1000px] md:h-[600px] absolute top-0"></div>
@@ -19,13 +19,13 @@ export const HeroSection = ({heroRef}) => {
             ></iframe>
           </div>
         </div>
-        <div className="col-1 w-[85%] md:w-[80%] absolute top-10 md:-top-10 pt-15 md:pt-0 flex items-center justify-between flex-col md:flex-row">
+        <div className="container col-1 w-[85%] md:w-[80%] absolute top-10 md:-top-10 pt-15 md:pt-0 flex items-center justify-between flex-col md:flex-row">
           <div className="flex flex-col justify-center gap-7 w-full md:w-[80%]">
             <span className="text-2xl w-full text-center heroSmallText">
               Hi, I'm Muhammad Hamid
             </span>
             <h1 className=" text-4xl md:text-5xl font-semibold md:font-bold gap-4 md:w-full flex flex-col justify-center md:flex-row items-center herotext_color">
-             <span> I'm a freelance</span><span className="w-[33%]"> <HeroText /> </span>{" "}
+             <span> I'm a freelance</span><span className="w-[47%] md:w-[33%]"> <HeroText /> </span>{" "}
             </h1>
             <h1 className="text-5xl font-semibold md:font-bold herotext_color text-center">
               Developer

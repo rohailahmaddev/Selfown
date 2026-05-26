@@ -21,7 +21,7 @@ export const AboutEduk = ({ display = true }) => {
             }
           />
         )}
-        <div className=" w-[70%] hidden  md:flex pt-25  flex-col gap-10">
+        <div className=" w-[70%] hidden  md:flex pt-25  flex-col gap-35">
         <ExperienceCard
             date={"2007-11"}
             border={"border-green-200"}
@@ -104,7 +104,7 @@ export const AboutEduk = ({ display = true }) => {
             duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
           />
         </div>
-        <div className="w-full mt-20 pt-25 flex md:hidden flex-col gap-35">
+        <div className="w-full mt-20 pt-25 flex md:hidden flex-col gap-55">
           <MobileEducation
            date={"2007-11"}
            border={"border-blue-200"}

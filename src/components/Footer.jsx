@@ -6,16 +6,37 @@ import { CiTwitter } from "react-icons/ci";
 import { FooterCol } from "./FooterCol";
 import { FooterStrip } from "./FooterStip";
 
-const company = ["Home", "About", "Service"];
+const company = [{
+  name:"Home",
+path:"/"}, {name:"About",
+  path:"/about"
+},{ name:"Service",
+  path:"/services"
+}];
 
-const information = ["Resume", "Client Say", "Projects"];
+const information = [{
+  name:"Resume",
+  path:"/resume"
+}, {name:"Client Say",
+  path:"",
+  id:"slider"
+}, {name:"Projects",
+  path:"/projects"
+}];
 
-const moreinfo = ["Blogs", "Contact", "Terms & Condition"];
+const moreinfo = [{name:"Blogs",
+  path:"/blogs"
+}, {name:"Contact",
+  path:"/contact"
+}, {name:"Terms & Condition",
+  path:"",
+  id:"footer"
+}];
 
 export const Footer = () => {
   return (
     <>
-      <section className="container footer_bg flex items-center justify-center border-b border-b-gray-400 pb-6">
+      <section className="container footer_bg flex items-center justify-center border-b border-b-gray-400 pb-6" id="footer">
         <div className="w-[85%] flex md:items-center md:justify-center flex-col md:flex-row  gap-10 ">
           <div className="col-1 flex flex-col w-full md:w-[45%] gap-7">
             <div className="col-1 w-[60%] flex items-center gap-2 pt-6">
@@ -29,16 +50,16 @@ export const Footer = () => {
             with clean code and seamless user experiences.
             </p>
             <div className="flex items-center gap-2">
-              <a href="#">
+              <a href="https://www.facebook.com/mughal.hamid" target="_blank">
                 <SlSocialFacebook className="text-2xl cursor-pointer text-gray-400" />
               </a>
-              <a href="#">
+              <a href="https://x.com/mughal_hamid" target="_blank">
                 <CiTwitter className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
               </a>
-              <a href="#">
+              <a href="https://github.com/mughalhamid" target="_blank">
                 <FiGithub className="text-2xl hover:text-red-600 cursor-pointer  text-gray-400" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/mughal.hamid" target="_blank">
                 <FaInstagram className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
               </a>
             </div>

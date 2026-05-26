@@ -11,7 +11,7 @@ export const Accordion = ({ image, array,exp }) => {
   return (
     <div className=" bg-indigo-100 flex justify-between flex-col md:flex-row w-full">
       <div className="w-full md:w-[30%] flex items-center justify-center flex-col">
-        <img src={image} alt="school child" className=" w-[55%] md:w-[60%]" />
+        <img src={image} alt="image" className=" w-[55%] md:w-[60%]" />
         <h2 className="herotext_color text-2xl"> {exp} </h2>
       </div>
       <ul className="w-full md:w-[70%] flex flex-col">

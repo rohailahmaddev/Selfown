@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 .container {
   max-width: 1370px;
   margin: auto;
 }
-.herocontainer{
+.hero_container {
   max-width: 100%;
   margin: auto;
 }
@@ -153,4 +156,61 @@
     min-width: 177.77vh;
     z-index: -1;
   }
+}
+
+.timeline-year {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 166px;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateY(-97%);
+  position: absolute;
+  right: -41px;
+  top: 50%;
+}
+.timeline-year:before, .main-timeline .timeline-year:after {
+  content: '';
+  height: 163px;
+  width: 163px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 84px;
+  top: 100px;
+}
+.timeline-year:after {
+  border-radius: 0;
+  transform: rotate(50deg);
+  top: 89px;
+  left: 120px;
+  box-shadow: 0 0 8px #435177;
+}
+
+.mobile_timeline-year {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 166px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translateY(-200%);
+  position: absolute;
+  right: 69px;
+  top: 50%;
+}
+
+
+.section_divider{
+  transform: scale(2);
+  height: auto;
+  width: 100%;
+  transform-origin: top center;
 }

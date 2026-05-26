@@ -83,7 +83,6 @@ export const NavBar = ({ scroll }) => {
             ))}
           </ul>
         </div>
-
         <div className="hidden md:flex items-center justify-between gap-4">
           <button className={`button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-2 rounded-xs py-1 flex items-center gap-2 ${isHome ? "bg-transparent nav_button" : ` ${scroll ? "button-bg text-white" : "bg-white nav_button"}`}`}>
             Hire Me!
@@ -122,3 +121,4 @@ export const NavBar = ({ scroll }) => {
     </nav>
   );
 };
+

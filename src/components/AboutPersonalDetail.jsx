@@ -6,7 +6,7 @@ export const AboutPersonalDetail = () => {
   return (
     <section className="container flex items-center justify-center">
       <div className="w-[85%] flex justify-between items-center md:flex-row flex-col">
-        <div className=" w-full md:w-[40%]">
+        <div className=" w-full md:w-[40%] pt-25">
           <img src={image} alt="image" />
         </div>
 

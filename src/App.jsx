@@ -28,7 +28,7 @@ function App() {
         <NavBar scroll={scroll}/>
       </header>
 
-      <main className="container">
+      <main>
         <Outlet />
       </main>
 

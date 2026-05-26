@@ -8,6 +8,12 @@ export const MobileEducation = (
         circleBg,
       }
 ) =>{ 
+  const colorMap = {
+    "bg-red-400":    "#f87171",
+    "bg-green-400":  "#4ade80",
+    "bg-blue-400":   "#60a5fa",
+    "bg-yellow-400": "#facc15",
+  };
     return(
         <div className="relative w-full cursor-pointer">
         <div
@@ -21,13 +27,11 @@ export const MobileEducation = (
             </p>
           </div>
         </div>
-        <div className=" w-30 absolute -top-25 right-31 h-30 flex items-center justify-center">
-          <div
-            className={`${circleBg} w-full h-full rounded-full flex items-center justify-center text-white font-bold text-lg`}
-          >
-            {date}
-          </div>
-        </div>
+        <div className={` rotate-0`}>
+     <div class={`mobile_timeline-year`}
+     style={{ background: `linear-gradient(60deg, ${colorMap[circleBg]}, #fcd9db)` }}
+     ><div>{date}</div></div>
+    </div>
       </div>
     )
 }

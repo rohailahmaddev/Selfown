@@ -1,3 +1,5 @@
+import StickerBadge from "./StickerBadje";
+
 export default function ExperienceCard({
   date,
   border,
@@ -27,14 +29,11 @@ export default function ExperienceCard({
           </p>
         </div>
       </div>
-      <div className={`w-45 absolute -top-1 -right-10 h-45 flex items-center justify-center ${rotate}`}>
-        <div
-          className={`${circleBg} w-full h-full rounded-full flex items-center justify-center text-white font-bold text-lg`}
-        >
-          {date}
-        </div>
-        <div className="fold"></div>
-      </div>
+      <StickerBadge
+      circleBg={circleBg}
+  rotate={rotate} 
+  date={date}
+/>
     </div>
   );
 }
