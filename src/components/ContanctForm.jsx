@@ -11,7 +11,7 @@ export const ContactForm = ({ section = "section" }) => {
   
   return (
     <section
-      className={`container flex items-center justify-center pt-25 pb-25 md:${section}`}
+      className={`container flex items-center justify-center pt-25 pb-40 md:${section}`}
     >
       <div className="w-[90%] bg-white md:shadow-md rounded flex flex-col md:flex-row">
         <div className="w-full md:w-[70%] flex flex-col gap-6 p-5">
@@ -95,7 +95,7 @@ export const ContactForm = ({ section = "section" }) => {
             <img src={contactSvg} alt="image" className="w-35" />
             <div>
               <div className="flex items-center gap-3 pb-5 border-b border-dashed border-gray-200">
-      blue-300<span className="p-3 bg-gray-300 rounded">
+                <span className="p-3 bg-gray-300 rounded">
                   <LuPhone />
                 </span>
                 <span className="flex flex-col">

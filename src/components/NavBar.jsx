@@ -112,11 +112,13 @@ export const NavBar = ({ scroll }) => {
             </li>
           ))}
           <li>
+          <a href="mailto:mughal.hamid@gmail.com?subject=Hiring Inquiry">
             <button className="button-border hover:-translate-y-1 transition duration-300 px-3 py-2 flex items-center gap-2"
             >
               Hire Me!
               <MdKeyboardDoubleArrowRight />
             </button>
+            </a>
           </li>
         </ul>
       </div>

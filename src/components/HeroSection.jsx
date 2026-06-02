@@ -67,8 +67,8 @@ console.log(btnColor)
 
         {/* ── Background Video ── */}
         <div className="w-full flex items-center justify-end relative overflow-hidden flex-row">
-          <div className="bg_overlay w-full h-[1000px] md:h-[652px] absolute top-0"></div>
-          <div className="w-[50%] h-[1000px] md:h-[652px] z-[-1]">
+          <div className="bg_overlay w-full h-[1002px] md:h-[652px] absolute top-0"></div>
+          <div className="w-[50%] h-[1002px] md:h-[652px] z-[-1]">
             <iframe
               className="block md:w-[177.77%] md:h-[652px] top-[calc(1/2*23%)] MobileVideo md:top-1/2 left-110 md:-translate-y-1/2 md:left-300 md:-translate-x-1/2 absolute"
               src="https://www.youtube-nocookie.com/embed/LBNDfxjEYlA?si=a6y-Rc56wsFbYrkB&controls=0&rel=0&modestbranding=1&autoplay=1&loop=1&mute=1"
@@ -89,7 +89,7 @@ console.log(btnColor)
             </span>
             <h1 className="text-4xl md:text-5xl font-semibold md:font-bold gap-4 md:w-full flex flex-col justify-center md:flex-row items-center herotext_color">
               <span>I'm a freelance</span>
-              <span className="w-[47%] md:w-[33%]">
+              <span className="md:w-[33%]">
                 <HeroText />
               </span>
             </h1>
@@ -106,7 +106,7 @@ console.log(btnColor)
             </a>
           </div>
           <div className="md:pt-20 md:w-[40%]">
-            <img src={authorImage} alt="Author image" className="h-149 md:h-153 md:w-110" />
+            <img src={authorImage} alt="Author image" className="h-153 md:h-153 md:w-110" />
           </div>
         </div>
 

@@ -19,13 +19,13 @@ import { useContext } from "react";
 const sliderCard = [
   {
     name: "Sahan Nanayakkara",
-    text: "Worked with Muhammad Hamid for over a year. Praised communication skills and proactive attitude. Mentioned commitment to high-quality work. Said collaboration experience was great.",
+    text: "Highly recommend Muhammad Hamid. Over the past year, he proved to be a proactive communicator committed to high-quality work.",
     author: "Sahan Nanayakkara",
     pic: user,
   },
   {
     name: "Viktor Stanišić",
-    text: "Praised technical expertise in .NET and React. Mentioned knowledge of DDD, SOLID principles, and design patterns. Highlighted strong communication and architecture skills. Recommended him as a valuable Solution Architect.",
+    text: "Highly recommend Muhammad Hamid as a Solution Architect. He brings strong expertise in .NET, React, architecture, DDD, and SOLID principles.",
     author: "Viktor Stanišić",
     pic: user2,
   },
