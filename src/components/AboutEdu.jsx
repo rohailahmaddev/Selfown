@@ -109,49 +109,65 @@ export const AboutEduk = ({ display = true }) => {
             date={"2007-11"}
             border={"border-blue-200"}
             circleBg={"bg-blue-400"}
+            position={"70px"}
             institute={"BSCS Bacholar Degree"}
+            duties={"NAML University Islamabad"}
           />
           <MobileEducation
             date={"2014-18"}
             border={"border-green-200"}
+            position={"170px"}
             circleBg={"bg-green-400"}
             institute={"Senior Full Stack Developer (RCI Insurance Platform)"}
+            duties={"Designed micro-frontend architecture and developed .NET 6 microservices for a large-scale insurance platform."}
           />
           <MobileEducation
             date={"2012-13"}
+            position={"195px"}
             border={"border-yellow-200"}
             circleBg={"bg-yellow-400"}
             institute={"Senior Full Stack Developer (Hospitality SaaS – Hotel Management)"}
+            duties={"Built .NET MAUI hotel management app and migrated Xamarin.Forms to MAUI with camera and barcode features."}
           />
           <MobileEducation
             date={"2017-08"}
             border={"border-blue-200"}
             circleBg={"bg-blue-400"}
+            position={"210px"}
             institute={"Software Engineer (TKXEL)"}
+            duties={"Led architecture design, technical delivery, and performance optimization across multiple enterprise projects. Managed client communication, pre-sales, code reviews, and mentored engineering teams."}
           />
           <MobileEducation
             date={"2012-13"}
             border={"border-yellow-200"}
+            position={"215px"}
             circleBg={"bg-yellow-400"}
             institute={"Sr. Software Engineer (Team Lead) (MEZINO TECHNOLOGIES)"}
+            duties={"Led development teams and delivered enterprise software solutions from design to deployment. Managed task allocation, code quality, and mentored junior developers."}
           />
           <MobileEducation
             date={"2014-18"}
             border={"border-green-200"}
+            position={"190px"}
             circleBg={"bg-green-400"}
             institute={"Sr. Software Engineer (3S SOLUTIONS)"}
+            duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
           />
           <MobileEducation
             date={"2007-11"}
             border={"border-blue-200"}
+            position={"165px"}
             circleBg={"bg-blue-400"}
             institute={"Software Engineer (SIGMATEC)"}
+            duties={"Built web applications using .NET technologies with frontend and backend integration. Worked on bug fixes, database optimization, and feature development support."}
           />
           <MobileEducation
             date={"2012-13"}
             border={"border-yellow-200"}
+            position={"190px"}
             circleBg={"bg-yellow-400"}
             institute={"Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)"}
+            duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
           />
         </div>
       </div>

@@ -3,7 +3,9 @@ export const MobileEducation = (
     date,
     border,
     institute,
+    duties,
     circleBg,
+    position
   }
 ) => {
   const colorMap = {
@@ -19,15 +21,16 @@ export const MobileEducation = (
       >
         <div className="p-2 w-full">
           <h3 className="text-lg font-semibold text-gray-700 w-full">{institute}</h3>
-          <p className="text-gray-500 font-semibold w-full text-justify">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            malesuada tellus lorem, et condimentum neque commodo
+          <p className="text-gray-500 font-semibold w-full">
+            {duties}
           </p>
         </div>
       </div>
       <div className={` rotate-0`}>
-        <div class={`mobile_timeline-year`}
-          style={{ background: `linear-gradient(60deg, ${colorMap[circleBg]}, #fcd9db)` }}
+        <div className={`mobile_timeline-year`}
+          style={{ background: `linear-gradient(60deg, ${colorMap[circleBg]}, #fcd9db)`,
+          "--circle-position":position
+        }}
         ><div>{date}</div></div>
       </div>
     </div>

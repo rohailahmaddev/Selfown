@@ -49,7 +49,7 @@ export const Skill = () => {
   return (
     <section className="container flex items-center justify-center">
       <div className="w-[90%] flex items-center justify-center pt-25 pb-25">
-        <ul className=" flex items-center justify-center flex-wrap gap-7 md:gap-5">
+        <ul className=" flex items-center justify-center flex-wrap gap-12 md:gap-5">
           {skills.map((ele, index) => {
             return (
               <li key={index}>
