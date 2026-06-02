@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import { FaBullseye } from "react-icons/fa6";
 import { useLocation } from "react-router-dom";
 
 export const Data = createContext(null);
