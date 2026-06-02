@@ -11,7 +11,14 @@ export const FooterCol = ({ heading, array }) => {
         {array.map((ele, i) => (
           <li key={i}>
             {ele.path ? (
-              <NavLink to={ele.path} className="text-gray-400 font-medium hover:text-white transition duration-300 cursor-pointer">
+              <NavLink to={ele.path} 
+              end 
+              className={({ isActive }) =>
+                isActive
+                  ? "text-gray-400 font-medium hover:text-white transition duration-300 cursor-pointer"
+                  : "text-gray-400 font-medium hover:text-white transition duration-300 cursor-pointer"
+              }
+              >
                 {ele.name}
               </NavLink>
             ) :

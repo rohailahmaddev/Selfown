@@ -10,14 +10,21 @@ import { SectionDivider } from "../components/SectionDivider";
 import { ServicesCard } from "../components/ServiceCard";
 import { Skill } from "../components/Skill";
 import Slider from "../components/Slider";
+import { ColorPanel } from "../components/ColorPanel";
+
+
 
 export const Home = () => {
+
 
   const heroRef = useRef(null);
 
   return (
     <>
-      <HeroSection heroRef={heroRef} />
+      <HeroSection heroRef={heroRef}/>
+
+      <ColorPanel/>
+      
       <PersonalDetail />
       <Skill />
       <ServicesCard />

@@ -3,6 +3,7 @@ import { LatestNews } from "../components/LatestNews";
 import { MessageSend } from "../components/Message";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
+import { ColorPanel } from "../components/ColorPanel";
 
 export const Blogs = () => {
 
@@ -11,6 +12,7 @@ export const Blogs = () => {
   return (
     <>
       <OtherHeroSections heading={"BLOGS"} heroRef={heroRef} />
+      <ColorPanel/>
       <SectionDivider
         top={`-top-5`}
         bg={"bg-transparent"}

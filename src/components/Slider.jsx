@@ -13,6 +13,8 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 import { SliderDiv } from "./SliderDiv";
+import { Data } from "../context/Store";
+import { useContext } from "react";
 
 const sliderCard = [
   {
@@ -60,8 +62,12 @@ const sliderCard = [
 ];
 
 export default function Slider() {
+
+  const {btnColor} = useContext(Data)
   return (
-    <section className="container flex items-center justify-center gradient_bg pt-20 pb-25" id="slider">
+    <section className="container flex items-center justify-center gradient_bg pt-20 pb-25" id="slider"
+    style={{ "--swiper-theme-color": btnColor }}
+    >
       <div className="w-[85%] bg-white shadow-md rounded flex items-center justify-between md:p-5 overflow-hidden">
         <Swiper
           navigation={true}

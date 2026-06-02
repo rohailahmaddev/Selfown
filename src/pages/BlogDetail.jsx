@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
 import { SingleBlogs } from "../components/SingleBlogs";
+import { ColorPanel } from "../components/ColorPanel";
 
 export const BlogDetail = () => {
 
@@ -10,6 +11,7 @@ export const BlogDetail = () => {
   return (
     <>
       <OtherHeroSections heading={"BLOGS"} heroRef={heroRef} />
+      <ColorPanel/>
       <SectionDivider
         top={`-top-5`}
         bg={"bg-transparent"}

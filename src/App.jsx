@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <header
-        className={` h-15 md:h-20 top-0 sticky z-50 transition-all duration-300 bg-white
+        className={` h-15 md:h-17 top-0 sticky z-50 transition-all duration-300 bg-white
     ${scroll ? "md:bg-white" : "md:bg-transparent"}
     `}
       >

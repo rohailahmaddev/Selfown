@@ -6,8 +6,6 @@ import { ContextProvider } from "./context/Store.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <ContextProvider>
       <Router />
-    </ContextProvider>
   </StrictMode>,
 );

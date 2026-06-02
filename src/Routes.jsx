@@ -8,12 +8,13 @@ import { ProjectsPage } from "./pages/Projects";
 import { Blogs } from "./pages/Blogs";
 import { Contact } from "./pages/Contact";
 import { BlogDetail } from "./pages/BlogDetail";
+import { ContextProvider } from "./context/Store";
 
 export const Router = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,
+      element:<ContextProvider>  <App /> </ContextProvider>,
       children: [
         {
           index: true,
@@ -51,5 +52,5 @@ export const Router = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return  <RouterProvider router={router} /> ;
 };

@@ -75,7 +75,7 @@ export const LatestNews = ({ display = true, heroRef }) => {
                   <div className="flex items-center gap-3">
                     <Avatar name={ele.author_name} />
                     <div className="flex flex-col">
-                      <h4 className="text-[15px]">{ele.author_name}</h4>
+                      <h4 className="text-[15px]">{ele.author_nam}</h4>
                       <h4 className="text-[15px]">{ele.created_at.substring(0, 10)}</h4>
                     </div>
                   </div>

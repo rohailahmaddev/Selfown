@@ -2,17 +2,22 @@ import contactSvg from "../assets/contact.svg";
 import { LuPhone } from "react-icons/lu";
 import { MdOutlineMailOutline } from "react-icons/md";
 import image from "../assets/testi-pet.png";
+import { useContext } from "react";
+import { Data } from "../context/Store";
 
 export const ContactForm = ({ section = "section" }) => {
+
+  const {btnColor} = useContext(Data)
+  
   return (
     <section
       className={`container flex items-center justify-center pt-25 pb-25 md:${section}`}
     >
-      <div className="w-[85%] bg-white md:shadow-md rounded flex flex-col md:flex-row">
+      <div className="w-[90%] bg-white md:shadow-md rounded flex flex-col md:flex-row">
         <div className="w-full md:w-[70%] flex flex-col gap-6 p-5">
           <div className="flex flex-col gap-3 p-2 w-full">
             <h2 className="herotext_color text-4xl w-full">Get in touch !</h2>
-            <p className="herotext_color w-full md:w-[65%] text-[20px]">
+            <p className="herotext_color w-full md:w-[65%] text-[19px]">
               Always available for freelancing if the right project comes along,
               Feel free to contact me.
             </p>
@@ -24,7 +29,7 @@ export const ContactForm = ({ section = "section" }) => {
                 <input
                   type="text"
                   id="username"
-                  className="p-2 outline-none rounded border border-blue-200 focus:border-black"
+                  className="p-2 outline-none rounded border border-gray-200 focus:border-blue-300"
                   placeholder="Your name"
                   required
                 />
@@ -34,7 +39,7 @@ export const ContactForm = ({ section = "section" }) => {
                 <input
                   type="email"
                   id="email"
-                  className="p-2 border outline-none rounded border-blue-200 focus:border-black"
+                  className="p-2 border outline-none rounded border-gray-200 focus:border-blue-300"
                   placeholder="Your email"
                   required
                 />
@@ -46,7 +51,7 @@ export const ContactForm = ({ section = "section" }) => {
                 <input
                   type="text"
                   id="Subject"
-                  className="p-2 rounded outline-none border border-blue-200 focus:border-black"
+                  className="p-2 rounded outline-none border border-gray-200 focus:border-blue-300"
                   placeholder="Your subject"
                   required
                 />
@@ -57,7 +62,7 @@ export const ContactForm = ({ section = "section" }) => {
                   type="tel"
                   maxLength={13}
                   id="number"
-                  className="p-2 outline-none border border-blue-200 focus:border-black rounded"
+                  className="p-2 outline-none border border-gray-200 focus:border-blue-300 rounded"
                   placeholder="+92 332 5926682"
                   required
                 />
@@ -68,13 +73,15 @@ export const ContactForm = ({ section = "section" }) => {
               <textarea
                 name="message"
                 id="message"
-                className="border p-2 border-blue-200 focus:border-black outline-none h-25 rounded"
+                className="border p-2 border-gray-200 focus:border-blue-300 outline-none h-30 rounded"
                 placeholder="Enter your message..."
                 required
               ></textarea>
             </div>
             <div className="w-[80%] md:w-[25%]">
-              <button className="text-xl p-3 text-white cursor-pointer rounded button-bg w-full" type="submit">
+              <button className="text-xl p-3 text-white cursor-pointer rounded button-bg w-full" type="submit"
+              style={{ backgroundColor: btnColor }}
+              >
                 Send Message
               </button>
             </div>
@@ -87,8 +94,8 @@ export const ContactForm = ({ section = "section" }) => {
           <div className=" flex flex-col gap-5 p-5 w-full">
             <img src={contactSvg} alt="image" className="w-35" />
             <div>
-              <div className="flex items-center gap-3 pb-5 border-b border-dashed border-blue-200">
-                <span className="p-3 bg-gray-300 rounded">
+              <div className="flex items-center gap-3 pb-5 border-b border-dashed border-gray-200">
+      blue-300<span className="p-3 bg-gray-300 rounded">
                   <LuPhone />
                 </span>
                 <span className="flex flex-col">

@@ -9,42 +9,48 @@ import { SerEdu } from "./SerEdu";
 export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
   const cards = [
     {
-      bg: "bg-red-200",
+      bg: "bg-red-100",
+      text:"text-red-500",
       icon: <HiMiniCodeBracket />,
       name: "Custom Software",
       discription:
         "Building scalable custom software solutions using .NET and .NET Core for modern business needs.",
     },
     {
-      bg: "bg-blue-200",
+      bg: "bg-blue-100",
+      text:"text-blue-500",
       icon: <FaDesktop />,
       name: "Desktop Applications",
       discription:
         "Developing powerful desktop applications with WinForms, WPF, and .NET MAUI.",
     },
     {
-      bg: "bg-green-200",
+      bg: "bg-green-100",
+      text:"text-green-500",
       icon: <TfiWorld />,
       name: "Web Development",
       discription:
         "Creating responsive web applications using ASP.NET Core, MVC, Razor Pages, and Blazor.",
     },
     {
-      bg: "bg-red-200",
+      bg: "bg-red-100",
+      text:"text-red-500",
       icon: <MdSmartphone />,
       name: "Mobile Apps",
       discription:
         "Cross-platform mobile app development with Xamarin and .NET MAUI for Android and iOS.",
     },
     {
-      bg: "bg-blue-200",
+      bg: "bg-blue-100",
+      text:"text-blue-500",
       icon: <IoServer />,
       name: "API & Backend",
       discription:
         "RESTful API development, cloud integration, and backend services with Node.js and Next.js.",
     },
     {
-      bg: "bg-green-200",
+      bg: "bg-green-100",
+      text:"text-green-500",
       icon: <FiLayout />,
       name: "Frontend Solutions",
       discription:
@@ -56,7 +62,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
     <section
       className={`container flex items-center justify-center ${bg} ${display ? "pt-25" : "pt-0"}`}
     >
-      <div className="w-[85%] flex items-center justify-center flex-col ">
+      <div className="w-[90%] flex items-center justify-center flex-col ">
         {display && (
           <SerEdu
             btn_text={"SERVICES"}
@@ -73,7 +79,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
               return (
                 <li key={index} className="">
                   <div className="shadow-md flex flex-col gap-5 p-6 bg-white pb-15">
-                    <div className={`${ele.bg} rounded p-3 w-10`}>
+                    <div className={`${ele.bg} rounded ${ele.text} p-3 w-13 h-13 flex justify-center items-center text-2xl`}>
                       {ele.icon}
                     </div>
                     <h2 className="text-2xl herotext_color font-medium">

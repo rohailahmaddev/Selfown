@@ -15,23 +15,26 @@ html {
   color:rgb(122, 138, 163);
 }
 .sudo_class::before {
-  background-color: rgb(227, 247, 250);
+  background:color-mix(in srgb, var(--theme-color) 20%, white);
   content: "";
   position: absolute;
-  left: -5px;
+  left: -15px;
   width: 28px;
   z-index: -1;
   height: 20px;
   border-radius: 30% 70% 70% 30% / 35% 44% 56% 65%;
 }
 .active {
-  color: rgb(21, 192, 214);
+  color: var(--theme-color);
 }
 .text {
   color: rgb(149, 183, 250);
 }
 .link:hover {
   color: rgb(21, 192, 214);
+}
+.navlink:hover{
+  color:var(--theme-color)
 }
 .button-border {
   border: 1px solid rgb(21, 192, 214);
@@ -46,7 +49,7 @@ html {
   color: rgb(153, 165, 199);
 }
 .nav_button{
-  color: rgb(21, 192, 214);
+  color: var(--theme-color);
 }
 .herotext_color {
   color: rgb(51, 71, 102);
@@ -54,12 +57,15 @@ html {
 .personal_det::after {
   position: absolute;
   content: " ";
-  width: 215px;
-  height: 10px;
-  bottom: 0;
+  width: 188px;
+  height: 6px;
+  bottom: 7px;
   z-index: -1;
   left: 0;
   background-color: gold;
+}
+.slider-heading{
+  color: #869ab8;
 }
 .service-bg {
   background: linear-gradient();
@@ -72,11 +78,11 @@ html {
 }
 .swiper-button-next,
 .swiper-button-prev {
-  background-color: rgb(218, 218, 255);
+  background: color-mix(in srgb, var(--swiper-theme-color) 20%, white);
   border-radius: 3px;
   border-radius: 50%;
   padding: 10px;
-  color: white;
+  color: var(--swiper-theme-color);
 }
 .section {
   background-color: rgb(247, 250, 252);

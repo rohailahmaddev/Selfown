@@ -1,3 +1,4 @@
+import { ColorPanel } from "../components/ColorPanel";
 import { ContactForm } from "../components/ContanctForm";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
@@ -6,6 +7,7 @@ export const Contact = () => {
   return (
     <>
       <OtherHeroSections heading={"CONTACT"} />
+      <ColorPanel/>
       <SectionDivider
         top={`-top-5`}
         bg={"bg-transparent"}

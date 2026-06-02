@@ -1,3 +1,4 @@
+import { ColorPanel } from "../components/ColorPanel";
 import { MessageSend } from "../components/Message";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { ProjectMenu } from "../components/ProjectsMenu";
@@ -7,6 +8,7 @@ export const ProjectsPage = () => {
   return (
     <>
       <OtherHeroSections heading={"POJECTS"} />
+      <ColorPanel/>
       <SectionDivider
         top={`-top-5`}
         bg={"bg-transparent"}

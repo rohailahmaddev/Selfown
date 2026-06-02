@@ -4,7 +4,7 @@ export const PersonalDetail = ({
   icons = true,
   displayProperty = "flex items-center md:flex-row flex-col justify-between w-[85%]",
   col1Width = "w-[50%]",
-  col2Width = "w-[35%]",
+  col2Width = "w-[42%]",
 }) => {
   const detail = [
     {
@@ -22,12 +22,12 @@ export const PersonalDetail = ({
   ];
   return (
     <section className="container flex items-center justify-center">
-      <div className={` ${displayProperty} pt-25 gap-10 md:gap-6`}>
+      <div className={` ${displayProperty} md:w-[90%] pt-25 gap-10 md:gap-6`}>
         <div className={`col-1 flex flex-col gap-5 md:${col1Width}`}>
-          <h2 className="herotext_color w-full font-semibold personal_det text-3xl  relative">
+          <h2 className="herotext_color w-full font-semibold personal_det text-[26px]  relative">
             Personal Details
           </h2>
-          <p className="herotext_color w-full text-2xl">
+          <p className="herotext_color w-full text-[20px]">
             Full-stack developer building scalable, efficient web applications with clean code, solid backend logic, and responsive frontend interfaces.          </p>
           {/* {icons && <PersonalDetailIcons />} */}
         </div>
@@ -36,8 +36,8 @@ export const PersonalDetail = ({
             {detail.map((Element, index) => {
               return (
                 <li key={index} className="flex items-center gap-5 ">
-                  <p className="w-20 md:w-35 text-[10px] md:text-[18px]"> {Element.name} </p> <span>:</span>{" "}
-                  <span className="text text-[10px] md:text-[18px]"> {Element.det} </span>
+                  <p className="w-20 md:w-32 text-[10px] md:text-[16px]"> {Element.name} </p> <span>:</span>{" "}
+                  <span className="text text-[10px] md:text-[16px]"> {Element.det} </span>
                 </li>
               );
             })}

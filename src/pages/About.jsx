@@ -5,12 +5,15 @@ import { MessageSend } from "../components/Message";
 import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
 import { Skill } from "../components/Skill";
+import { ColorPanel } from "../components/ColorPanel";
 
 export const About = () => {
   const heroRef = useRef(null);
+  
   return (
     <>
       <OtherHeroSections heading={"ABOUT ME"} heroRef={heroRef} />
+      <ColorPanel/>
       <SectionDivider
         bg={"bg-transparent"}
         svg={

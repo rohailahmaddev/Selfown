@@ -4,7 +4,7 @@ export const SliderDiv = ({ sliderCard }) => {
   console.log(sliderCard?.name)
   return (
     <div className="flex items-center justify-center flex-col gap-3 md:gap-7 p-4 md:pt-10 w-full">
-      <h1 className="text-4xl font-bold text-center herotext_color">
+      <h1 className="text-4xl font-bold text-center slider-heading">
         {sliderCard?.name}
       </h1>
       <p className="text-xl md:text-2xl  text-center w-[75%] italic">{sliderCard?.text}</p>

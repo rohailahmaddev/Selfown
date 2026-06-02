@@ -9,30 +9,37 @@ import angular from "../assets/Angular.svg";
 const skills = [
   {
     skill: ".NET",
+    experience:"3 Years Experience",
     icon: NET,
   },
   {
     skill: "Angular",
+    experience:"4 Years Experience",
     icon: angular,
   },
   {
     skill: "AWS",
+    experience:"5 Years Experience",
     icon: Aws,
   },
   {
     skill: "React",
+    experience:"5 Years Experience",
     icon: react,
   },
   {
     skill: "Azure",
+    experience:"3 Years Experience",
     icon: Azure,
   },
   {
     skill: "Next.JS",
+    experience:"4 Years Experience",
     icon: Next,
   },
   {
     skill: "Node.js",
+    experience:"5 Years Experience",
     icon: node,
   },
 
@@ -41,18 +48,18 @@ const skills = [
 export const Skill = () => {
   return (
     <section className="container flex items-center justify-center">
-      <div className="w-[85%] flex items-center justify-center pt-25 pb-25">
-        <ul className=" flex items-center justify-center flex-wrap gap-7 md:gap-12">
+      <div className="w-[90%] flex items-center justify-center pt-25 pb-25">
+        <ul className=" flex items-center justify-center flex-wrap gap-7 md:gap-5">
           {skills.map((ele, index) => {
             return (
               <li key={index}>
-                <div className="flex items-center justify-between p-4 rounded shadow-md gap-7">
-                  <img src={ele.icon} alt="icon" className="w-10" />
+                <div className="flex items-center justify-between p-2 rounded shadow-md gap-5">
+                  <img src={ele.icon} alt="icon" className="w-8" />
                   <div className="flex flex-col">
                     <h3 className="herotext_color text-[20px] font-medium w-20">
                       {ele.skill}
                     </h3>
-                    {/* <span className="herotext_color w-39">{ele.experience}</span> */}
+                    <span className="text-gray-500 w-32 md:text-[14px]">{ele.experience}</span>
                   </div>
                 </div>
               </li>

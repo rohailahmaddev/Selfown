@@ -3,8 +3,6 @@ export const MobileEducation = (
     date,
     border,
     institute,
-    iconBg,
-    iconsColor,
     circleBg,
   }
 ) => {

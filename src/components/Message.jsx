@@ -3,25 +3,25 @@ import image from "../assets/testi-pet.png";
 export const MessageSend = () => {
   return (
     <section
-      className="container section flex items-center justify-center bg-right bg-no-repeat bg-size-[200px] md:bg-size-[350px]  h-70"
+      className="container section flex items-center justify-center bg-right bg-no-repeat bg-size-[200px] md:bg-size-[350px]  h-60"
       style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="w-[85%] flex items-center justify-between flex-col gap-5 md:gap-0 md:flex-row">
-        <div className="col-1 w-full md:w-[55%] flex flex-col gap-4">
-          <h2 className="text-2xl font-semibold md:text-4xl herotext_color">
+      <div className="w-[90%] flex items-center justify-between flex-col gap-5 md:gap-0 md:flex-row">
+        <div className="col-1 w-full md:w-[50%] flex flex-col gap-4">
+          <h2 className="text-2xl font-semibold md:text-3xl herotext_color">
             I Am Available For Freelancing.
           </h2>
-          <p className="herotext_color text-2xl">
+          <p className="herotext_color text-[18px]">
             Browse hundreds of job offers and find the bestsuitable position.
           </p>
         </div>
-        <div className="col-2 w-full md:w-[40%] flex items-center justify-center">
+        <div className="col-2 w-full md:w-[47%] flex items-center justify-center">
           <form className="w-full">
-            <div className="bg-white rounded md:rounded-xl  p-1 w-full shadow-md flex items-center justify-between">
+            <div className="bg-white rounded md:rounded-sm  p-1 w-full shadow-md flex items-center justify-between">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="md:text-xl herotext_color outline-none border-0 px-2"
+                className="md:text-[15px] herotext_color outline-none border-0 px-2"
               />
               <button
                 type="submit"
