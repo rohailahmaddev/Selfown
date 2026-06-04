@@ -9,7 +9,7 @@ const accordion = [
     date: "2007-2011",
     answer:
       "NUML Islamabad is an educational institution offering Computer Science programs focused on programming, software development, and modern computing skills.",
-    institute: "NAML University Islamabad Pakistan",
+    institute: "NUML University Islamabad Pakistan",
   }
 ];
 
@@ -23,15 +23,15 @@ const accordion2 = [
       "RCI Insurance / Remote Cloud Platform",
   },
   {
-    question: "Senior Full Stack Developer (Hospitality SaaS – Hotel Management)",
+    question: "Senior Full Stack Developer (InnRoad/DynamX)",
     date: "2022 - 2023",
     answer:
-      "Developed and maintained .NET MAUI cross-platform mobile apps for hotel management SaaS. Migrated Xamarin.Forms to MAUI and implemented native features like camera and barcode scanning.",
+      "Developed full-stack web applications with responsive front-end interfaces, scalable back-end systems, and database integration.",
     institute:
-      "Remote SaaS Platform",
+      "InnRoad/DynamX",
   },
   {
-    question: "Software Engineer (TKXEL)",
+    question: "Principal Software Engineer (TKXEL)",
     date: "2021 - 2023",
     answer:
       "Led architecture design, technical delivery, and performance optimization across multiple enterprise projects. Managed client communication, pre-sales, code reviews, and mentored engineering teams.",
@@ -45,30 +45,6 @@ const accordion2 = [
       "Led development teams and delivered enterprise software solutions from design to deployment. Managed task allocation, code quality, and mentored junior developers.",
     institute:
       "MEZINO TECHNOLOGIES",
-  },
-  {
-    question: "Sr. Software Engineer (3S SOLUTIONS)",
-    date: "2015 - 2016",
-    answer:
-      "Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support.",
-    institute:
-      "3S SOLUTIONS",
-  },
-  {
-    question: "Software Engineer (SIGMATEC)",
-    date: "2014 - 2015",
-    answer:
-      "Built web applications using .NET technologies with frontend and backend integration. Worked on bug fixes, database optimization, and feature development support.",
-    institute:
-      "SIGMATEC",
-  },
-  {
-    question: "Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)",
-    date: "2012 - 2013",
-    answer:
-      "Developed and maintained responsive websites using HTML, CSS, and JavaScript. Handled UI updates, basic backend integration, and website maintenance.",
-    institute:
-      "KOHINOOR MAPLE LEAF GROUP – KMLG",
   },
 ];
 

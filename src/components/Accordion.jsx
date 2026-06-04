@@ -12,7 +12,7 @@ export const Accordion = ({ image, array, exp }) => {
     setOpenIndex((prev) => (prev === i ? null : i));
   };
   return (
-    <div className=" bg-indigo-50 flex justify-between flex-col md:flex-row w-full">
+    <div className=" accordion_bg flex justify-between flex-col md:flex-row w-full">
       <div className="w-full md:w-[30%] flex items-center justify-center flex-col">
         <img src={image} alt="image" className=" w-[55%] md:w-[60%]" />
         <h2 className="herotext_color text-2xl"> {exp} </h2>

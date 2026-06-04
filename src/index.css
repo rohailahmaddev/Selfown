@@ -196,7 +196,9 @@ html {
   left: 120px;
   box-shadow: 0 0 8px #435177;
 }
-
+.accordion_bg{
+  background-color: rgb(247, 250, 252);
+}
 .mobile_timeline-year {
   color: #fff;
   font-size: 24px;
