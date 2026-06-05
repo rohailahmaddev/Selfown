@@ -1,12 +1,8 @@
 import ExperienceCard from "./Eductaions";
 import { MobileEducation } from "./MobileEducation";
-import { RxPeople } from "react-icons/rx";
 import { FaUniversity } from "react-icons/fa";
 import { CgOrganisation } from "react-icons/cg";
 import { SerEdu } from "./SerEdu";
-import { FaTrophy } from "react-icons/fa";
-import { FaGraduationCap } from "react-icons/fa";
-import { BiSolidSchool } from "react-icons/bi";
 
 export const AboutEduk = ({ display = true }) => {
   return (

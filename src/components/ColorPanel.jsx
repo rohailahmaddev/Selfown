@@ -3,12 +3,12 @@ import { PiPaintBrushBold } from "react-icons/pi";
 import { Data } from "../context/Store";
 
 const COLORS = [
-    { label: "Violet",  value: "#7C3AED" },
-    { label: "Sky",     value: "#0284C7" },
-    { label: "Emerald", value: "#059669" },
-    { label: "Amber",   value: "#D97706" },
-    { label: "Fuchsia", value: "#C026D3" },
-    { label: "Indigo",  value: "#4338CA" },
+    { label: "Indigo",  value: "#00bbd4" },
+    { label: "Violet",  value: "#387eff" },
+    { label: "Sky",     value: "#ffc936" },
+    { label: "Emerald", value: "#ed9555" },
+    { label: "Amber",   value: "#806cf0" },
+    { label: "Fuchsia", value: "#69c27f" },
 ];
 
 export const ColorPanel = () => {
@@ -17,8 +17,6 @@ export const ColorPanel = () => {
 
     return(
         <>
-        
-  {/* ── Color Palette Panel ── */}
   <div
   className="fixed hidden md:flex left-0 top-[35%] -translate-y-1/2 z-50  items-start"
   style={{ pointerEvents: "none" }}

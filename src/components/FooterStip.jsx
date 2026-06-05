@@ -1,5 +1,3 @@
-import { FaHeart } from "react-icons/fa6";
-
 export const FooterStrip = () => {
   return (
     <section className="container footer_bg flex items-center justify-center">

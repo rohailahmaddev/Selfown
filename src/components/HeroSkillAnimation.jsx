@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const skills = [".NET", "NODE.JS", "NEXT.JS", "ANGULAR", "REACT", "Azure", "AWS"];
+const skills = [".NET", "NODE.JS", "NEXT.JS", "ANGULAR", "REACT", "AZURE", "AWS"];
 
 export default function HeroText() {
   const [currentIndex, setCurrentIndex] = useState(0);

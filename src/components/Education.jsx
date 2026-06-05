@@ -18,7 +18,7 @@ const accordion2 = [
     question: "Senior Full Stack Developer (RCI Insurance Platform)",
     date: "2023 - Present",
     answer:
-      "Designed micro-frontend architecture and developed .NET 6 microservices for a large-scale insurance platform.",
+      "Led micro-frontend architecture using React and TypeScript on a production insurance platform, backed by a .NET 6 microservices and modular monolith backend. Drove architectural standards, delivered an i18n strategy across React and Angular, and produced a modernisation roadmap for a legacy ASP.NET Web Forms system.",
     institute:
       "RCI Insurance / Remote Cloud Platform",
   },
@@ -26,7 +26,7 @@ const accordion2 = [
     question: "Senior Full Stack Developer (InnRoad/DynamX)",
     date: "2022 - 2023",
     answer:
-      "Developed full-stack web applications with responsive front-end interfaces, scalable back-end systems, and database integration.",
+      "Engineered cross-platform mobile applications using .NET MAUI for Android and iOS. Led a zero-regression migration from Xamarin.Forms to .NET MAUI, modernizing architecture and re-engineering native camera and barcode scanning features. Optimized application performance, improved code maintainability, and ensured seamless production delivery across multiple releases.",
     institute:
       "InnRoad/DynamX",
   },
@@ -34,15 +34,15 @@ const accordion2 = [
     question: "Principal Software Engineer (TKXEL)",
     date: "2021 - 2023",
     answer:
-      "Led architecture design, technical delivery, and performance optimization across multiple enterprise projects. Managed client communication, pre-sales, code reviews, and mentored engineering teams.",
+      "Provided technical leadership across multiple concurrent projects from discovery to delivery. Led pre-sales engagements, designed team structures, mentored engineers, and acted as the final escalation point for critical issues. Spearheaded complex integrations including custom OKTA auth flows and Salesforce APIs on BridgeCorp.",
     institute:
       "TKXEL",
   },
   {
-    question: "Sr. Software Engineer (Team Lead) (MEZINO TECHNOLOGIES)",
+    question: "Sr. Software Engineer (MEZINO TECHNOLOGIES)",
     date: "2016 - 2021",
     answer:
-      "Led development teams and delivered enterprise software solutions from design to deployment. Managed task allocation, code quality, and mentored junior developers.",
+      "Delivered full-stack development across enterprise products, including a serverless file-processing pipeline (Opus/Epilogue Systems) using Azure Functions, SNS, SQS, and Pub/Sub. Contributed to an event-driven forecasting platform (Wahupa/Kinaxis), supporting modernization from monolithic system to microservices while improving scalability and performance.",
     institute:
       "MEZINO TECHNOLOGIES",
   },
@@ -51,7 +51,7 @@ const accordion2 = [
 export const Eductation = () => {
   return (
     <section className="container flex items-center justify-center pb-10">
-      <div className="w-[85%] flex items-center justify-center flex-col pt-25 gap-15">
+      <div className="w-[90%] flex items-center justify-center flex-col pt-25 gap-15">
         <SerEdu
           btn_text={"LIFE TIME"}
           heading={"Education & Experience"}
