@@ -5,13 +5,13 @@ import image from "../assets/testi-pet.png";
 import { useContext } from "react";
 import { Data } from "../context/Store";
 
-export const ContactForm = ({ section = "section" }) => {
+export const ContactForm = () => {
 
   const {btnColor} = useContext(Data)
   
   return (
     <section
-      className={`container flex items-center justify-center pt-25 pb-40 md:${section}`}
+      className={`container flex items-center justify-center pt-25 pb-40 section`}
     >
       <div className="w-[90%] bg-white md:shadow-md rounded flex flex-col md:flex-row">
         <div className="w-full md:w-[70%] flex flex-col gap-6 p-5">

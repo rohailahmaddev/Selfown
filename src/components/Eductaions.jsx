@@ -1,39 +1,48 @@
-import StickerBadge from "./StickerBadje";
 
 export default function ExperienceCard({
   date,
   border,
   institute,
   iconBg,
+  f_color,
+  s_color,
   icon,
-  rotate,
+  pt="30px",
+  pb="30px",
+  left,
   duties,
   circleBg,
 }) {
   return (
-    <div className={`relative w-full cursor-pointer ${rotate}`}>
-      <div
-        className={`relative flex items-center  border-2 w-[90%] -z-1 border-dashed ${border} border-r-0 justify-between rounded p-2 overflow-hidden`}
-      >
-        <div className={`border-2 ${border} p-1 rounded-lg ${rotate}`}>
-          <div
-            className={`${iconBg} rounded-lg p-13 shadow-inner flex items-center justify-center`}
+    <div class={`main-timeline`}>
+      <div className={`timeline`}>
+        <a href="#" className={`timeline-content border-2 border-dashed ${border}`}
+            style={{"--theme-pt":pt,"--theme-pb":pb}}
+        >
+          <div className={`flex items-center justify-center border-2 ${border} p-2 timeline-icon`}
+            style={left === "0px" ? { right: "auto", left: "10px" } : { left: "auto", right: "10px" }}
           >
-            {icon}
+            <p className={`${iconBg} p-10`}>{icon}</p>
           </div>
-        </div>
-        <div className={` w-[65%] ${rotate ? `pl-25 ${rotate}` : `pr-15`} `}>
-          <h3 className="text-lg font-semibold text-gray-700">{institute}</h3>
-          <p className="text-gray-500 font-semibold">
-            {duties}
-          </p>
-        </div>
+          <div className={`inner-content`}
+          >
+            <h3 className={`text-[18px] font-medium text-left`}>{institute}</h3>
+            <p className={`text-[14px] text-left`}>
+              {duties}
+            </p>
+          </div>
+          <div className={`timeline-year ${circleBg}`}
+            style={{
+              ...(left === "0px"
+                ? { left: "auto", right: "-119px" }
+                : { right: "auto", left: "-119px" }
+              ),
+              "--first-color": f_color,
+              "--second-color": s_color
+            }}>
+              <span>{date}</span></div>
+        </a>
       </div>
-      <StickerBadge
-        circleBg={circleBg}
-        rotate={rotate}
-        date={date}
-      />
     </div>
   );
 }

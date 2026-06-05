@@ -21,87 +21,74 @@ export const AboutEduk = ({ display = true }) => {
             }
           />
         )}
-        <div className=" w-[70%] hidden  md:flex pt-25  flex-col gap-35">
+        <div className=" w-[90%] hidden  md:flex pt-25  flex-col gap-10">
           <ExperienceCard
             date={"2007-11"}
             border={"border-green-200"}
+            left={"0px"}
+            pb="96px"
+            pt="96px"
+            f_color={"#4def6a"}
+            s_color={"#d9fce1"}
             rotate={"rotate-180"}
             icon={<FaUniversity className={`text-green-400 text-4xl`} />}
             iconBg={"bg-green-100"}
             circleBg={"bg-green-400"}
             institute={"BSCS Bacholar Degree"}
-            duties={"NAML University Islamabad"}
+            duties={"NUML University Islamabad"}
           />
           <ExperienceCard
             date={"2023-Present"}
             border={"border-red-200"}
+            f_color={"#ef4d56"}
+            s_color={"#fcd9db"}
+            left={"-63px"}
             icon={<CgOrganisation className={`text-red-400 text-4xl`} />}
             iconBg={"bg-red-100"}
             circleBg={"bg-red-400"}
-            institute={"Senior Full Stack Developer (RCI Insurance Platform)"}
-            duties={"Designed micro-frontend architecture and developed .NET 6 microservices for a large-scale insurance platform."}
+            institute={"Sr. Full Stack Developer (RCI Insurance Platform)"}
+            duties={"Led micro-frontend architecture using React and TypeScript on a production insurance platform, backed by a .NET 6 microservices and modular monolith backend. Drove architectural standards, delivered an i18n strategy across React and Angular, and produced a modernisation roadmap for a legacy ASP.NET Web Forms system."}
           />
           <ExperienceCard
             date={"2022-23"}
             border={"border-green-200"}
+            left={"0px"}
+            f_color={"#4def6a"}
+            s_color={"#d9fce1"}
             rotate={"rotate-180"}
             icon={<CgOrganisation className={`text-green-400 text-4xl`} />}
             iconBg={"bg-green-100"}
             circleBg={"bg-green-400"}
-            institute={"Senior Full Stack Developer (Hospitality SaaS – Hotel Management)"}
-            duties={"Built .NET MAUI hotel management app and migrated Xamarin.Forms to MAUI with camera and barcode features."}
+            institute={"Sr. Full Stack Developer (InnRoad/DynamX)"}
+            duties={"Engineered cross-platform mobile applications using .NET MAUI for Android and iOS. Led a zero-regression migration from Xamarin.Forms to .NET MAUI, modernizing architecture and re-engineering native camera and barcode scanning features. Optimized application performance, improved code maintainability, and ensured seamless production delivery across multiple releases."}
           />
           <ExperienceCard
             date={"2021-23"}
             border={"border-yellow-200"}
+            left={"-63px"}
+            f_color={"#efb84d"}
+            s_color={"#fdf1d9"}
             iconsColor={""}
             icon={<CgOrganisation className={`text-yellow-400 text-4xl`} />}
             iconBg={"bg-yellow-100"}
             circleBg={"bg-yellow-400"}
-            institute={"Software Engineer (TKXEL)"}
-            duties={"Led architecture design, technical delivery, and performance optimization across multiple enterprise projects. Managed client communication, pre-sales, code reviews, and mentored engineering teams."}
+            institute={"Pricipal Software Engineer (TKXEL)"}
+            duties={"Provided technical leadership across multiple concurrent projects from discovery to delivery. Led pre-sales engagements, designed team structures, mentored engineers, and acted as the final escalation point for critical issues. Spearheaded complex integrations including custom OKTA auth flows and Salesforce APIs on BridgeCorp."}
           />
           <ExperienceCard
             date={"2016-21"}
             border={"border-blue-200"}
+            left={"0px"}
+            right={"-63px"}
+            f_color={"#4d8bef"}
+            s_color={"#d9e8fc"}
             rotate={"rotate-180"}
             iconsColor={"text-blue-400"}
             icon={<CgOrganisation className={`text-blue-400 text-4xl`} />}
             iconBg={"bg-blue-100"}
             circleBg={"bg-blue-400"}
-            institute={"Sr. Software Engineer (Team Lead) (MEZINO TECHNOLOGIES)"}
-            duties={"Led development teams and delivered enterprise software solutions from design to deployment. Managed task allocation, code quality, and mentored junior developers."}
-          />
-          <ExperienceCard
-            date={"2015-16"}
-            border={"border-yellow-200"}
-            iconsColor={""}
-            icon={<CgOrganisation className={`text-yellow-400 text-4xl`} />}
-            iconBg={"bg-yellow-100"}
-            circleBg={"bg-yellow-400"}
-            institute={"Sr. Software Engineer (3S SOLUTIONS)"}
-            duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
-          />
-          <ExperienceCard
-            date={"2014-15"}
-            border={"border-blue-200"}
-            rotate={"rotate-180"}
-            iconsColor={"text-blue-400"}
-            icon={<CgOrganisation className={`text-blue-400 text-4xl`} />}
-            iconBg={"bg-blue-100"}
-            circleBg={"bg-blue-400"}
-            institute={"Software Engineer (SIGMATEC)"}
-            duties={"Built web applications using .NET technologies with frontend and backend integration. Worked on bug fixes, database optimization, and feature development support."}
-          />
-          <ExperienceCard
-            date={"2015-16"}
-            border={"border-yellow-200"}
-            iconsColor={""}
-            icon={<CgOrganisation className={`text-yellow-400 text-4xl`} />}
-            iconBg={"bg-yellow-100"}
-            circleBg={"bg-yellow-400"}
-            institute={"Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)"}
-            duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
+            institute={"Sr. Software Engineer (Mezino Technologies)"}
+            duties={"Delivered full-stack development across enterprise products, including a serverless file-processing pipeline (Opus/Epilogue Systems) using Azure Functions, SNS, SQS, and Pub/Sub. Contributed to an event-driven forecasting platform (Wahupa/Kinaxis), supporting modernization from monolithic system to microservices while improving scalability and performance."}
           />
         </div>
         <div className="w-full mt-20 pt-25 flex md:hidden flex-col gap-55">
@@ -111,63 +98,39 @@ export const AboutEduk = ({ display = true }) => {
             circleBg={"bg-blue-400"}
             position={"70px"}
             institute={"BSCS Bacholar Degree"}
-            duties={"NAML University Islamabad"}
+            duties={"NUML University Islamabad"}
           />
           <MobileEducation
             date={"2014-18"}
             border={"border-green-200"}
-            position={"170px"}
+            position={"310px"}
             circleBg={"bg-green-400"}
             institute={"Senior Full Stack Developer (RCI Insurance Platform)"}
-            duties={"Designed micro-frontend architecture and developed .NET 6 microservices for a large-scale insurance platform."}
+            duties={"Led micro-frontend architecture using React and TypeScript on a production insurance platform, backed by a .NET 6 microservices and modular monolith backend. Drove architectural standards, delivered an i18n strategy across React and Angular, and produced a modernisation roadmap for a legacy ASP.NET Web Forms system."}
           />
           <MobileEducation
             date={"2012-13"}
-            position={"195px"}
+            position={"284px"}
             border={"border-yellow-200"}
             circleBg={"bg-yellow-400"}
-            institute={"Senior Full Stack Developer (Hospitality SaaS – Hotel Management)"}
-            duties={"Built .NET MAUI hotel management app and migrated Xamarin.Forms to MAUI with camera and barcode features."}
+            institute={"Senior Full Stack Developer (InnRoad/DynamX)"}
+            duties={"Engineered cross-platform mobile applications using .NET MAUI for Android and iOS. Led a zero-regression production migration from Xamarin.Forms to .NET MAUI, re-engineering native camera and barcode scanning features — improving performance and long-term maintainability."}
           />
           <MobileEducation
             date={"2017-08"}
             border={"border-blue-200"}
             circleBg={"bg-blue-400"}
-            position={"210px"}
-            institute={"Software Engineer (TKXEL)"}
-            duties={"Led architecture design, technical delivery, and performance optimization across multiple enterprise projects. Managed client communication, pre-sales, code reviews, and mentored engineering teams."}
+            position={"310px"}
+            institute={"Principal Software Engineer (TKXEL)"}
+            duties={"Provided technical leadership across multiple concurrent projects from discovery to delivery. Led pre-sales engagements, designed team structures, mentored engineers, and acted as the final escalation point for critical issues. Spearheaded complex integrations including custom OKTA auth flows and Salesforce APIs on BridgeCorp."}
           />
           <MobileEducation
             date={"2012-13"}
             border={"border-yellow-200"}
-            position={"215px"}
+            position={"310px"}
             circleBg={"bg-yellow-400"}
-            institute={"Sr. Software Engineer (Team Lead) (MEZINO TECHNOLOGIES)"}
-            duties={"Led development teams and delivered enterprise software solutions from design to deployment. Managed task allocation, code quality, and mentored junior developers."}
-          />
-          <MobileEducation
-            date={"2014-18"}
-            border={"border-green-200"}
-            position={"190px"}
-            circleBg={"bg-green-400"}
-            institute={"Sr. Software Engineer (3S SOLUTIONS)"}
-            duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
-          />
-          <MobileEducation
-            date={"2007-11"}
-            border={"border-blue-200"}
-            position={"165px"}
-            circleBg={"bg-blue-400"}
-            institute={"Software Engineer (SIGMATEC)"}
-            duties={"Built web applications using .NET technologies with frontend and backend integration. Worked on bug fixes, database optimization, and feature development support."}
-          />
-          <MobileEducation
-            date={"2012-13"}
-            border={"border-yellow-200"}
-            position={"190px"}
-            circleBg={"bg-yellow-400"}
-            institute={"Web Developer (KOHINOOR MAPLE LEAF GROUP – KMLG)"}
-            duties={"Developed and maintained .NET applications with focus on backend logic and database systems. Handled bug fixing, feature updates, and production support."}
+            institute={"Sr. Software Engineer (MEZINO TECHNOLOGIES)"}
+            duties={"Delivered full stack development across enterprise products including a serverless file-processing pipeline (Opus/Epilogue Systems) using Azure Functions, SNS, SQS and Pub/Sub, and an event-driven forecasting platform (Wahupa/Kinaxis) with architectural modernisation from monolith to microservices."}
           />
         </div>
       </div>

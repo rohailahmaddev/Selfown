@@ -22,16 +22,14 @@ export const Home = () => {
   return (
     <>
       <HeroSection heroRef={heroRef}/>
-
       <ColorPanel/>
-      
       <PersonalDetail />
       <Skill />
       <ServicesCard />
       <Eductation />
       <SectionDivider
-        top={`top-0`}
-        bg={"bg-white"}
+        top={`md:top-0`}
+        bg={"bg-transparent"}
         svg={
           <svg
             viewBox="0 0 2880 48"
@@ -39,6 +37,7 @@ export const Home = () => {
             xmlns="http://www.w3.org/2000/svg"
             style={{
               transform: "scale(2)",
+              backgroundColor:"white",
               height: "auto",
               width: "100%",
               transformOrigin: "top center",
@@ -54,6 +53,7 @@ export const Home = () => {
       />
       <Slider />
       <MessageSend />
+
       <ProjectMenu />
       <LatestNews heroRef={heroRef} />
       <ContactForm />

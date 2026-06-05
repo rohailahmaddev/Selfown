@@ -4,7 +4,7 @@ import { Projects } from "./Projects";
 
 const menu = ["All", ".NET", "C#", "Next.JS"];
 
-export const ProjectMenu = ({ display }) => {
+export const ProjectMenu = ({ display=true }) => {
   const [activeTab, setActiveTab] = useState(0);
   const [activeMenu, setActiveMenu] = useState("All");
   const handleClick = (i, ele) => {
@@ -12,7 +12,7 @@ export const ProjectMenu = ({ display }) => {
     setActiveMenu(ele);
   };
   return (
-    <section className="container flex items-center justify-center pb-25">
+    <section className={`container flex items-center justify-center pb-25 ${display?"pt-25":""}`}>
       <div className="w-[90%] flex flex-col items-center justify-center">
         {display && (
           <SerEdu
@@ -23,7 +23,7 @@ export const ProjectMenu = ({ display }) => {
             }
           />
         )}
-        <div className="pt-25 w-full pb-20">
+        <div className=" pt-25 w-full pb-20">
           <ul className="border-b border-dashed border-b-blue-300 flex items-center">
             {menu.map((ele, i) => {
               return (

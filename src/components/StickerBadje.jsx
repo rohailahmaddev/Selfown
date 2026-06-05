@@ -10,11 +10,12 @@ const StickerBadge = ({ rotate, date, circleBg }) => {
   };
   console.log(circleBg)
   return (
-    <div className={` rotate-0`}>
-      <div class={`timeline-year`}
-        style={{ background: `linear-gradient(60deg, ${colorMap[circleBg]}, #fcd9db)` }}
-      ><div className={`${rotate}`}>{date}</div></div>
-    </div>
+    // <div className={` rotate-0`}>
+    //   <div class={`timeline-year`}
+    //     style={{ background: `linear-gradient(60deg, ${colorMap[circleBg]}, #fcd9db)` }}
+    //   ><div className={`${rotate}`}>{date}</div></div>
+    // </div>
+    <div class="timeline-year"><span>2007-08</span></div>
   );
 };
 

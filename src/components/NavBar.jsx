@@ -50,7 +50,7 @@ export const NavBar = ({ scroll }) => {
       <div className="w-[90%] flex items-center justify-between py-2 md:py-4 ">
 
         <div className="flex items-center justify-center">
-          <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-white"}`}>Muhammad Hamid</p>
+          <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-black md:text-white"}`}>Muhammad Hamid</p>
         </div>
 
         <div className="hidden md:flex w-[55%]">

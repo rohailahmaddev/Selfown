@@ -22,7 +22,7 @@ export const PersonalDetail = ({
   ];
   return (
     <section className="container flex items-center justify-center">
-      <div className={` ${displayProperty} md:w-[90%] pt-25 gap-10 md:gap-30`}>
+      <div className={` ${displayProperty} md:w-[90%] pt-25 gap-10 md:gap-15`}>
         <div className={`col-1 flex flex-col gap-5 md:${col1Width}`}>
           <h2 className="herotext_color w-full font-semibold personal_det text-[26px]  relative">
             Personal Details
