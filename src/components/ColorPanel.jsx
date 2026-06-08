@@ -59,7 +59,6 @@ export const ColorPanel = () => {
     <PiPaintBrushBold className="text-black text-[20px]" />
   </button>
 </div>
-
         </>
     )
 }
