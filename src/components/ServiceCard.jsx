@@ -6,8 +6,8 @@ import { SerEdu } from "./SerEdu";
 const services = [
   {
     icon: <IoServer />,
-    iconBg: "bg-purple-900/60",
-    iconColor: "text-purple-400",
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
     label: "Backend & Architecture",
     title: "Enterprise & API Development",
     desc: "Scalable backend systems and clean API design for complex business domains — built to last in production.",
@@ -22,8 +22,8 @@ const services = [
   },
   {
     icon: <TfiWorld />,
-    iconBg: "bg-teal-900/60",
-    iconColor: "text-teal-400",
+    iconBg: "bg-teal-100",
+    iconColor: "text-teal-600",
     label: "Frontend & Web",
     title: "Modern Web Applications",
     desc: "Responsive, performant web apps with clean component architecture — from server-rendered pages to rich SPAs.",
@@ -38,8 +38,8 @@ const services = [
   },
   {
     icon: <MdSmartphone />,
-    iconBg: "bg-blue-900/60",
-    iconColor: "text-blue-400",
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
     label: "Desktop & Mobile",
     title: "Cross-Platform App Development",
     desc: "Native-quality desktop and mobile apps using the modern .NET ecosystem — one codebase, every platform.",
@@ -60,7 +60,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
       <div className="w-[90%] flex items-center justify-center flex-col ">
         {display && (
           <SerEdu
-            btn_text={"SERVICES"}
+            btn_text={"EXPERTISE"}
             heading={"My Services"}
             para={
               "Build scalable full stack web applications with modern frontend, backend, and API solutions for fast and seamless digital experiences."}

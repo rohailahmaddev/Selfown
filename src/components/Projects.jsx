@@ -72,53 +72,50 @@ const ProjectsArray = [
 
 export const Projects = ({ activeMenu }) => {
   return (
-    <motion.ul className="flex items-center px-10 w-full gap-5 flex-wrap">
-      <AnimatePresence>
-        {ProjectsArray.filter(
-          (item) => activeMenu === "All" || item.catagory[0] === activeMenu || item.catagory[1] === activeMenu
-        ).map((ele, index) => {
-          return (
-            <motion.li
-              key={ele.name + index}
-              layout
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.3 }}
-              className=" md:w-[32%]"
-            >
-              <div className="flex flex-col py-2 px-2 rounded shadow-md gap-5">
-                <div className="flex items-center gap-4">
-                  <div className={`p-2 ${ele.bg} rounded-xl`}>
-                    <img src={ele.icon} alt="icon" className="w-8" />
-                  </div>
-                  <div className="flex">
-                    <h3 className="herotext_color text-[19px] font-medium ">
-                      {ele.name}
-                    </h3>
-                    {/* <span className="text flex items-center gap-2">
-                      Mannat-Themes{" "}
-                      <FaArrowUpRightFromSquare className="cursor-pointer" />
-                    </span> */}
-                  </div>
-                </div>
-                <ul className="flex items-center gap-1 flex-wrap">
-                  {ele.tech_stack.map((item, i) => {
-                    return (
-                      <li
-                        className="px-2 py-1 rounded bg-blue-100 coursor-pointer text text-[15px]"
-                        key={i}
-                      >
-                        {item}
-                      </li>
-                    );
-                  })}
-                </ul>
+  <motion.ul className="grid grid-cols-1 md:grid-cols-3 md:px-10 w-full gap-4">
+  <AnimatePresence>
+    {ProjectsArray.filter(
+      (item) =>
+        activeMenu === "All" ||
+        item.catagory[0] === activeMenu ||
+        item.catagory[1] === activeMenu
+    ).map((ele, index) => {
+      return (
+        <motion.li
+          key={ele.name + index}
+          layout
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
+          transition={{ duration: 0.3 }}
+          className="w-full"
+        >
+          <div className="flex flex-col h-full py-2 px-2 rounded shadow-md gap-5">
+            <div className="flex items-center gap-4">
+              <div className={`p-2 ${ele.bg} rounded-xl shrink-0`}>
+                <img src={ele.icon} alt="icon" className="w-8" />
               </div>
-            </motion.li>
-          );
-        })}
-      </AnimatePresence>
-    </motion.ul>
+              <div className="flex">
+                <h3 className="herotext_color text-[19px] font-medium">
+                  {ele.name}
+                </h3>
+              </div>
+            </div>
+            <ul className="flex items-center gap-1 flex-wrap">
+              {ele.tech_stack.map((item, i) => (
+                <li
+                  className="px-2 py-1 rounded bg-blue-100 cursor-pointer text text-[15px]"
+                  key={i}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </motion.li>
+      );
+    })}
+  </AnimatePresence>
+</motion.ul>
   );
 };

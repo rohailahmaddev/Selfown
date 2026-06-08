@@ -32,7 +32,7 @@ export const Accordion = ({ image, array, exp }) => {
                   onClick={() => handleAccordion(index)}
                 />
                 )}
-                <h2 className="herotext_color text-xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
+                <h2 className="herotext_color text-[18px] md:text-xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
                   {ele.question}
                 </h2>
                 <span className="w-[15%]"
@@ -44,7 +44,7 @@ export const Accordion = ({ image, array, exp }) => {
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? `max-h-125 opacity-100` : `max-h-0 opacity-0`}`}
               >
                 <div className="flex  flex-col bg-transparent gap-3 p-6 ">
-                  <p className="answer text-[10px] md:text-[20px]">{ele.answer}</p>
+                  <p className="answer text-[14px] md:text-[20px]">{ele.answer}</p>
                   <p className="herotext_color text-xl md:text-2xl">{ele.institute}</p>
                 </div>
               </div>
