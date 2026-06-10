@@ -58,8 +58,8 @@ import { Data } from "../context/Store";
 
 export const HeroSection = ({ heroRef }) => {
 
-const {btnColor} = useContext(Data)
-console.log(btnColor)
+  const { btnColor } = useContext(Data)
+  console.log(btnColor)
 
   return (
     <section className="hero_container flex items-center justify-center" ref={heroRef}>

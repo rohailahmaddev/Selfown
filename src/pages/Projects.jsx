@@ -1,6 +1,7 @@
 import { ColorPanel } from "../components/ColorPanel";
 import { MessageSend } from "../components/Message";
 import { OtherHeroSections } from "../components/OtherHeroSections";
+import { ProjectPage } from "../components/ProjectPage";
 import { ProjectMenu } from "../components/ProjectsMenu";
 import { SectionDivider } from "../components/SectionDivider";
 
@@ -31,7 +32,8 @@ export const ProjectsPage = () => {
           </svg>
         }
       />
-      <ProjectMenu display={false} />
+      {/* <ProjectMenu display={false} /> */}
+      <ProjectPage/>
       <MessageSend />
       <SectionDivider
         top={`-top-5`}

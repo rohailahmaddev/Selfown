@@ -3,6 +3,7 @@ import { OtherHeroSections } from "../components/OtherHeroSections";
 import { SectionDivider } from "../components/SectionDivider";
 import { SingleBlogs } from "../components/SingleBlogs";
 import { ColorPanel } from "../components/ColorPanel";
+import { MessageSend } from "../components/Message";
 
 export const BlogDetail = () => {
 
@@ -10,7 +11,7 @@ export const BlogDetail = () => {
 
   return (
     <>
-      <OtherHeroSections heading={"BLOGS"} heroRef={heroRef} />
+      <OtherHeroSections heading={"BLOG DETAIL"} heroRef={heroRef} />
       <ColorPanel/>
       <SectionDivider
         top={`-top-5`}
@@ -35,6 +36,7 @@ export const BlogDetail = () => {
         }
       />
       <SingleBlogs />
+      <MessageSend />
       <SectionDivider
         top={`-top-5`}
         bg={"bg-transparent"}

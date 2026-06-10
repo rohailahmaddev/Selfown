@@ -38,19 +38,21 @@ const NavMenu = [
 export const NavBar = ({ scroll }) => {
 
   const [isOpen, setIsOpen] = useState(false);
-  const {btnColor} = useContext(Data)
+  const { btnColor } = useContext(Data)
   const location = useLocation();
 
   const isHome = location.pathname === "/";
-  
+
   return (
     <nav className="container flex flex-col items-center justify-center"
-    style={{"--theme-color":btnColor}}
+      style={{ "--theme-color": btnColor }}
     >
       <div className="w-[90%] flex items-center justify-between py-2 md:py-4 ">
 
         <div className="flex items-center justify-center">
-          <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-black md:text-white"}`}>Muhammad Hamid</p>
+          <NavLink to="/">
+            <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-black md:text-white"}`}>Muhammad Hamid</p>
+          </NavLink>
         </div>
 
         <div className="hidden md:flex w-[55%]">
@@ -73,19 +75,18 @@ export const NavBar = ({ scroll }) => {
         </div>
         <div className="hidden md:flex items-center justify-between gap-4 w-[10%]">
           <a href="mailto:mughal.hamid@gmail.com?subject=Hiring Inquiry">
-            <button  
-             className={`button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-3 rounded-xs py-[7px] md:text-[15px] font-semibold flex items-center gap-2 ${
-               isHome
-                 ? "bg-transparent nav_button"
-                 : scroll
-                 ? "text-white"
-                 : "bg-white nav_button"
-             }`}
-             style={{
-               color: isHome ? btnColor : undefined,
-               borderColor: btnColor,
-               backgroundColor: !isHome && scroll ? btnColor : undefined,
-             }}
+            <button
+              className={`button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-3 rounded-xs py-[7px] md:text-[15px] font-semibold flex items-center gap-2 ${isHome
+                  ? "bg-transparent nav_button"
+                  : scroll
+                    ? "text-white"
+                    : "bg-white nav_button"
+                }`}
+              style={{
+                color: isHome ? btnColor : undefined,
+                borderColor: btnColor,
+                backgroundColor: !isHome && scroll ? btnColor : undefined,
+              }}
             >
               Hire Me!
               <MdKeyboardDoubleArrowRight />
@@ -112,12 +113,12 @@ export const NavBar = ({ scroll }) => {
             </li>
           ))}
           <li>
-          <a href="mailto:mughal.hamid@gmail.com?subject=Hiring Inquiry">
-            <button className="button-border hover:-translate-y-1 transition duration-300 px-3 py-2 flex items-center gap-2"
-            >
-              Hire Me!
-              <MdKeyboardDoubleArrowRight />
-            </button>
+            <a href="mailto:mughal.hamid@gmail.com?subject=Hiring Inquiry">
+              <button className="button-border hover:-translate-y-1 transition duration-300 px-3 py-2 flex items-center gap-2"
+              >
+                Hire Me!
+                <MdKeyboardDoubleArrowRight />
+              </button>
             </a>
           </li>
         </ul>

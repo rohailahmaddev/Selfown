@@ -1,10 +1,11 @@
-
 export default function ExperienceCard({
   date,
   border,
   institute,
   iconBg,
   f_color,
+  class_w,
+  right,
   s_color,
   icon,
   pt = "30px",
@@ -26,21 +27,29 @@ export default function ExperienceCard({
           </div>
           <div className={`inner-content`}
           >
-            <h3 className={`text-[18px] font-medium text-left`}>{institute}</h3>
-            <p className={`text-[14px] text-left`}>
+            <h3 className={`text-[18px] font-medium text-left`}
+              style={left === "0px" ? { textAlign: "right" } : { textAlign: "left" }}
+            >{institute}</h3>
+            <p className={`text-[14px] ${class_w === "timeline-education" ? "text-right text-lg/10" : "text-justify"}`}
+            >
               {duties}
             </p>
           </div>
-          <div className={`timeline-year ${circleBg}`}
+          <div
+            className={`${class_w === "timeline-education" ? "timeline-education" : "timeline-year"} ${circleBg}`}
             style={{
               ...(left === "0px"
-                ? { left: "auto", right: "-119px" }
-                : { right: "auto", left: "-119px" }
+                ? { left: "auto", right: right }
+                : { right: "auto", left: "-105px" }
               ),
               "--first-color": f_color,
-              "--second-color": s_color
-            }}>
-            <span>{date}</span></div>
+              "--second-color": s_color,
+              boxShadow: `0 0 0 15px rgba(0,0,0,0.03)`,
+              outline: `3px solid white`,
+            }}
+          >
+            <span className="[text-shadow:1px_1px_2px_rgba(0,0,0,0.1)]">{date}</span>
+          </div>
         </a>
       </div>
     </div>

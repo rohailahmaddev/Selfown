@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { SerEdu } from "./SerEdu";
-import { Projects } from "./Projects";
+import { PageProjectsCard } from "./PageProjectsCard";
 
 const menu = ["All", ".NET", "C#", "Next.JS"];
 
-export const ProjectMenu = ({ display = true }) => {
+export const ProjectPage = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [activeMenu, setActiveMenu] = useState("All");
   const handleClick = (i, ele) => {
@@ -12,17 +11,8 @@ export const ProjectMenu = ({ display = true }) => {
     setActiveMenu(ele);
   };
   return (
-    <section className={`container flex items-center justify-center pb-25 ${display ? "pt-25" : ""}`}>
+    <section className={`container flex items-center justify-center pb-25 `}>
       <div className="w-[90%] flex flex-col items-center justify-center">
-        {display && (
-          <SerEdu
-            btn_text={"WORK"}
-            heading={"My Projects"}
-            para={
-              "We craft digital, graphic and dimensional thinking, to create category leading brand experiences that have meaning ."
-            }
-          />
-        )}
         <div className=" pt-25 w-full pb-20">
           <ul className="border-b border-dashed border-b-blue-300 flex items-center">
             {menu.map((ele, i) => {
@@ -38,8 +28,8 @@ export const ProjectMenu = ({ display = true }) => {
             })}
           </ul>
         </div>
-        <Projects activeMenu={activeMenu} />
+        <PageProjectsCard activeMenu={activeMenu} />
       </div>
     </section>
-  );
-};
+  )
+}

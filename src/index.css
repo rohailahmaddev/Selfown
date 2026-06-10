@@ -97,9 +97,9 @@ html {
 
 .text_blur::after {
   height: 30px;
-  left: -97px;
+  left: -102px;
   position: absolute;
-  width: 190px;
+  width: 209px;
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
   top: 0px;
@@ -109,7 +109,7 @@ html {
   content: var(--heading-content);
   color: white;
   text-align: center;
-  width: 190px;
+  width: 208px;
   animation: animateBounce 3s infinite;
 }
 .Video{
@@ -137,6 +137,9 @@ html {
 
 .margint {
   margin-top: -80px;
+}
+.mobile_nav_logo_color{
+  color: white;
 }
 
 .fold {
@@ -276,4 +279,42 @@ html {
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
+}
+
+.timeline-education {
+  color: #fff;
+  background:  linear-gradient(60deg, var(--first-color), var(--second-color));;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 166px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  right: -63px;
+  top: 50%;
+}
+.main-timeline .timeline-education:before,
+.main-timeline .timeline-education:after {
+  content: "";
+  height: 163px;
+  width: 163px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 84px;
+  top: 100px;
+}
+
+/* ✅ override :after separately at the SAME or higher specificity */
+.main-timeline .timeline-education:after {
+  border-radius: 0;
+  transform: rotate(50deg);
+  top: 89px;
+  left: 120px;
+  box-shadow: 0 0 8px #435177;
 }
