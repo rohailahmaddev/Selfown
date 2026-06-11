@@ -72,7 +72,7 @@ const ProjectsArray = [
 
 export const PageProjectsCard = ({ activeMenu }) => {
   return (
-    <motion.ul className="grid grid-cols-1 md:grid-cols-3 md:px-10 w-full gap-4">
+    <motion.ul className="grid grid-cols-1 md:grid-cols-3 md:px-10 w-full gap-6">
       <AnimatePresence>
         {ProjectsArray.filter(
           (item) =>
@@ -84,22 +84,41 @@ export const PageProjectsCard = ({ activeMenu }) => {
             <motion.li
               key={ele.name + index}
               layout
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.3 }}
+              whileHover={{ y: -8 }}
               className="w-full"
             >
-              <div className="flex flex-col h-full rounded shadow-md gap-5">
-                <div className="flex flex-col items-center gap-6 pb-3">
-                  <div className={`w-full h-40 ${ele.bg} rounded shrink-0 flex items-center justify-center`}>
-                    <img src={ele.icon} alt="icon" className="w-15" />
-                  </div>
-                  <div className="w-full flex items-center justify-start px-10 h-20 py-5">
-                    <h3 className="herotext_color text-[19px] text-left font-medium">
-                      {ele.name}
-                    </h3>
-                  </div>
+              <div className="flex flex-col h-full rounded-2xl shadow-md hover:shadow-2xl transition-shadow duration-300 overflow-hidden bg-white border border-gray-100">
+                <div
+                  className={`w-full h-44 ${ele.bg} flex items-center justify-center group`}
+                >
+                  <motion.img
+                    src={ele.icon}
+                    alt="icon"
+                    className="w-16 drop-shadow-md"
+                    whileHover={{ scale: 1.15, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  />
+                </div>
+
+                <div className="flex flex-col gap-4 p-5">
+                  <h3 className="herotext_color text-lg font-semibold leading-snug">
+                    {ele.name}
+                  </h3>
+
+                  <ul className="flex items-center gap-2 flex-wrap">
+                    {ele.tech_stack.map((item, i) => (
+                      <li
+                        className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100 hover:bg-blue-100 cursor-pointer text-[13px] font-medium transition-colors"
+                        key={i}
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </motion.li>
