@@ -8,7 +8,7 @@ import { SectionDivider } from "../components/SectionDivider";
 export const ProjectsPage = () => {
   return (
     <>
-      <OtherHeroSections heading={"POJECTS"} />
+      <OtherHeroSections heading={"PROJECTS"} />
       <ColorPanel/>
       <SectionDivider
         top={`-top-5`}
