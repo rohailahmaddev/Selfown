@@ -53,7 +53,7 @@ export const LatestNews = ({ display = true, heroRef }) => {
           />
         )}
         <ul
-          className={`${display ? "md:grid-cols-3" : "md:grid-cols-3 md:grid-rows-1"} grid grid-col-1 gap-5 w-full items-center pt-20`}
+          className={`${display ? "md:grid-cols-3" : "md:grid-cols-3 md:grid-rows-1"} grid grid-col-1 gap-5 w-full justify-center items-center pt-20`}
         >
           {array.map((ele, index) => {
             const formattedDate = ele?.created_at
@@ -66,12 +66,12 @@ export const LatestNews = ({ display = true, heroRef }) => {
             return (
               <li
                 key={index}
-                className="rounded flex flex-col gap-9  shadow-md pb-5 cursor-pointer"
+                className="rounded flex flex-col gap-5  shadow-md pb-5 cursor-pointer"
                 onClick={() => navigate(`/blogs/${ele.id}`)}
               >
-                <img src={ele.image} alt="image" className="rounded-t " />
+                <img src={ele.image_url} alt="image" className="rounded-t " />
                 <div className="mx-5 border-b border-dashed border-blue-100">
-                  <h2 className="text-xl font-medium h-23 ">
+                  <h2 className="text-xl font-medium h-20 ">
                     {ele.title}
                   </h2>
                 </div>

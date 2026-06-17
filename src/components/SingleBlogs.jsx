@@ -1,33 +1,27 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { GetSingleBlog } from "../api/GetBlogs";
 import { Data } from "../context/Store";
 import { Loader } from "./Loader";
 
 const tags = ["Web Development", "Programming", "Career Advice", "Coding Tips"];
 
-const relatedPosts = [
-  { id: 1, title: "It is a long established...", date: "26 march 2022", image: null },
-  { id: 2, title: "There are many variations...", date: "26 march 2022", image: null },
-  { id: 3, title: "Contrary to popular belief...", date: "26 march 2022", image: null },
-  { id: 4, title: "Finibus Bonorum et Malorum...", date: "26 march 2022", image: null },
-];
-
 export const SingleBlogs = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState(null);
   const [related, setRelated] = useState([]);
+  const navigate = useNavigate();
   const { loading, setLoading, btnColor } = useContext(Data);
   const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
     const getBlogs = async () => {
+      console.log("sdlfjadsl;kjfasdl;")
       setLoading(true);
       try {
         const res = await GetSingleBlog(id);
         setBlog(res.data);
-        // If your API returns related posts, set them here
-        // setRelated(res.data.related || []);
+        setRelated(res.related || []);
       } catch (error) {
         console.log(error);
       } finally {
@@ -35,7 +29,7 @@ export const SingleBlogs = () => {
       }
     };
     getBlogs();
-  }, [setLoading]);
+  }, [id]);
 
   if (loading) return <Loader />;
 
@@ -81,10 +75,10 @@ export const SingleBlogs = () => {
         </div>
 
         {/* Hero Image */}
-        {blog?.image && (
+        {blog?.image_url && (
           <div className="rounded-2xl overflow-hidden mb-8 bg-gray-50">
             <img
-              src={blog.image}
+              src={blog.image_url}
               alt={blog.title}
               className="w-full h-[280px] object-cover"
             />
@@ -124,16 +118,18 @@ export const SingleBlogs = () => {
 
         {/* Latest Blog Posts */}
         <div className="mt-12 border-t border-gray-100 pt-10">
-          <h2 className="text-3xl font-medium herotext_color mb-1">Latest Blog Posts</h2>
-          <p className="text-xs text-gray-400 mb-5">26 march 2022</p>
+          <h2 className="text-3xl font-medium herotext_color mb-1 pb-5">Latest Blog Posts</h2>
+          {/* <p className="text-xs text-gray-400 mb-5">26 march 2022</p> */}
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {(related.length ? related : relatedPosts).map((post) => (
-              <div key={post.id} className="cursor-pointer group">
+            {related.length > 0 && related?.map((post) => (
+              <div key={post.id} className="cursor-pointer group"
+                onClick={() => navigate(`/blogs/${post.id}`)}
+              >
                 <div className="rounded-xl overflow-hidden bg-gray-100 mb-2 h-[80px]">
-                  {post.image ? (
+                  {post.image_url ? (
                     <img
-                      src={post.image}
+                      src={post.image_url}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
@@ -167,18 +163,20 @@ export const SingleBlogs = () => {
                 <p className="text-xs text-gray-400">{blog.author_role || "Author"}</p>
               </div>
             </div>
-            <button
-              onMouseEnter={() => setHovered(true)}
-              onMouseLeave={() => setHovered(false)}
-              style={{
-                backgroundColor: hovered ? btnColor : "transparent",
-                color: hovered ? "white" : btnColor,
-                border: `1px solid ${btnColor}`,
-              }}
-              className="text-sm px-6 py-2 rounded transition-colors cursor-pointer"
-            >
-              Blogs
-            </button>
+            <NavLink to={"/blogs"}>
+              <button
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                style={{
+                  backgroundColor: hovered ? btnColor : "transparent",
+                  color: hovered ? "white" : btnColor,
+                  border: `1px solid ${btnColor}`,
+                }}
+                className="text-sm px-6 py-2 rounded transition-colors cursor-pointer"
+              >
+                Blogs
+              </button>
+            </NavLink>
 
           </div>
         )}

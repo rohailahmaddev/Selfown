@@ -1,10 +1,10 @@
-import { PersonalDetailIcons } from "./PersonalDetailIcons";
+// import { PersonalDetailIcons } from "./PersonalDetailIcons";
 
 export const PersonalDetail = ({
   icons = true,
   displayProperty = "flex items-center md:flex-row flex-col justify-between  w-[90%]",
-  col1Width ="w-[50%]",
-  col2Width =" w-full md:w-[42%]",
+  col1Width = "w-[50%]",
+  col2Width = " w-full md:w-[42%]",
 }) => {
   const detail = [
     {
@@ -17,7 +17,7 @@ export const PersonalDetail = ({
     },
     {
       name: "Interest",
-      det: "Book reading, Bedminton, football",
+      det: "Book reading, Bedminton, Football",
     },
   ];
   return (
