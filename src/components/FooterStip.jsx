@@ -4,7 +4,7 @@ export const FooterStrip = () => {
       <div className="w-[85%] flex md:items-center md:flex-row justify-between py-5">
         <div className="col1 w-[60%] md:w-[30%] ">
           <p className="text-gray-400 w-full text-[10px] md:text-[20px] flex items-center gap-3">
-            © 2026 Muhammad Hammid.
+            © 2026 Rohail Ahmad.
           </p>
         </div>
         <div className="col2">

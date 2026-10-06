@@ -11,14 +11,16 @@ export const Accordion = ({ image, array, exp }) => {
   const handleAccordion = (i) => {
     setOpenIndex((prev) => (prev === i ? null : i));
   };
+ 
   return (
     <div className=" accordion_bg flex justify-between flex-col md:flex-row w-full">
-      <div className="w-full md:w-[30%] flex items-center justify-center flex-col">
+      <div className="w-full md:w-[30%] flex items-center justify-center flex-col p-5">
         <img src={image} alt="image" className=" w-[55%] md:w-[60%]" />
         <h2 className="herotext_color text-2xl"> {exp} </h2>
       </div>
       <ul className="w-full md:w-[70%] flex flex-col">
         {array.map((ele, index) => {
+           console.log(ele.date.split(" – ")[0])
           return (
             <li key={index}>
               <div className="flex items-center  gap-3 md:gap-0 justify-between p-3 md:p-5 bg-white w-full border-b border-dashed border-blue-300">
@@ -35,10 +37,18 @@ export const Accordion = ({ image, array, exp }) => {
                 <h2 className="herotext_color text-[18px] md:text-xl w-[75%] cursor-pointer" onClick={() => handleAccordion(index)}>
                   {ele.question}
                 </h2>
-                <span className="w-[15%]"
+                {/* <span className="w-[13%] text-center leading-4 md:w-[22%]"
                   style={{ color: btnColor,
                 }}
-                >{ele.date}</span>
+                >{ele.date}</span> */}
+                <span
+  className="w-[13%] text-center leading-4 md:w-[22%]"
+  style={{ color: btnColor }}
+>
+  <span className="block md:inline">{ele.date.split(" - ")[0]}</span>
+  <span className="block md:inline md:mx-1">–</span>
+  <span className="block md:inline">{ele.date.split(" - ")[1]}</span>
+</span>
               </div>
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? `max-h-125 opacity-100` : `max-h-0 opacity-0`}`}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { SerEdu } from "./SerEdu";
 import { Projects } from "./Projects";
 
-const menu = ["All", ".NET", "C#", "Next.JS"];
+const menu = ["All", "Node.JS", "Next.JS"];
 
 export const ProjectMenu = ({ display = true }) => {
   const [activeTab, setActiveTab] = useState(0);

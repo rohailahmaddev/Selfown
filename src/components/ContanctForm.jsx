@@ -99,7 +99,7 @@ export const ContactForm = () => {
                   <LuPhone />
                 </span>
                 <span className="flex flex-col">
-                  <p>+92 332 5926682</p>
+                  <p>+92 327 0782028</p>
                   <p className="text-gray-500">9:00am to 7:00pm</p>
                 </span>
               </div>
@@ -108,7 +108,7 @@ export const ContactForm = () => {
                   <MdOutlineMailOutline />
                 </span>
                 <span className="flex flex-col">
-                  <p>mughal.hamid@gmail.com</p>
+                  <p>rohailrao07@gmail.com</p>
                   <p className="text-gray-500">Monday to Saturday</p>
                 </span>
               </div>

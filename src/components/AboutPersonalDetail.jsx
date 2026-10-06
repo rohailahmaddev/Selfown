@@ -1,12 +1,12 @@
-import image from "../assets/author.png";
+import image from "../assets/author1.png";
 import { PersonalDetail } from "./PersonalDetail";
 import { PersonalDetailIcons } from "./PersonalDetailIcons";
 
 export const AboutPersonalDetail = () => {
   return (
     <section className="container flex items-center justify-center">
-      <div className="w-[85%] flex justify-between items-center md:flex-row flex-col">
-        <div className=" w-full md:w-[40%] pt-25">
+      <div className="w-[85%] flex justify-between items-end md:flex-row flex-col">
+        <div className=" w-full md:w-[40%] pt-15">
           <img src={image} alt="image" />
         </div>
 

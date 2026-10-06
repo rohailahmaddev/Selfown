@@ -47,11 +47,11 @@ export const NavBar = ({ scroll }) => {
     <nav className="container flex flex-col items-center justify-center"
       style={{ "--theme-color": btnColor }}
     >
-      <div className="w-[90%] flex items-center justify-between py-2 md:py-4 ">
+      <div className="w-[93%] flex items-center justify-between py-2 md:py-4 ">
 
         <div className="flex items-center justify-center">
           <NavLink to="/">
-            <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-black md:text-white"}`}>Muhammad Hamid</p>
+            <p className={`block font-semibold text-xl md:text-2xl ${isHome || scroll ? " herotext_color md:block" : "text-black md:text-white"}`}>Rohail Ahmad</p>
           </NavLink>
         </div>
 
@@ -74,7 +74,7 @@ export const NavBar = ({ scroll }) => {
           </ul>
         </div>
         <div className="hidden md:flex items-center justify-between gap-4 w-[10%]">
-          <a href="mailto:mughal.hamid@gmail.com?subject=Hiring Inquiry">
+          <a href="mailto:rohailrao07@gmail.com?subject=Hiring Inquiry">
             <button
               className={`button-border hover:-translate-y-1 cursor-pointer transition duration-300 px-3 rounded-xs py-[7px] md:text-[15px] font-semibold flex items-center gap-2 ${isHome
                   ? "bg-transparent nav_button"

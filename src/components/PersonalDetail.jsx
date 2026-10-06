@@ -17,7 +17,7 @@ export const PersonalDetail = ({
     },
     {
       name: "Interest",
-      det: "Book reading, Bedminton, Football",
+      det: "Football",
     },
   ];
   return (
@@ -36,8 +36,8 @@ export const PersonalDetail = ({
             {detail.map((Element, index) => {
               return (
                 <li key={index} className="flex items-center gap-5 ">
-                  <p className="w-20 md:w-32 text-[10px] md:text-[16px]"> {Element.name} </p> <span>:</span>{" "}
-                  <span className="text text-[10px] md:text-[16px]"> {Element.det} </span>
+                  <p className="w-31 md:w-32 text-[15px] md:text-[16px]"> {Element.name} </p> <span>:</span>{" "}
+                  <span className="text text-[15px] md:text-[16px]"> {Element.det} </span>
                 </li>
               );
             })}

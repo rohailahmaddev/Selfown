@@ -1,7 +1,7 @@
 import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { SlSocialFacebook } from "react-icons/sl";
-import { CiTwitter } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
 import { FooterCol } from "./FooterCol";
 import { FooterStrip } from "./FooterStip";
 
@@ -49,7 +49,7 @@ export const Footer = () => {
             <div className="col-1 w-[80%] flex items-center gap-2 pt-6">
               {/* <img src={logo} alt="logo" className="w-6" /> */}
               <h1 className="font-bold text-2xl cursor-pointer text-white md:w-full">
-                Muhammad Hammid
+                Rohail Ahmad
               </h1>
             </div>
             <p className="text-gray-400 text-[20px]">
@@ -57,17 +57,11 @@ export const Footer = () => {
               with clean code and seamless user experiences.
             </p>
             <div className="flex items-center gap-2">
-              <a href="https://www.facebook.com/mughal.hamid" target="_blank">
-                <SlSocialFacebook className="text-2xl cursor-pointer text-gray-400" />
+              <a href="https://www.linkedin.com/in/rohailahmaddev/" target="_blank">
+                <CiLinkedin className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
               </a>
-              <a href="https://x.com/mughal_hamid" target="_blank">
-                <CiTwitter className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
-              </a>
-              <a href="https://github.com/mughalhamid" target="_blank">
+              <a href="https://github.com/rohailahmaddev" target="_blank">
                 <FiGithub className="text-2xl hover:text-red-600 cursor-pointer  text-gray-400" />
-              </a>
-              <a href="https://www.instagram.com/mughal.hamid" target="_blank">
-                <FaInstagram className="text-2xl hover:text-blue-600 cursor-pointer  text-gray-400" />
               </a>
             </div>
           </div>

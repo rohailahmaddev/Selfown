@@ -1,76 +1,112 @@
-import Net from "../assets/.NET.svg";
 import Next from "../assets/Next.js.svg";
-import ASPNET from "../assets/aspnet.svg";
-import C from "../assets/C.svg";
+import NODE from "../assets/Node.svg";
 import { motion, AnimatePresence } from "framer-motion";
+import { Data } from "../context/Store";
+import { useContext } from "react";
 
 const ProjectsArray = [
   {
-    name: "Analytics workforce performance system",
-    icon: Net,
-    tech_stack: [".NET", "C#", "React", "SQL Server"],
-    bg: "bg-blue-200",
-    catagory: [".NET", "C#"],
+    name: "E-commerce Platform",
+    icon: NODE,
+    tech_stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Prisma",
+      "JWT",
+      "Cloudinary"
+    ],
+    bg: "bg-green-100",
+    catagory: ["Node.JS"]
   },
+
   {
-    name: "Production support system",
-    icon: Net,
-    tech_stack: [".NET", "C#", "SQL Server"],
-    bg: "bg-blue-200",
-    catagory: [".NET", "C#"],
+    name: "Blog CMS & Publishing Platform",
+    icon: NODE,
+    tech_stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Cloudinary",
+      "JWT"
+    ],
+    bg: "bg-green-100",
+    catagory: ["Node.JS"]
   },
+
   {
-    name: "Production SaaS / enterprise app",
-    icon: ASPNET,
-    tech_stack: ["C#", "React", "Typescript", "SQL Server"],
-    bg: "bg-black/10",
-    catagory: [".NET", "C#"],
-  },
-  {
-    name: "Full JavaScript full-stack product",
+    name: "Business Management & CMS",
     icon: Next,
-    tech_stack: ["Next.JS", "React", "Node.JS", "Typescript"],
-    bg: "bg-gray-200",
-    catagory: ["Next.JS"],
+    tech_stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "MySQL",
+      "Prisma",
+      "Cloudinary"
+    ],
+    bg: "bg-gray-100",
+    catagory: ["Next.JS", "Node.JS"]
   },
+
   {
-    name: "Enterprise insurance system",
-    icon: Net,
-    tech_stack: [".NET", "React", "i18next", "Angular", "Typescript"],
-    bg: "bg-blue-200",
-    catagory: [".NET"],
+    name: "Appointment Booking System",
+    icon: NODE,
+    tech_stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Prisma",
+      "JWT",
+      "Zod"
+    ],
+    bg: "bg-green-100",
+    catagory: ["Node.JS"]
   },
+
   {
-    name: "Mobile modernization project",
-    icon: C,
-    tech_stack: [".NET MAUI", "C#", "Camera API", "Xamarin.Froms"],
-    bg: "bg-red-100",
-    catagory: ["C#"],
+    name: "Real-Time Chat & Collaboration App",
+    icon: NODE,
+    tech_stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "MongoDB",
+      "Mongoose",
+      "Redis"
+    ],
+    bg: "bg-green-100",
+    catagory: ["Node.JS"]
   },
+
   {
-    name: "Event-driven cloud architecture",
-    icon: C,
-    tech_stack: ["Azure", "AWS S3", "SNS/SQS", "Serverless Architecture"],
-    bg: "bg-red-100",
-    catagory: ["C#"],
-  },
-  {
-    name: "AI + event-driven analytics system",
-    icon: Net,
-    tech_stack: [".NET", "Python", "React", "Kinaxis API"],
-    bg: "bg-blue-200",
-    catagory: [".NET"],
-  },
-  {
-    name: "Government-compliant invoicing system",
-    icon: Net,
-    tech_stack: [".NET", "C#", "XML / UBL 2.1", "Peppol BIS 3.0", "REST APIs"],
-    bg: "bg-blue-200",
-    catagory: [".NET", "C#"],
-  },
+    name: "AI-Powered Productivity Assistant",
+    icon: Next,
+    tech_stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "OpenAI API",
+      "MongoDB",
+      "Mongoose"
+    ],
+    bg: "bg-gray-100",
+    catagory: ["Next.JS"]
+  }
 ];
 
 export const Projects = ({ activeMenu }) => {
+  // const {btnColor} = useContext(Data)
   return (
   <motion.ul className="grid grid-cols-1 md:grid-cols-3 md:px-10 w-full gap-4">
   <AnimatePresence>
@@ -104,8 +140,9 @@ export const Projects = ({ activeMenu }) => {
             <ul className="flex items-center gap-1 flex-wrap">
               {ele.tech_stack.map((item, i) => (
                 <li
-                  className="px-2 py-1 rounded bg-blue-100 cursor-pointer text text-[15px]"
+                  className="px-2 py-1 rounded bg-blue-50 cursor-pointer text text-[15px]"
                   key={i}
+                  // style={{ backgroundColor: btnColor }}
                 >
                   {item}
                 </li>

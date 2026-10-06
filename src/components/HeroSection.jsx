@@ -34,7 +34,7 @@ export const HeroSection = ({ heroRef }) => {
         <div className="container col-1 w-[85%] md:w-[90%] absolute top-10 md:-top-10 pt-15 md:pt-0 flex items-center justify-between flex-col md:flex-row">
           <div className="flex flex-col justify-center items-center gap-3 w-full md:w-[55%]">
             <span className="text-[20px] w-full text-center heroSmallText">
-              Hi, I'm Muhammad Hamid
+              Hi, I'm Rohail Ahmad
             </span>
             <h1 className="text-4xl md:text-5xl font-semibold md:font-bold gap-4 md:w-full flex flex-col justify-center md:flex-row items-center herotext_color">
               <span>I'm a freelance</span>
@@ -54,8 +54,8 @@ export const HeroSection = ({ heroRef }) => {
               </button>
             </a>
           </div>
-          <div className="md:pt-20 md:w-[40%]">
-            <img src={authorImage} alt="Author image" className="h-153 md:h-153 md:w-110" />
+          <div className="md:pt-10 md:w-[40%]">
+            <img src={authorImage} alt="Author image" className="h-153 w-105 md:h-163 md:w-105" />
           </div>
         </div>
 

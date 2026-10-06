@@ -5,47 +5,30 @@ import jobImage from "../assets/job.png";
 
 const accordion = [
   {
-    question: "BSCS Bachelor Degree",
-    date: "2007-2011",
+    question: "BS Computer Science — Final Year",
+    date: "2023 - 2027",
     answer:
-      "NUML Islamabad is an educational institution offering Computer Science programs focused on programming, software development, and modern computing skills.",
-    institute: "NUML University Islamabad Pakistan",
+      "Punjab University is an educational institution offering Computer Science programs focused on programming, software development, and modern computing skills.",
+    institute: "University of the Punjab",
   }
 ];
 
 const accordion2 = [
   {
-    question: "Senior Full Stack Developer (RCI Insurance Platform)",
-    date: "2023 - Present",
-    answer:
-      "Led micro-frontend architecture using React and TypeScript on a production insurance platform, backed by a .NET 6 microservices and modular monolith backend. Drove architectural standards, delivered an i18n strategy across React and Angular, and produced a modernisation roadmap for a legacy ASP.NET Web Forms system.",
+    question: "Software Development Intern (KloudXel)",
+    date: "May 2026 - Jul 2026",
+    answer:"Completed a three-month internship at KloudXel, contributing to the RCI Insurance Claims Management System. Worked on real-world full-stack development using React, TypeScript, C#, ASP.NET, Web API, Entity Framework, and SQL Server, including API integration, database operations, debugging, and feature development.",
     institute:
-      "RCI Insurance / Remote Cloud Platform",
+      "KloudXel",
   },
   {
-    question: "Senior Full Stack Developer (InnRoad/DynamX)",
-    date: "2022 - 2023",
+    question: "MERN Stack Developer Intern (bVoir Technologies)",
+    date: "Oct 2025 - Mar 2026",
     answer:
-      "Engineered cross-platform mobile applications using .NET MAUI for Android and iOS. Led a zero-regression migration from Xamarin.Forms to .NET MAUI, modernizing architecture and re-engineering native camera and barcode scanning features. Optimized application performance, improved code maintainability, and ensured seamless production delivery across multiple releases.",
+      "Completed a six-month MERN Stack internship at bVoir Technologies, developing web applications using React.js, Node.js, Express.js, and MySQL. Worked on REST APIs, authentication, database integration, frontend development, and full-stack application features.",
     institute:
-      "InnRoad/DynamX",
-  },
-  {
-    question: "Principal Software Engineer (TKXEL)",
-    date: "2021 - 2023",
-    answer:
-      "Provided technical leadership across multiple concurrent projects from discovery to delivery. Led pre-sales engagements, designed team structures, mentored engineers, and acted as the final escalation point for critical issues. Spearheaded complex integrations including custom OKTA auth flows and Salesforce APIs on BridgeCorp.",
-    institute:
-      "TKXEL",
-  },
-  {
-    question: "Sr. Software Engineer (MEZINO TECHNOLOGIES)",
-    date: "2016 - 2021",
-    answer:
-      "Delivered full-stack development across enterprise products, including a serverless file-processing pipeline (Opus/Epilogue Systems) using Azure Functions, SNS, SQS, and Pub/Sub. Contributed to an event-driven forecasting platform (Wahupa/Kinaxis), supporting modernization from monolithic system to microservices while improving scalability and performance.",
-    institute:
-      "MEZINO TECHNOLOGIES",
-  },
+      "bVoir Technologies",
+  }
 ];
 
 export const Eductation = () => {

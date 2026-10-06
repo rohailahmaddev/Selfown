@@ -1,73 +1,109 @@
-import Net from "../assets/.NET.svg";
+// import Net from "../assets/.NET.svg";
 import Next from "../assets/Next.js.svg";
-import ASPNET from "../assets/aspnet.svg";
-import C from "../assets/C.svg";
+import NODE from "../assets/Node.svg";
+// import ASPNET from "../assets/aspnet.svg";
+// import C from "../assets/C.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ProjectsArray = [
-  {
-    name: "Analytics workforce performance system",
-    icon: Net,
-    tech_stack: [".NET", "C#", "React", "SQL Server"],
-    bg: "bg-blue-100",
-    catagory: [".NET", "C#"],
-  },
-  {
-    name: "Production support system",
-    icon: Net,
-    tech_stack: [".NET", "C#", "SQL Server"],
-    bg: "bg-blue-100",
-    catagory: [".NET", "C#"],
-  },
-  {
-    name: "Production SaaS / enterprise app",
-    icon: ASPNET,
-    tech_stack: ["C#", "React", "Typescript", "SQL Server"],
-    bg: "bg-black/10",
-    catagory: [".NET", "C#"],
-  },
-  {
-    name: "Full JavaScript full-stack product",
-    icon: Next,
-    tech_stack: ["Next.JS", "React", "Node.JS", "Typescript"],
-    bg: "bg-gray-100",
-    catagory: ["Next.JS"],
-  },
-  {
-    name: "Enterprise insurance system",
-    icon: Net,
-    tech_stack: [".NET", "React", "i18next", "Angular", "Typescript"],
-    bg: "bg-blue-100",
-    catagory: [".NET"],
-  },
-  {
-    name: "Mobile modernization project",
-    icon: C,
-    tech_stack: [".NET MAUI", "C#", "Camera API", "Xamarin.Froms"],
-    bg: "bg-red-100",
-    catagory: ["C#"],
-  },
-  {
-    name: "Event-driven cloud architecture",
-    icon: C,
-    tech_stack: ["Azure", "AWS S3", "SNS/SQS", "Serverless Architecture"],
-    bg: "bg-red-100",
-    catagory: ["C#"],
-  },
-  {
-    name: "AI + event-driven analytics system",
-    icon: Net,
-    tech_stack: [".NET", "Python", "React", "Kinaxis API"],
-    bg: "bg-blue-100",
-    catagory: [".NET"],
-  },
-  {
-    name: "Government-compliant invoicing system",
-    icon: Net,
-    tech_stack: [".NET", "C#", "XML / UBL 2.1", "Peppol BIS 3.0", "REST APIs"],
-    bg: "bg-blue-100",
-    catagory: [".NET", "C#"],
-  },
+{
+  name: "E-commerce Platform",
+  icon: NODE,
+  tech_stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Prisma",
+      "JWT",
+      "Cloudinary"
+  ],
+  bg: "bg-green-100",
+  catagory: ["Node.JS"]
+},
+
+{
+  name: "Blog CMS & Publishing Platform",
+  icon: NODE,
+  tech_stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Cloudinary",
+      "JWT"
+  ],
+  bg: "bg-green-100",
+  catagory: ["Node.JS"]
+},
+
+{
+  name: "Business Management & CMS",
+  icon: Next,
+  tech_stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "MySQL",
+      "Prisma",
+      "Cloudinary"
+  ],
+  bg: "bg-gray-100",
+  catagory: ["Next.JS", "Node.JS"]
+},
+
+{
+  name: "Appointment Booking System",
+  icon: NODE,
+  tech_stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "Prisma",
+      "JWT",
+      "Zod"
+  ],
+  bg: "bg-green-100",
+  catagory: ["Node.JS"]
+},
+
+{
+  name: "Real-Time Chat & Collaboration App",
+  icon: NODE,
+  tech_stack: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "MySQL",
+      "Prisma",
+      "Redis"
+  ],
+  bg: "bg-green-100",
+  catagory: ["Node.JS"]
+},
+
+{
+  name: "AI-Powered Productivity Assistant",
+  icon: Next,
+  tech_stack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "OpenAI API",
+      "MySQL",
+      "Prisma"
+  ],
+  bg: "bg-gray-100",
+  catagory: ["Next.JS"]
+}
 ];
 
 export const PageProjectsCard = ({ activeMenu }) => {
@@ -112,7 +148,7 @@ export const PageProjectsCard = ({ activeMenu }) => {
                   <ul className="flex items-center gap-2 flex-wrap">
                     {ele.tech_stack.map((item, i) => (
                       <li
-                        className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100 hover:bg-blue-100 cursor-pointer text-[13px] font-medium transition-colors"
+                        className="px-3 py-1 rounded-full bg-blue-50 text border border-blue-100 hover:bg-blue-100 cursor-pointer text-[13px] font-medium transition-colors"
                         key={i}
                       >
                         {item}

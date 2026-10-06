@@ -1,5 +1,5 @@
 import { TfiWorld } from "react-icons/tfi";
-import { MdSmartphone } from "react-icons/md";
+import { FaCartShopping } from "react-icons/fa6";
 import { IoServer } from "react-icons/io5";
 import { SerEdu } from "./SerEdu";
 
@@ -8,52 +8,53 @@ const services = [
     icon: <IoServer />,
     iconBg: "bg-purple-100",
     iconColor: "text-purple-600",
-    label: "Backend & Architecture",
-    title: "Enterprise & API Development",
-    desc: "Scalable backend systems and clean API design for complex business domains — built to last in production.",
+    label: "Backend Development",
+    title: "APIs & Backend Systems",
+    desc: "Reliable backend services and REST APIs for web applications, with clean architecture, authentication, validation, and database integration.",
     items: [
-      "REST & GraphQL APIs with .NET Core, Node.js, NestJS",
-      "Microservices, event-driven & serverless architectures",
-      "Auth systems — OAuth, OIDC, JWT, OKTA, Auth0",
-      "SQL Server, PostgreSQL, MongoDB, Redis",
-      "AWS & Azure — Lambda, Functions, SQS, SNS, S3",
+      "REST API development with Node.js and Express.js",
+      "Authentication with JWT and HTTP-only cookies",
+      "MySQL database design and Prisma ORM",
+      "CRUD operations, validation, and error handling",
+      "Role-based access control and protected APIs",
     ],
-    tags: [".NET Core", "Node.js", "C#", "Azure", "AWS"],
+    tags: ["Node.js", "Express.js", "TypeScript", "MySQL", "Prisma", "MongoDB"],
   },
+
   {
     icon: <TfiWorld />,
     iconBg: "bg-teal-100",
     iconColor: "text-teal-600",
     label: "Frontend & Web",
-    title: "Modern Web Applications",
-    desc: "Responsive, performant web apps with clean component architecture — from server-rendered pages to rich SPAs.",
+    title: "Modern Full-Stack Web Applications",
+    desc: "Responsive and user-friendly web applications built with React and modern TypeScript-based development practices.",
     items: [
-      "React, Next.js, Angular — full frontend ownership",
-      "TypeScript, TanStack Query, Redux, Zustand",
-      "ASP.NET Core MVC, Blazor, Razor Pages",
-      "Micro-frontend architecture & design systems",
-      "Performance tuning, accessibility, i18n",
+      "React and Next.js application development",
+      "Responsive interfaces with Tailwind CSS",
+      "TypeScript-based frontend development",
+      "State management with Redux Toolkit",
+      "REST API integration and dynamic web interfaces",
     ],
-    tags: ["React", "Next.js", "TypeScript", "Blazor"],
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
   },
+
   {
-    icon: <MdSmartphone />,
+    icon: <FaCartShopping />,
     iconBg: "bg-blue-100",
     iconColor: "text-blue-600",
-    label: "Desktop & Mobile",
-    title: "Cross-Platform App Development",
-    desc: "Native-quality desktop and mobile apps using the modern .NET ecosystem — one codebase, every platform.",
+    label: "Business Solutions",
+    title: "E-commerce & CMS Development",
+    desc: "Custom business websites, e-commerce platforms, and content management systems with secure admin panels and database-driven features.",
     items: [
-      ".NET MAUI for iOS & Android from a single codebase",
-      "WPF & WinForms for Windows enterprise tools",
-      "Xamarin to .NET MAUI migrations",
-      "React Native & Expo for JS-based mobile",
-      "Camera, barcode, native hardware integrations",
+      "E-commerce websites with product and inventory management",
+      "Shopping carts, orders, reviews, and product variants",
+      "Admin dashboards and content management systems",
+      "Blog platforms with image upload and publishing",
+      "Cloudinary integration for image and media management",
     ],
-    tags: [".NET MAUI", "WPF", "React Native", "WinForms"],
+    tags: ["E-commerce", "CMS", "React", "Node.js", "MySQL", "MongoDB"],
   },
 ];
-
 export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
   return (
     <section className={`container flex items-center justify-center ${bg} ${display ? "pt-25" : "pt-0"}`}>
@@ -76,7 +77,7 @@ export const ServicesCard = ({ display = true, bg = "gradient_bg" }) => {
                 {s.icon}
               </div>
               <div>
-                <p className="text-[10px] uppercase tracking-widest text-gray-500 font-medium">
+                <p className="text-[13px] uppercase tracking-widest text-gray-500 font-medium">
                   {s.label}
                 </p>
                 <h3 className="text-lg font-semibold herotext_color  leading-snug mt-1">

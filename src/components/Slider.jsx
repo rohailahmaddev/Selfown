@@ -1,11 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import user from "../assets/sahan.jpg";
-import user2 from "../assets/viktor.jpg"
-import user3 from "../assets/talha.jpg"
-import user4 from "../assets/muzafar.jpg"
-import user5 from "../assets/waqar.jpg"
-import user6 from "../assets/jawad.jpg"
-import user7 from "../assets/mansoor.jpg"
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,49 +11,36 @@ import { useContext } from "react";
 
 const sliderCard = [
   {
-    name: "Sahan Nanayakkara",
-    text: "Highly recommend Muhammad Hamid. Over the past year, he proved to be a proactive communicator committed to high-quality work.",
-    author: "Sahan Nanayakkara",
-    pic: user,
+    name: "Full-Stack Development",
+    text: "Building responsive web applications with React, Next.js, Node.js, Express.js, TypeScript, and modern database technologies.",
+    author: "My Core Focus",
   },
   {
-    name: "Viktor Stanišić",
-    text: "Highly recommend Muhammad Hamid as a Solution Architect. He brings strong expertise in .NET, React, architecture, DDD, and SOLID principles.",
-    author: "Viktor Stanišić",
-    pic: user2,
+    name: "Real-World Experience",
+    text: "Contributed to a real-world insurance claims management system during my software development internship at KloudXel.",
+    author: "Professional Experience",
   },
   {
-    name: "Talha Tahir",
-    text: "Said Hamid is professional, mature, a strong team player, and helpful in explaining issues and defects during QA collaboration",
-    author: "Talha Tahir",
-    pic: user3,
+    name: "MERN Stack Development",
+    text: "Completed a six-month MERN Stack internship at bVoir Technologies, working on frontend, backend, APIs, authentication, and database integration.",
+    author: "Internship Experience",
   },
   {
-    name: "Muzafar Hussain",
-    text: "Praised Muhammad Hamid’s professionalism, diverse technical skills, project discovery participation, software architecture understanding, and strong work ethic.",
-    author: "Muzafar Hussain",
-    pic: user4,
+    name: "Backend & APIs",
+    text: "Developing REST APIs with Node.js and Express.js, including authentication, validation, database operations, and role-based access control.",
+    author: "Backend Development",
   },
   {
-    name: "Waqar Ahmad",
-    text: "Highlighted Hamid’s hard work, loyalty, strong C#/.NET grip, coding style, and clear OOP concepts.",
-    author: "Waqar Ahmad",
-    pic: user5,
+    name: "Database Development",
+    text: "Working with both relational and NoSQL databases, including MySQL, Prisma, MongoDB, and Mongoose.",
+    author: "Database Skills",
   },
   {
-    name: "Jawad Ahmed",
-    text: "Mentioned Hamid’s passion, vision, deadline management, focus, and commitment to high-quality standards.",
-    author: "Jawad Ahmed",
-    pic: user6,
-  },
-  {
-    name: "Mansoor Usman Khan",
-    text: "Called Hamid a creative, dedicated, ambitious programmer who worked devotedly on multiple projects.",
-    author: "Mansoor Usman Khan",
-    pic: user7,
+    name: "AI-Integrated Applications",
+    text: "Interested in integrating AI capabilities into practical web applications and building useful AI-powered products.",
+    author: "AI Integration",
   },
 ];
-
 export default function Slider() {
 
   const {btnColor} = useContext(Data)
@@ -68,7 +48,7 @@ export default function Slider() {
     <section className="container flex items-center justify-center gradient_bg pt-20 pb-25" id="slider"
     style={{ "--swiper-theme-color": btnColor }}
     >
-      <div className="w-[85%] bg-white shadow-md rounded flex items-center justify-between md:p-5 overflow-hidden">
+      <div className="w-[88%] bg-white shadow-md rounded flex items-center justify-between md:p-5 overflow-hidden">
         <Swiper
           navigation={true}
           modules={[Navigation, Autoplay]}
@@ -97,9 +77,6 @@ export default function Slider() {
           </SwiperSlide>
           <SwiperSlide>
             <SliderDiv sliderCard={sliderCard[5]} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SliderDiv sliderCard={sliderCard[6]} />
           </SwiperSlide>
         </Swiper>
       </div>
