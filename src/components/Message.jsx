@@ -25,7 +25,7 @@ export const MessageSend = () => {
               />
               <button
                 type="submit"
-                className="md:text-xl text-[14px] p-3 md:p-3 text-white cursor-pointer rounded bg-blue-950"
+                className="md:text-xl text-[14px] p-2 md:p-3 text-white cursor-pointer rounded bg-blue-950"
               >
                 Send Message
               </button>
